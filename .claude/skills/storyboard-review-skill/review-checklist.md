@@ -1,329 +1,329 @@
-# 分镜审查检查清单
+# Storyboard Review Checklist
 
-各制作阶段输出的全面质量标准。
+Comprehensive quality standards for the output of each production stage.
 
 ---
 
-## 阶段 1: Beat Breakdown 审查
+## Stage 1: Beat Breakdown Review
 
 **Artifact**: `beat-breakdown-ep{XX}.md`
 
-### 计数和完整性
+### Count and Completeness
 
-- [ ] **恰好 9 个 beats**（不是 8 个，不是 10 个，恰好 9 个）
-- [ ] 所有 9 个 beats 都有**beat 编号**（1-9）
-- [ ] 所有 9 个 beats 都有**场景引用**（页码、场景编号或时间戳）
-- [ ] 所有 9 个 beats 都有**描述**（非空白或占位符）
-- [ ] 所有 9 个 beats 都有**叙事目的**（解释为什么这个 beat 重要）
+- [ ] **Exactly 9 beats** (not 8, not 10, exactly 9)
+- [ ] All 9 beats have a **beat number** (1-9)
+- [ ] All 9 beats have a **scene reference** (page number, scene number, or timestamp)
+- [ ] All 9 beats have a **description** (not blank or a placeholder)
+- [ ] All 9 beats have a **narrative purpose** (explaining why this beat matters)
 
-### 覆盖度和分布
+### Coverage and Distribution
 
-- [ ] **开头已覆盖**: Beats 1-3 包括设定和触发事件
-- [ ] **发展已覆盖**: Beats 4-6 包括上升动作和复杂化
-- [ ] **结尾已覆盖**: Beats 7-9 包括高潮和结局
-- [ ] **合理间隔**: Beats 在时间线上分布（非全部集中）
-- [ ] **完整弧线**: 9 个 beats 合在一起讲述完整故事
+- [ ] **Beginning covered**: Beats 1-3 include setup and the inciting incident
+- [ ] **Development covered**: Beats 4-6 include rising action and complications
+- [ ] **Ending covered**: Beats 7-9 include climax and resolution
+- [ ] **Reasonable spacing**: Beats are distributed across the timeline (not all clustered)
+- [ ] **Complete arc**: The 9 beats together tell a complete story
 
-### 清晰性和具体性
+### Clarity and Specificity
 
-- [ ] **无模糊描述**: 每个 beat 描述具体事件
-  - ❌ 失败: "角色发生了一些事"
-  - ✓ 通过: "Maya 在奶奶的日记中发现了隐藏的地图"
-- [ ] **具体动作**: 描述使用主动的、有形的事件
-- [ ] **独立可理解**: 每个 beat 无需大量上下文即可理解
+- [ ] **No vague descriptions**: Each beat describes a specific event
+  - ❌ Fail: "Something happens to the character"
+  - ✓ Pass: "Maya discovers a hidden map in her grandmother's diary"
+- [ ] **Concrete action**: Descriptions use active, tangible events
+- [ ] **Understandable on its own**: Each beat can be understood without extensive context
 
-### 选择质量
+### Selection Quality
 
-- [ ] **转折点**: Beats 是叙事枢纽，非填充时刻
-- [ ] **视觉潜力**: 每个 beat 可用引人注目的图像表现
-- [ ] **故事必需**: 移除任何 beat 都会在叙事理解上造成空缺
-- [ ] **情感意义**: Beats 捕捉情感或紧张感高涨的时刻
+- [ ] **Turning points**: Beats are narrative pivots, not filler moments
+- [ ] **Visual potential**: Each beat can be represented by a compelling image
+- [ ] **Story-essential**: Removing any beat would leave a gap in narrative understanding
+- [ ] **Emotional significance**: Beats capture moments of heightened emotion or tension
 
-### 角色和地点跟踪
+### Character and Location Tracking
 
-- [ ] **关键角色已列出**: 所有重复出现的角色已用规范描述识别
-- [ ] **关键地点已列出**: 所有重复出现的场景已识别
-- [ ] **一致性基础**: 提供的信息足以在后续阶段保持连贯性
+- [ ] **Key characters listed**: All recurring characters are identified with canonical descriptions
+- [ ] **Key locations listed**: All recurring settings are identified
+- [ ] **Consistency foundation**: Enough information is provided to maintain continuity in later stages
 
-### 常见失败模式
+### Common Failure Patterns
 
-- ❌ Beat 数量错误（7、10、12 个 beats 而非恰好 9 个）
-- ❌ 模糊描述（"一个场景"、"发生了什么"、"角色做事"）
-- ❌ 缺失部分（如无高潮 beats、无设定 beats）
-- ❌ 平凡时刻（beats 描述不重要的动作）
-- ❌ Beats 集中（所有 9 个 beats 在故事前三分之一）
+- ❌ Wrong beat count (7, 10, 12 beats instead of exactly 9)
+- ❌ Vague descriptions ("a scene", "something happens", "the character does things")
+- ❌ Missing sections (e.g. no climax beats, no setup beats)
+- ❌ Mundane moments (beats describing unimportant actions)
+- ❌ Clustered beats (all 9 beats in the first third of the story)
 
 ---
 
-## 阶段 2: Beat Board (9 宫格)审查
+## Stage 2: Beat Board (9-Grid) Review
 
 **Artifact**: `beat-board-prompt-ep{XX}.md`
 
-### 计数和结构
+### Count and Structure
 
-- [ ] **恰好 9 个提示词**（每个 beat 一个，来自 breakdown）
-- [ ] 每个提示词有**beat 引用**（引用 breakdown 中的对应 beat）
-- [ ] 每个提示词有**叙事上下文**（解释正在发生什么）
+- [ ] **Exactly 9 prompts** (one per beat, from the breakdown)
+- [ ] Each prompt has a **beat reference** (citing the corresponding beat in the breakdown)
+- [ ] Each prompt has **narrative context** (explaining what is happening)
 
-### 提示词格式和风格
+### Prompt Format and Style
 
-- [ ] **叙事描述式风格**: 流畅的句子，非关键词列表
-  - ❌ 失败: "woman, red dress, beach, sunset, 8k, detailed"
-  - ✓ 通过: "A woman in a red dress stands on a beach at sunset..."
-- [ ] **适当长度**: 每个提示词 80-150 词
-  - 过短（<60 词）→ 缺少细节
-  - 过长（>180 词）→ 臃肿、不聚焦
-- [ ] **镜头规格**: 每个提示词包括镜头类型和镜头角度
-  - 必需: "Medium shot, eye-level"或类似表述
+- [ ] **Narrative descriptive style**: Flowing sentences, not keyword lists
+  - ❌ Fail: "woman, red dress, beach, sunset, 8k, detailed"
+  - ✓ Pass: "A woman in a red dress stands on a beach at sunset..."
+- [ ] **Appropriate length**: 80-150 words per prompt
+  - Too short (<60 words) → missing detail
+  - Too long (>180 words) → bloated, unfocused
+- [ ] **Shot specification**: Each prompt includes shot type and camera angle
+  - Required: "Medium shot, eye-level" or similar wording
 
-### 清晰性（4C 框架的 C1）
+### Clarity (C1 of the 4C Framework)
 
-- [ ] **主体明确定义**: 主要主体是谁/什么没有歧义
-- [ ] **动作/姿势已指定**: 主体的位置和动作已描述
-- [ ] **场景详细**: 地点包括 2-4 个独特特征
-- [ ] **光影已描述**: 光影的方向、质量和氛围已指定
-- [ ] **无矛盾**: 元素不冲突（如"黑暗房间里阳光明媚"）
+- [ ] **Subject clearly defined**: No ambiguity about who/what the main subject is
+- [ ] **Action/pose specified**: The subject's position and action are described
+- [ ] **Scene detailed**: The location includes 2-4 distinctive features
+- [ ] **Lighting described**: Direction, quality, and atmosphere of the lighting are specified
+- [ ] **No contradictions**: Elements do not conflict (e.g. "bright sunshine in a dark room")
 
-### 一致性（4C 框架的 C3）
+### Consistency (C3 of the 4C Framework)
 
-- [ ] **角色外观相同**: 同一角色在所有提示词中描述完全相同
-  - 示例检查: 如果提示词 1 说"长银发"，提示词 5 也必须说"长银发"
-  - 查找: 头发、眼睛、服装、显著标记
-- [ ] **场景一致性**: 如果某个位置出现在多个提示词中，细节对齐
-- [ ] **风格关键词统一**: 所有提示词使用相同的风格标记
-  - 示例: 如果提示词 1 使用"anime style, cinematic lighting"，所有提示词都应使用
-- [ ] **光影方式连贯**: 整体光影理念保持（除非故事需要改变）
+- [ ] **Character appearance identical**: The same character is described identically across all prompts
+  - Example check: If Prompt 1 says "long silver hair", Prompt 5 must also say "long silver hair"
+  - Look for: hair, eyes, clothing, distinguishing marks
+- [ ] **Scene consistency**: If a location appears in multiple prompts, the details align
+- [ ] **Style keywords uniform**: All prompts use the same style markers
+  - Example: If Prompt 1 uses "anime style, cinematic lighting", all prompts should
+- [ ] **Lighting approach coherent**: The overall lighting concept is maintained (unless the story requires a change)
 
-### 覆盖度和对齐
+### Coverage and Alignment
 
-- [ ] **Beats 匹配 breakdown**: 每个 panel 对应阶段 1 的正确 beat
-- [ ] **视觉叙事**: 9 个 panels 合在一起视觉化讲述 episode 的故事
-- [ ] **镜头多样性**: 广角、中景、特写的混合（非全部相同镜头类型）
+- [ ] **Beats match the breakdown**: Each panel corresponds to the correct beat from Stage 1
+- [ ] **Visual storytelling**: The 9 panels together tell the episode's story visually
+- [ ] **Shot variety**: A mix of wide, medium, and close-up shots (not all the same shot type)
 
-### 风格标记应用
+### Style Marker Application
 
-- [ ] **项目风格已应用**: 项目配置中的视觉风格用于所有提示词
-- [ ] **宽高比已注明**: 在元数据中指定（如 16:9, 1:1）
-- [ ] **目标模型已注明**: AI 模型已识别（如 Gemini Imagen 3）
+- [ ] **Project style applied**: The visual style from the project configuration is used in all prompts
+- [ ] **Aspect ratio noted**: Specified in the metadata (e.g. 16:9, 1:1)
+- [ ] **Target model noted**: The AI model is identified (e.g. Gemini Imagen 3)
 
-### 常见失败模式
+### Common Failure Patterns
 
-- ❌ 提示词数量错误（8 或 10 个提示词而非 9 个）
-- ❌ 关键词堆砌（"detective, noir, rain, night, trench coat, fedora, 8k, detailed"）
-- ❌ 角色不一致（提示词 2 有"短黑发"但提示词 7 有"长金发"）
-- ❌ 缺少镜头规格（未提及镜头类型或镜头角度）
-- ❌ 模糊描述（"一个人在一个地方"）
-- ❌ 风格关键词缺失或在提示词间不一致
+- ❌ Wrong prompt count (8 or 10 prompts instead of 9)
+- ❌ Keyword stuffing ("detective, noir, rain, night, trench coat, fedora, 8k, detailed")
+- ❌ Character inconsistency (Prompt 2 has "short black hair" but Prompt 7 has "long blonde hair")
+- ❌ Missing shot specification (no mention of shot type or camera angle)
+- ❌ Vague descriptions ("a person in a place")
+- ❌ Style keywords missing or inconsistent between prompts
 
 ---
 
-## 阶段 3: Sequence Board (4 格序列)审查
+## Stage 3: Sequence Board (4-Panel Sequence) Review
 
 **Artifact**: `sequence-board-prompt-ep{XX}.md`
 
-### 结构和计数
+### Structure and Count
 
-- [ ] **每个序列恰好 4 个 panels**（不是 3 个，不是 5 个）
-- [ ] **源 beat 已识别**: 每个序列引用其在 beat board 中的源
-- [ ] **提供叙事上下文**: 4 个 panels 中发生的事情已解释
-- [ ] **估计时长**: 实时时长已注明（如"8 秒"）
+- [ ] **Exactly 4 panels per sequence** (not 3, not 5)
+- [ ] **Source beat identified**: Each sequence references its source in the beat board
+- [ ] **Narrative context provided**: What happens across the 4 panels is explained
+- [ ] **Estimated duration**: Real-time duration is noted (e.g. "8 seconds")
 
-### 继承性（关键）
+### Inheritance (Critical)
 
-- [ ] **角色外观已继承**: Panels 使用与源 beat 相同的角色描述
-  - 交叉检查: Panel 1 的角色描述是否匹配 Beat X 的描述？
-  - 示例: 如果 Beat 5 说"卷曲红发女性穿蓝色夹克"，所有 4 个 panels 必须保持
-- [ ] **场景已继承**: 地点匹配或逻辑扩展自源 beat
-- [ ] **光影已继承**: 光影方式与源 beat 一致（除非故事需要改变）
+- [ ] **Character appearance inherited**: Panels use the same character description as the source beat
+  - Cross-check: Does Panel 1's character description match Beat X's description?
+  - Example: If Beat 5 says "woman with curly red hair in a blue jacket", all 4 panels must maintain this
+- [ ] **Scene inherited**: The location matches or logically extends from the source beat
+- [ ] **Lighting inherited**: The lighting approach is consistent with the source beat (unless the story requires a change)
 
-### 动作连贯性
+### Action Continuity
 
-- [ ] **逻辑进展**: 动作从 Panel 1 → 2 → 3 → 4 自然流动
-- [ ] **物理可能**: 动作可在估计时长内发生
-  - ❌ 失败: "角色跑 100 米"在 3 秒内
-  - ✓ 通过: "角色向前走 3 步"在 3 秒内
-- [ ] **无瞬移**: 角色/物体通过空间移动，不跳位置
-- [ ] **清晰过渡**: Panel 之间的过渡已指定（切、摇、推等）
+- [ ] **Logical progression**: Action flows naturally from Panel 1 → 2 → 3 → 4
+- [ ] **Physically possible**: The action can occur within the estimated duration
+  - ❌ Fail: "Character runs 100 meters" in 3 seconds
+  - ✓ Pass: "Character takes 3 steps forward" in 3 seconds
+- [ ] **No teleporting**: Characters/objects move through space, not jump positions
+- [ ] **Clear transitions**: Transitions between panels are specified (cut, pan, push, etc.)
 
-### 摄影（180 度法则）
+### Cinematography (180-Degree Rule)
 
-- [ ] **屏幕方向保持**: 角色不无故翻转位置
-  - 示例: 如果角色 A 在 Panel 1 的左侧，除非物理移动，否则应在 Panels 2-4 保持左侧
-- [ ] **轴线稳定性**: 主体间的假想线保持
-- [ ] **跨线有理**: 如果跨越 180 度线，是显示的（非跳跃）
+- [ ] **Screen direction maintained**: Characters do not flip positions without reason
+  - Example: If Character A is on the left in Panel 1, they should remain on the left in Panels 2-4 unless they physically move
+- [ ] **Axis stability**: The imaginary line between subjects is maintained
+- [ ] **Line crossing justified**: If the 180-degree line is crossed, it is shown (not jumped)
 
-### 剪辑安全（避免跳切）
+### Edit Safety (Avoiding Jump Cuts)
 
-- [ ] **无跳切**: 避免同一镜头略微不同角度
-  - ❌ 失败: Panel 1: "角色中景"，Panel 2: "角色中景，镜头略近"
-  - ✓ 通过: Panel 1: "中景"，Panel 2: "角色脸部特写"（明显变化）
-- [ ] **明显镜头变化**: 切换时，镜头类型或角度显著改变
-- [ ] **流畅过渡**: 切换有动机且清晰，不突兀
+- [ ] **No jump cuts**: Avoid the same shot at a slightly different angle
+  - ❌ Fail: Panel 1: "Medium shot of character", Panel 2: "Medium shot of character, camera slightly closer"
+  - ✓ Pass: Panel 1: "Medium shot", Panel 2: "Close-up of character's face" (clear change)
+- [ ] **Clear shot changes**: When cutting, shot type or angle changes significantly
+- [ ] **Smooth transitions**: Cuts are motivated and clear, not jarring
 
-### Panel 提示词质量
+### Panel Prompt Quality
 
-- [ ] **每个 panel 80-150 词**: 保持适当长度
-- [ ] **叙事描述式风格**: 非关键词列表
-- [ ] **包含镜头规格**: 镜头类型、镜头角度、过渡类型
+- [ ] **80-150 words per panel**: Appropriate length maintained
+- [ ] **Narrative descriptive style**: Not keyword lists
+- [ ] **Includes shot specification**: Shot type, camera angle, transition type
 
-### 序列节奏
+### Sequence Pacing
 
-- [ ] **动作适合时长**: 描述的运动可现实地在时间内完成
-- [ ] **节奏多样性**: 并非所有序列都是相同速度（有慢有快）
-- [ ] **镜头运动清晰**: 如果镜头移动，方向和类型已指定
+- [ ] **Action fits the duration**: The described motion can realistically be completed in the time
+- [ ] **Pacing variety**: Not all sequences are the same speed (some slow, some fast)
+- [ ] **Camera movement clear**: If the camera moves, direction and type are specified
 
-### 常见失败模式
+### Common Failure Patterns
 
-- ❌ 每序列 panel 数量错误（3 或 5 个 panels 而非 4 个）
-- ❌ 角色外观与源 beat 不同（继承违规）
-- ❌ 屏幕方向违规（角色从左切换到右，无运动）
-- ❌ 跳切（Panel 1 中景，Panel 2 略微不同的中景）
-- ❌ 不可能的动作（角色 1 秒内飞过房间，无超能力）
-- ❌ 不清晰的过渡（无 Panel 1 如何连接到 Panel 2 的指示）
-- ❌ 场景意外变化（Panel 1 在办公室，Panel 3 突然在森林，无解释）
+- ❌ Wrong panel count per sequence (3 or 5 panels instead of 4)
+- ❌ Character appearance differs from the source beat (inheritance violation)
+- ❌ Screen direction violation (character switches from left to right with no motion)
+- ❌ Jump cuts (Panel 1 medium shot, Panel 2 slightly different medium shot)
+- ❌ Impossible action (character flies across the room in 1 second, no superpowers)
+- ❌ Unclear transitions (no indication of how Panel 1 connects to Panel 2)
+- ❌ Unexpected scene change (Panel 1 in an office, Panel 3 suddenly in a forest, no explanation)
 
 ---
 
-## 阶段 4: Motion Prompt 审查
+## Stage 4: Motion Prompt Review
 
 **Artifact**: `motion-prompt-ep{XX}.md`
 
-### 结构和计数
+### Structure and Count
 
-- [ ] **每序列一个提示词**: 每个 4 格序列获得一个 motion prompt
-- [ ] **源序列已识别**: 引用基于哪个序列
-- [ ] **时长已指定**: 目标视频时长已注明（通常 3-5 秒）
+- [ ] **One prompt per sequence**: Each 4-panel sequence gets one motion prompt
+- [ ] **Source sequence identified**: References which sequence it is based on
+- [ ] **Duration specified**: Target video duration is noted (typically 3-5 seconds)
 
-### 简洁性（视频模型关键）
+### Conciseness (Critical for Video Models)
 
-- [ ] **适当长度**: 40-80 词（显著短于静态提示词）
-  - 过长（>100 词）→ 模型可能忽略部分
-  - 过短（<30 词）→ 缺少必要细节
-- [ ] **聚焦描述**: 描述运动，非详尽的场景细节
-  - ❌ 失败: "在灯光精美的维多利亚房间里，配有华丽家具、高窗、红色天鹅绒窗帘..."
-  - ✓ 通过: "在维多利亚房间里,..."
+- [ ] **Appropriate length**: 40-80 words (significantly shorter than static prompts)
+  - Too long (>100 words) → the model may ignore parts
+  - Too short (<30 words) → missing necessary detail
+- [ ] **Focused description**: Describes motion, not exhaustive scene detail
+  - ❌ Fail: "In a beautifully lit Victorian room with ornate furniture, tall windows, red velvet curtains..."
+  - ✓ Pass: "In a Victorian room,..."
 
-### 运动清晰度
+### Motion Clarity
 
-- [ ] **主要运动已定义**: 一个清晰的主要动作已描述
-  - ❌ 失败: "角色跑、跳、旋转、挥手，同时镜头变焦和摇移"
-  - ✓ 通过: "角色向前跑，镜头向左摇以跟随"
-- [ ] **方向已指定**: 运动方向明确无歧义
-  - 必需: "从左到右"、"朝向镜头"、"顺时针"等
-  - ❌ 失败: "角色移动"
-  - ✓ 通过: "角色从左向右移动"
-- [ ] **速度已指示**: 运动的节奏清晰
-  - 使用: "缓慢"、"快速"、"飘动"、"冲刺"等
+- [ ] **Primary motion defined**: One clear primary action is described
+  - ❌ Fail: "Character runs, jumps, spins, waves, while camera zooms and pans"
+  - ✓ Pass: "Character runs forward, camera pans left to follow"
+- [ ] **Direction specified**: Motion direction is explicit and unambiguous
+  - Required: "left to right", "toward camera", "clockwise", etc.
+  - ❌ Fail: "Character moves"
+  - ✓ Pass: "Character moves from left to right"
+- [ ] **Speed indicated**: The pacing of the motion is clear
+  - Use: "slowly", "quickly", "drifting", "sprinting", etc.
 
-### 主体 vs 镜头运动
+### Subject vs Camera Motion
 
-- [ ] **运动源清晰**: 指定什么在动（主体、镜头或两者）
-  - "角色向前走"（主体移动）
-  - "镜头向后推"（镜头移动）
-  - "角色向左跑，镜头向右摇"（两者移动）
-- [ ] **镜头运动已指定**: 如镜头移动，类型清晰
+- [ ] **Motion source clear**: Specifies what is moving (subject, camera, or both)
+  - "Character walks forward" (subject moves)
+  - "Camera dollies backward" (camera moves)
+  - "Character runs left, camera pans right" (both move)
+- [ ] **Camera movement specified**: If the camera moves, the type is clear
   - Pan, tilt, dolly, truck, zoom, orbit
 
-### 物理合理性
+### Physical Plausibility
 
-- [ ] **时长现实**: 运动可在声明时间内完成
-  - 3 秒: 简单动作（转头、拿起物体、走一步）
-  - 5 秒: 中等动作（穿过小房间、坐下、开门）
-  - ❌ 失败: "角色跑马拉松"在 3 秒内
-- [ ] **遵守物理**: 无不可能的运动（除非超自然/有理由）
+- [ ] **Duration realistic**: The motion can be completed in the stated time
+  - 3 seconds: simple actions (turn head, pick up object, take a step)
+  - 5 seconds: moderate actions (cross a small room, sit down, open a door)
+  - ❌ Fail: "Character runs a marathon" in 3 seconds
+- [ ] **Obeys physics**: No impossible motion (unless supernatural/justified)
 
-### 主体一致性
+### Subject Consistency
 
-- [ ] **角色描述匹配源**: 主体描述如 sequence board 中
-  - 不需要完整详尽描述，但关键识别符保持
-  - 示例: 如果序列有"银发女性穿红色大衣"，motion prompt 应包括这些识别符
+- [ ] **Character description matches the source**: Subject described as in the sequence board
+  - A full exhaustive description is not needed, but key identifiers are maintained
+  - Example: If the sequence has "silver-haired woman in a red coat", the motion prompt should include these identifiers
 
-### 专注性和简洁性
+### Focus and Conciseness
 
-- [ ] **单一主要动作**: 非多个竞争性运动
-- [ ] **仅必要细节**: 背景相比静态提示词简化
-- [ ] **以运动为中心**: 强调 movement，非静态构图
+- [ ] **Single primary action**: Not multiple competing motions
+- [ ] **Essential detail only**: Background is simplified compared to static prompts
+- [ ] **Motion-centered**: Emphasizes movement, not static composition
 
-### 常见失败模式
+### Common Failure Patterns
 
-- ❌ 过于冗长（120+词，读起来像静态图像提示词）
-- ❌ 多个竞争性运动（"跑、跳、旋转、挥手、转身"）
-- ❌ 模糊方向（"角色四处移动"）
-- ❌ 不可能的时机（"角色跑过城市"在 3 秒内）
-- ❌ 角色描述与 sequence board 不匹配
-- ❌ 未指定运动方向
-- ❌ 不清楚什么在动（主体？镜头？两者？）
+- ❌ Too verbose (120+ words, reads like a static image prompt)
+- ❌ Multiple competing motions ("runs, jumps, spins, waves, turns")
+- ❌ Vague direction ("character moves around")
+- ❌ Impossible timing ("character runs across the city" in 3 seconds)
+- ❌ Character description does not match the sequence board
+- ❌ Motion direction unspecified
+- ❌ Unclear what is moving (subject? camera? both?)
 
 ---
 
-## 审查输出格式
+## Review Output Format
 
-进行审查时，Director 应按以下结构组织反馈：
+When conducting a review, the Director should structure feedback as follows:
 
 ```markdown
-## 审查: [Artifact 名称]
+## Review: [Artifact Name]
 
-**阶段**: [1, 2, 3, 或 4]
-**判决**: PASS | FAIL
+**Stage**: [1, 2, 3, or 4]
+**Verdict**: PASS | FAIL
 
-### 质量检查结果:
+### Quality Check Results:
 
-- [ ] 标准 1: PASS/FAIL - [简要说明]
-- [ ] 标准 2: PASS/FAIL - [简要说明]
-- [ ] 标准 3: PASS/FAIL - [简要说明]
-      [...继续所有相关标准...]
+- [ ] Criterion 1: PASS/FAIL - [brief note]
+- [ ] Criterion 2: PASS/FAIL - [brief note]
+- [ ] Criterion 3: PASS/FAIL - [brief note]
+      [...continue for all relevant criteria...]
 
-### 发现的问题:
+### Issues Found:
 
-[如果 FAIL，列出具体问题及对 beats/prompts/panels 的引用]
+[If FAIL, list specific issues with references to beats/prompts/panels]
 
-1. **问题**: [描述]
+1. **Issue**: [description]
 
-   - **位置**: [Beat 5, Prompt 3, Panel 2 等]
-   - **问题**: [具体解释]
-   - **需要修复**: [需要改变什么]
+   - **Location**: [Beat 5, Prompt 3, Panel 2, etc.]
+   - **Problem**: [specific explanation]
+   - **Fix Required**: [what needs to change]
 
-2. **问题**: [...]
+2. **Issue**: [...]
 
-### 建议措施:
+### Recommended Actions:
 
-[如果 FAIL，提供逐步修订指导]
+[If FAIL, provide step-by-step revision guidance]
 
-### 批准说明:
+### Approval Notes:
 
-[如果 PASS，可选择性说明优秀之处或小建议]
+[If PASS, optionally note what was done well or minor suggestions]
 ```
 
 ---
 
-## 决策矩阵
+## Decision Matrix
 
-### 何时 PASS:
+### When to PASS:
 
-- ✓ 所有**主要标准**满足
-- ✓ 次要问题仅是表面问题（如不影响生成的拼写错误）
-- ✓ 作品已准备好用于 AI 生成
-- ✓ 方法论原则（清晰、简洁、一致、渐进）已展示
+- ✓ All **major criteria** are met
+- ✓ Minor issues are cosmetic only (e.g. typos that do not affect generation)
+- ✓ The work is ready for AI generation
+- ✓ The methodology principles (clear, concise, consistent, progressive) are demonstrated
 
-### 何时 FAIL:
+### When to FAIL:
 
-- ✗ 任何**主要标准**被违反
-- ✗ 一致性问题（角色外观变化、屏幕方向违规）
-- ✗ 缺少必需元素（无镜头规格、无光影描述）
-- ✗ 方法论违规（关键词格式而非叙事、长度错误）
-- ✗ 安全问题（连贯性错误、序列中的跳切）
-- ✗ 继承失败（4 格与源 9 格不匹配）
+- ✗ Any **major criterion** is violated
+- ✗ Consistency issues (character appearance changes, screen direction violations)
+- ✗ Missing required elements (no shot specification, no lighting description)
+- ✗ Methodology violations (keyword format instead of narrative, wrong length)
+- ✗ Safety issues (continuity errors, jump cuts in sequences)
+- ✗ Inheritance failures (4-panel does not match the source 9-grid)
 
-**重要**: 有疑问时，FAIL 并请求澄清。现在确保质量总比在有缺陷的提示词上浪费生成资源要好。
-
----
-
-## 修订循环限制
-
-- **正常流程**: FAIL → 修订 → 审查 → PASS
-- **同一 artifact 连续 3 次 FAIL 后**: 升级给 Producer 进行用户干预
-  - 可能表明: 要求不清晰、技术误解、或需要用户输入
+**Important**: When in doubt, FAIL and request clarification. Ensuring quality now is always better than wasting generation resources on flawed prompts.
 
 ---
 
-本检查清单是整个分镜制作系统质量控制的基础。
+## Revision Loop Limits
+
+- **Normal flow**: FAIL → revise → review → PASS
+- **After 3 consecutive FAILs on the same artifact**: Escalate to the Producer for user intervention
+  - May indicate: unclear requirements, technical misunderstanding, or the need for user input
+
+---
+
+This checklist is the foundation of quality control for the entire storyboard production system.

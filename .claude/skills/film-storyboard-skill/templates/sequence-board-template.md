@@ -1,42 +1,42 @@
-# Sequence Board 输出格式（参考）
+# Sequence Board Output Format (Reference)
 
-**此模板展示 4 格 sequence board 的结构**
+**This template shows the structure of a 4-panel sequence board**
 
-**❌ 严禁输出**：
+**❌ Strictly prohibited in output**:
 
-- Frontmatter 元数据
-- 模板说明
-- "下一步"指令
-- 任何非内容的说明
+- Frontmatter metadata
+- Template instructions
+- "Next step" directives
+- Any non-content notes
 
-**✅ 仅输出**：实际的 sequence board 内容
+**✅ Output only**: The actual sequence board content
 
 ---
 
-## 最终输出格式：
+## Final output format:
 
 ```markdown
 # Sequence Board - Episode {XX}
 
-## Sequence A: [来自 Beat X]
+## Sequence A: [From Beat X]
 
 ### Panel 1
 
-[Shot type]. [详细视觉描述，继承 beat board 的角色/场景/光色]
+[Shot type]. [Detailed visual description, inheriting character/scene/lighting and color from the beat board]
 
 ### Panel 2
 
-[Shot type]. [连续动作描述]
+[Shot type]. [Continuous action description]
 
 ### Panel 3
 
-[Shot type]. [连续动作描述]
+[Shot type]. [Continuous action description]
 
 ### Panel 4
 
-[Shot type]. [连续动作描述]
+[Shot type]. [Continuous action description]
 
-## Sequence B: [来自 Beat Y]
+## Sequence B: [From Beat Y]
 
 ### Panel 1
 
@@ -55,17 +55,17 @@
 ...
 ```
 
-## 关键要求：
+## Key Requirements:
 
-- **继承一致性**: 必须继承对应 beat board 的角色描述、场景设定、光色方案
-- **动作连贯**: 4 个 panels 之间动作连续，无跳跃
-- **轴线稳定**: 遵守 180 度法则
-- **镜头流畅**: Panel 间的转换自然
+- **Inheritance consistency**: Must inherit the character description, scene setting, and lighting/color scheme of the corresponding beat board
+- **Action continuity**: Action is continuous across the 4 panels, with no jumps
+- **Axis stability**: Obey the 180-degree rule
+- **Smooth shots**: Transitions between panels are natural
 
-## Agent 注意事项：
+## Agent Notes:
 
-- 无需 frontmatter 元数据
-- 无需模板说明
-- 每个 sequence 恰好 4 个 panels
-- 必须基于已批准的 beat board
-- 叙事英文提示词（AI 兼容性）
+- No frontmatter metadata
+- No template instructions
+- Exactly 4 panels per sequence
+- Must be based on the approved beat board
+- Narrative English prompts (AI compatibility)

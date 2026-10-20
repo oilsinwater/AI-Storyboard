@@ -5,12 +5,12 @@
     "scriptwriter_id": null,
     "episodes": {
         "ep01": {
-            "title": "觉醒",
-            "script": "完成",
-            "beat_breakdown": "完成",
-            "beat_board": "未开始",
-            "sequence_board": "未开始",
-            "motion_prompt": "未开始"
+            "title": "Awakening",
+            "script": "Completed",
+            "beat_breakdown": "Completed",
+            "beat_board": "Not Started",
+            "sequence_board": "Not Started",
+            "motion_prompt": "Not Started"
         }
     },
     "version": "1.0.0",

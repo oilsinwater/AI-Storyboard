@@ -1,94 +1,94 @@
-# 📖 Nano Banner 提示词写作指南（仅供参考）
+# 📖 Nano Banner Prompt Writing Guide (Reference Only)
 
-> **注意**: 这是参考指南。**仅在对 Nano Banner 提示词格式有疑问时查阅**。
-> **不要自动加载此文件** - 仅在困惑或需要时参考。
+> **Note**: This is a reference guide. **Consult only when you have questions about the Nano Banner prompt format**.
+> **Do not load this file automatically** - refer to it only when confused or when needed.
 
 ---
 
 # Nano Banner Prompt Guide
 
-专为 Nano Banner 3x3 网格生成优化的提示词写作指南。
+A prompt writing guide optimized specifically for Nano Banner 3x3 grid generation.
 
-**重要说明**:
+**Important notes**:
 
-- 本指南专注于**Nano Banner Episode Visual Script 格式**
-- Nano Banner 格式与标准 Gemini/Midjourney 格式**不同**
-- 提示词内容**使用英文**以获得最佳生成效果
-- 这是 📖 **Reference Only** 文档，不会自动加载到上下文中
+- This guide focuses on the **Nano Banner Episode Visual Script format**
+- The Nano Banner format is **different** from the standard Gemini/Midjourney format
+- Prompt content is **written in English** for the best generation results
+- This is a 📖 **Reference Only** document and is not loaded into context automatically
 
 ---
 
-## Nano Banner 核心格式
+## Nano Banner Core Format
 
-### Episode Visual Script 结构
+### Episode Visual Script Structure
 
-Nano Banner 使用特殊的"Episode Visual Script"格式，优化用于一次性生成完整 3x3 网格：
+Nano Banner uses a special "Episode Visual Script" format, optimized for generating the complete 3x3 grid in one pass:
 
 ```markdown
 EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
 
-Beat 1: [Beat 标题]
-Visual Description: [80-120 词详细视觉描述]
-Lighting & Mood: [30-50 词光影和氛围]
+Beat 1: [Beat title]
+Visual Description: [80-120 word detailed visual description]
+Lighting & Mood: [30-50 words on lighting and atmosphere]
 
-Beat 2: [Beat 标题]
-Visual Description: [80-120 词详细视觉描述]
-Lighting & Mood: [30-50 词光影和氛围]
+Beat 2: [Beat title]
+Visual Description: [80-120 word detailed visual description]
+Lighting & Mood: [30-50 words on lighting and atmosphere]
 
-[继续 Beat 3-9，总共 9 个 beats]
+[Continue Beat 3-9, 9 beats in total]
 ```
 
-### 格式要求
+### Format Requirements
 
-**标题行**:
+**Title line**:
 
 ```
 EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
 ```
 
-- 必须包含 episode 编号
-- 固定格式，不可省略
+- Must include the episode number
+- Fixed format, cannot be omitted
 
-**每个 Beat 结构** (恰好 3 行):
+**Structure of each Beat** (exactly 3 lines):
 
-1. `Beat X: [标题]` - Beat 编号和标题
-2. `Visual Description:` - 80-120 词的详细视觉描述
-3. `Lighting & Mood:` - 30-50 词的光影和氛围
+1. `Beat X: [Title]` - Beat number and title
+2. `Visual Description:` - 80-120 word detailed visual description
+3. `Lighting & Mood:` - 30-50 words on lighting and atmosphere
 
-**总计**: 1 个标题行 + 9 个 beats × 3 行 = 28 行
+**Total**: 1 title line + 9 beats × 3 lines = 28 lines
 
-### 3x3 网格布局
+### 3x3 Grid Layout
 
-9 个 beats 对应 nano banner 的 3x3 网格位置：
+The 9 beats correspond to the nano banner 3x3 grid positions:
 
 ```
 ┌─────────┬─────────┬─────────┐
 │ Beat 1  │ Beat 2  │ Beat 3  │
-│ 左上    │ 中上    │ 右上    │
+│ Top-L   │ Top-C   │ Top-R   │
 ├─────────┼─────────┼─────────┤
 │ Beat 4  │ Beat 5  │ Beat 6  │
-│ 左中    │ 中心    │ 右中    │
+│ Mid-L   │ Center  │ Mid-R   │
 ├─────────┼─────────┼─────────┤
 │ Beat 7  │ Beat 8  │ Beat 9  │
-│ 左下    │ 中下    │ 右下    │
+│ Bot-L   │ Bot-C   │ Bot-R   │
 └─────────┴─────────┴─────────┘
 ```
 
-**关键点**:
+**Key points**:
 
-- Nano banner 会将这 9 个 beats 同时渲染为 3x3 网格
-- Beat 1-3 是第一行（上）
-- Beat 4-6 是第二行（中）
-- Beat 7-9 是第三行（下）
-- 保持所有 beats 的角色/风格一致性至关重要
+- Nano banner renders these 9 beats simultaneously as a 3x3 grid
+- Beats 1-3 are the first row (top)
+- Beats 4-6 are the second row (middle)
+- Beats 7-9 are the third row (bottom)
+- Maintaining character/style consistency across all beats is critical
 
 ---
 
-## Visual Description 编写规则
+## Visual Description Writing Rules
 
-### 必需元素（按顺序）
+### Required Elements (in order)
 
-1. **镜头规格** (Shot Type + Angle)
+1. **Shot specification** (Shot Type + Angle)
 
    ```
    Wide shot, high angle.
@@ -96,7 +96,7 @@ EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
    Close-up, low angle.
    ```
 
-2. **角色描述** (Canonical Description)
+2. **Character description** (Canonical Description)
 
    ```
    A young woman in her late 20s with waist-length straight silver hair,
@@ -104,9 +104,9 @@ EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
    over a white high-neck shirt
    ```
 
-   **关键**: 所有 9 个 beats 必须使用**完全相同**的角色描述
+   **Key**: All 9 beats must use **exactly the same** character description
 
-3. **动作/姿势**
+3. **Action/pose**
 
    ```
    stands alone on a crowded platform
@@ -114,36 +114,36 @@ EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
    reaches toward a glowing object
    ```
 
-4. **场景设定**
+4. **Scene setting**
 
    ```
    Modern metropolitan subway station with fluorescent lighting and
    yellow safety lines on the ground
    ```
 
-   包含 2-4 个独特场景特征
+   Include 2-4 distinctive scene features
 
-5. **关键视觉元素**
+5. **Key visual elements**
    ```
    Commuters rush past her in blurred motion while she remains perfectly still,
    staring at an ancient leather-bound journal in her hands
    ```
 
-### 长度控制
+### Length Control
 
-- **最佳**: 80-120 词
-- **过短** (<60 词): 缺少必要细节
-- **过长** (>140 词): 信息过载，nano banner 可能忽略
+- **Optimal**: 80-120 words
+- **Too short** (<60 words): Missing necessary detail
+- **Too long** (>140 words): Information overload; nano banner may ignore parts
 
-### 叙事描述式风格
+### Narrative Descriptive Style
 
-❌ **错误** (关键词堆砌):
+❌ **Wrong** (keyword stuffing):
 
 ```
 woman, silver hair, black coat, subway, neon, dramatic, 8k, detailed
 ```
 
-✅ **正确** (叙事描述):
+✅ **Correct** (narrative description):
 
 ```
 Wide shot, high angle. A young woman in her late 20s with waist-length straight
@@ -156,11 +156,11 @@ subway station with fluorescent lighting and yellow safety lines on the ground.
 
 ---
 
-## Lighting & Mood 编写规则
+## Lighting & Mood Writing Rules
 
-### 必需元素
+### Required Elements
 
-1. **光源和方向**
+1. **Light source and direction**
 
    ```
    Harsh overhead fluorescent lights creating flat, institutional illumination
@@ -168,7 +168,7 @@ subway station with fluorescent lighting and yellow safety lines on the ground.
    Flickering cool fluorescent overhead light mixing with warm amber glow
    ```
 
-2. **光影质量**
+2. **Light quality**
 
    ```
    Soft diffused natural light
@@ -176,7 +176,7 @@ subway station with fluorescent lighting and yellow safety lines on the ground.
    Rim lighting creating silhouette effect
    ```
 
-3. **色温**
+3. **Color temperature**
 
    ```
    Cool blue-white color temperature
@@ -184,28 +184,28 @@ subway station with fluorescent lighting and yellow safety lines on the ground.
    Cold silvery moonlight
    ```
 
-4. **情绪氛围**
+4. **Emotional atmosphere**
    ```
    Isolated, contemplative atmosphere
    Mysterious and tense mood
    Eerie, supernatural feeling
    ```
 
-### 长度控制
+### Length Control
 
-- **最佳**: 30-50 词
-- **过短** (<20 词): 不够具体
-- **过长** (>60 词): 应该属于 Visual Description
+- **Optimal**: 30-50 words
+- **Too short** (<20 words): Not specific enough
+- **Too long** (>60 words): Belongs in the Visual Description instead
 
 ---
 
-## 角色一致性技巧
+## Character Consistency Techniques
 
-### 建立规范描述
+### Establishing the Canonical Description
 
-在 Beat 1 建立完整的角色描述，然后在所有 9 个 beats 中**逐字重复**关键识别符：
+Establish the full character description in Beat 1, then repeat the key identifiers **verbatim** in all 9 beats:
 
-**规范描述**:
+**Canonical description**:
 
 ```
 A young woman in her late 20s with waist-length straight silver hair,
@@ -213,7 +213,7 @@ pale porcelain skin, and bright violet eyes, wearing a long black coat
 over a white high-neck shirt
 ```
 
-**在后续 beats 中重复**:
+**Repeated in later beats**:
 
 ```
 Beat 1: ...the silver-haired woman in her late 20s with violet eyes and
@@ -225,19 +225,19 @@ Beat 5: ...the same woman with waist-length silver hair and bright violet
 Beat 9: ...the young woman with silver hair and violet eyes in the black coat...
 ```
 
-### 关键识别符
+### Key Identifiers
 
-必须在所有 beats 中保持一致：
+Must remain consistent across all beats:
 
-- 发型、发色、发长
-- 眼睛颜色
-- 主要服装（外套、裙子等）
-- 肤色
-- 显著标记（疤痕、纹身等）
+- Hairstyle, hair color, hair length
+- Eye color
+- Main clothing (coat, dress, etc.)
+- Skin tone
+- Distinguishing marks (scars, tattoos, etc.)
 
 ---
 
-## 完整示例
+## Complete Example
 
 ```markdown
 EPISODE 01: BEAT BOARD VISUAL SCRIPT
@@ -281,76 +281,76 @@ Lighting & Mood: Warm candlelight creating a path forward while darkness looms o
 
 ---
 
-## 常见错误
+## Common Mistakes
 
-### ❌ 角色描述不一致
+### ❌ Inconsistent character description
 
 ```
 Beat 1: woman with long silver hair
 Beat 5: woman with short blonde hair
 ```
 
-**问题**: Nano Banner 会生成两个不同外观的人物
+**Problem**: Nano Banner will generate two people with different appearances
 
-### ❌ 过度简短
+### ❌ Too short
 
 ```
-Visual Description: A woman stands in a train station. (7词)
+Visual Description: A woman stands in a train station. (7 words)
 ```
 
-**问题**: 信息不足，nano banner 无法生成详细图像
+**Problem**: Not enough information; nano banner cannot generate a detailed image
 
-### ❌ 关键词堆砌
+### ❌ Keyword stuffing
 
 ```
 Visual Description: woman, silver hair, black coat, subway, mysterious, 8k, cinematic, detailed
 ```
 
-**问题**: Nano Banner 需要叙事描述式，非关键词列表
+**Problem**: Nano Banner needs narrative description, not keyword lists
 
-### ❌ 缺少镜头规格
+### ❌ Missing shot specification
 
 ```
 Visual Description: A woman with silver hair stands on a platform...
 ```
 
-**问题**: 缺少"Wide shot, high angle"等镜头信息
+**Problem**: Missing shot information such as "Wide shot, high angle"
 
-### ❌ Lighting & Mood 过长
+### ❌ Lighting & Mood too long
 
 ```
 Lighting & Mood: The lighting consists of harsh overhead fluorescent lights that
 create a very flat and institutional type of illumination with a cool blue-white
 color temperature, and the overall mood is one of isolation and contemplation,
 with a strong contrast between her stillness and the chaos of the surrounding
-commuters rushing past... (65词)
+commuters rushing past... (65 words)
 ```
 
-**问题**: 超过 50 词限制，应归入 Visual Description
+**Problem**: Exceeds the 50-word limit; should be moved into the Visual Description
 
 ---
 
-## 质量自查清单
+## Quality Self-Check
 
-**每个 Beat 检查**:
+**Per-beat checks**:
 
-- [ ] Visual Description: 80-120 词
-- [ ] Lighting & Mood: 30-50 词
-- [ ] 包含镜头类型和角度
-- [ ] 角色描述与 Beat 1 一致
-- [ ] 使用叙事描述式（非关键词）
-- [ ] 场景包含 2-4 个独特特征
-- [ ] 已指定光源、方向、色温
-- [ ] 已描述情绪氛围
+- [ ] Visual Description: 80-120 words
+- [ ] Lighting & Mood: 30-50 words
+- [ ] Includes shot type and angle
+- [ ] Character description is consistent with Beat 1
+- [ ] Uses narrative descriptive style (not keywords)
+- [ ] Scene includes 2-4 distinctive features
+- [ ] Light source, direction, and color temperature are specified
+- [ ] Emotional atmosphere is described
 
-**整体检查**:
+**Overall checks**:
 
-- [ ] 恰好 9 个 beats
-- [ ] 标题行格式正确："EPISODE XX: BEAT BOARD VISUAL SCRIPT"
-- [ ] 角色外观在所有 beats 中 100%一致
-- [ ] 无 frontmatter 或元数据
-- [ ] 无模板说明或注释
+- [ ] Exactly 9 beats
+- [ ] Title line format is correct: "EPISODE XX: BEAT BOARD VISUAL SCRIPT"
+- [ ] Character appearance is 100% consistent across all beats
+- [ ] No frontmatter or metadata
+- [ ] No template instructions or notes
 
 ---
 
-本指南专为 Nano Banner 3x3 网格生成优化。遵循这些规则可确保生成的 9 个 panels 具有视觉一致性和专业质量。
+This guide is optimized specifically for Nano Banner 3x3 grid generation. Following these rules ensures the 9 generated panels have visual consistency and professional quality.

@@ -1,14 +1,14 @@
 # Animator Skill - Motion Library
 
-本文档包含完整的运动类型库、速度指导和平台特性参考。仅在需要选择运动类型或优化平台输出时查阅。
+This document contains the complete motion type library, speed guidance, and platform feature reference. Consult only when choosing a motion type or optimizing platform output.
 
 ---
 
-## 运动类型库
+## Motion Type Library
 
-### 主体运动
+### Subject Motion
 
-#### 人物移动
+#### Character Locomotion
 
 ```
 walks from left to right
@@ -20,7 +20,7 @@ approaches from background to foreground
 exits frame left
 ```
 
-#### 人物动作
+#### Character Actions
 
 ```
 reaches out with right hand
@@ -33,7 +33,7 @@ waves hand greeting
 kneels down carefully
 ```
 
-#### 表情/姿态
+#### Expressions / Poses
 
 ```
 head turns from left to right
@@ -48,9 +48,9 @@ raises eyebrow
 
 ---
 
-### 镜头运动
+### Camera Motion
 
-#### 平移 (Pan)
+#### Pan
 
 ```
 camera pans left to right
@@ -60,7 +60,7 @@ camera pans down from sky to ground
 horizontal pan across cityscape
 ```
 
-#### 推拉 (Dolly)
+#### Dolly
 
 ```
 camera dollies forward toward subject
@@ -70,7 +70,7 @@ dolly out from close-up to establish shot
 camera pushes in slowly
 ```
 
-#### 升降 (Crane/Boom)
+#### Crane/Boom
 
 ```
 camera rises slowly upward
@@ -80,7 +80,7 @@ boom down to character level
 vertical descent following falling object
 ```
 
-#### 环绕 (Orbit)
+#### Orbit
 
 ```
 camera orbits around subject clockwise
@@ -89,7 +89,7 @@ camera circles subject from right to left
 arc around object revealing different angles
 ```
 
-#### 其他镜头运动
+#### Other Camera Movements
 
 ```
 camera tilts up from feet to face
@@ -103,9 +103,9 @@ static camera, no movement
 
 ---
 
-### 自然运动
+### Natural Motion
 
-#### 风
+#### Wind
 
 ```
 wind blows hair gently to the right
@@ -116,7 +116,7 @@ dust particles drift in air current
 flag waves vigorously
 ```
 
-#### 水
+#### Water
 
 ```
 water ripples expand outward
@@ -127,7 +127,7 @@ water drips from ceiling
 stream flows gently
 ```
 
-#### 光影
+#### Light and Shadow
 
 ```
 shadows lengthen gradually
@@ -138,7 +138,7 @@ light fades to darkness
 sun rays pierce through clouds
 ```
 
-#### 其他自然元素
+#### Other Natural Elements
 
 ```
 snow falls softly
@@ -151,11 +151,11 @@ petals fall from tree
 
 ---
 
-## 运动速度指导
+## Motion Speed Guidance
 
-### 慢速运动 (Slow, Gradual)
+### Slow Motion (Slow, Gradual)
 
-**关键词**:
+**Keywords**:
 
 - slowly
 - gradually
@@ -166,17 +166,17 @@ petals fall from tree
 - creeps
 - lingers
 
-**适用场景**:
+**Suitable for**:
 
-- 情绪细腻时刻
-- 悬念营造
-- 美学展示
-- 柔和过渡
-- 沉思氛围
+- Emotionally delicate moments
+- Building suspense
+- Aesthetic showcases
+- Soft transitions
+- Contemplative atmosphere
 
-**时长**: 4-5 秒
+**Duration**: 4-5 seconds
 
-**示例**:
+**Examples**:
 
 ```
 A woman slowly turns her head toward the window. Gentle, deliberate movement.
@@ -185,9 +185,9 @@ A woman slowly turns her head toward the window. Gentle, deliberate movement.
 
 ---
 
-### 中速运动 (Normal, Steady)
+### Medium Motion (Normal, Steady)
 
-**关键词**:
+**Keywords**:
 
 - walks
 - moves
@@ -197,17 +197,17 @@ A woman slowly turns her head toward the window. Gentle, deliberate movement.
 - regular motion
 - consistent rhythm
 
-**适用场景**:
+**Suitable for**:
 
-- 日常动作
-- 叙事推进
-- 标准镜头
-- 真实生活节奏
-- 自然对话场景
+- Everyday actions
+- Narrative progression
+- Standard shots
+- Real-life pacing
+- Natural dialogue scenes
 
-**时长**: 3-4 秒
+**Duration**: 3-4 seconds
 
-**示例**:
+**Examples**:
 
 ```
 A man walks across the room from left to right, picking up a book from the table.
@@ -216,9 +216,9 @@ Steady walking pace. 4 seconds.
 
 ---
 
-### 快速运动 (Fast, Sudden)
+### Fast Motion (Fast, Sudden)
 
-**关键词**:
+**Keywords**:
 
 - quickly
 - swiftly
@@ -229,17 +229,17 @@ Steady walking pace. 4 seconds.
 - bursts
 - snaps
 
-**适用场景**:
+**Suitable for**:
 
-- 动作场景
-- 惊吓时刻
-- 紧迫感
-- 追逐序列
-- 突发反应
+- Action scenes
+- Jump-scare moments
+- Sense of urgency
+- Chase sequences
+- Sudden reactions
 
-**时长**: 2-3 秒
+**Duration**: 2-3 seconds
 
-**示例**:
+**Examples**:
 
 ```
 A detective suddenly turns around, eyes wide, hand reaching for weapon.
@@ -248,193 +248,193 @@ Quick, sharp movement. 2 seconds.
 
 ---
 
-## 支持的视频平台
+## Supported Video Platforms
 
-### Runway Gen-3 (推荐)
+### Runway Gen-3 (Recommended)
 
-**优势**:
+**Strengths**:
 
-- 支持复杂运动
-- 高质量输出（1080p+）
-- 良好的物理一致性
-- 多种运动类型支持
+- Supports complex motion
+- High-quality output (1080p+)
+- Good physical consistency
+- Supports many motion types
 
-**最佳时长**: 3-5 秒
-**推荐运动**: 复杂的镜头运动 + 主体运动组合
+**Best duration**: 3-5 seconds
+**Recommended motion**: Complex camera motion + subject motion combinations
 
-**优化技巧**:
+**Optimization tips**:
 
-- 明确指定 camera movement
-- 避免过多同时运动
-- 使用方向性描述（left to right, toward camera）
+- Specify camera movement explicitly
+- Avoid too many simultaneous motions
+- Use directional descriptions (left to right, toward camera)
 
 ---
 
 ### Pika Labs
 
-**优势**:
+**Strengths**:
 
-- 快速生成
-- 适合简单运动
-- 易于使用
-- 良好的连贯性
+- Fast generation
+- Suited to simple motion
+- Easy to use
+- Good coherence
 
-**最佳时长**: 3-4 秒
-**推荐运动**: 单一主体运动或简单镜头平移
+**Best duration**: 3-4 seconds
+**Recommended motion**: Single subject motion or simple camera pans
 
-**优化技巧**:
+**Optimization tips**:
 
-- 保持运动简单专注
-- 清晰的起始和结束状态
-- 避免复杂多层运动
+- Keep motion simple and focused
+- Clear start and end states
+- Avoid complex multi-layered motion
 
 ---
 
 ### Stable Video Diffusion (SVD)
 
-**优势**:
+**Strengths**:
 
-- 开源免费
-- 可本地部署
-- 适合细微运动
-- 社区支持强
+- Open source and free
+- Can be deployed locally
+- Suited to subtle motion
+- Strong community support
 
-**最佳时长**: 2-4 秒
-**推荐运动**: 微妙的表情变化、轻微镜头运动
+**Best duration**: 2-4 seconds
+**Recommended motion**: Subtle expression changes, slight camera movement
 
-**优化技巧**:
+**Optimization tips**:
 
-- 专注于细节运动
-- 避免大幅度动作
-- 利用静态背景
+- Focus on fine-detail motion
+- Avoid large-scale actions
+- Make use of static backgrounds
 
 ---
 
 ### AnimateDiff
 
-**优势**:
+**Strengths**:
 
-- 与 Stable Diffusion 集成
-- 风格化动画
-- 社区支持强
-- 可控性高
+- Integrates with Stable Diffusion
+- Stylized animation
+- Strong community support
+- Highly controllable
 
-**最佳时长**: 1-3 秒
-**推荐运动**: 风格化动作、艺术化运动
+**Best duration**: 1-3 seconds
+**Recommended motion**: Stylized actions, artistic motion
 
-**优化技巧**:
+**Optimization tips**:
 
-- 利用 motion modules
-- 保持风格一致性
-- 适合非真实感动画
+- Make use of motion modules
+- Maintain style consistency
+- Suited to non-photorealistic animation
 
 ---
 
-## 运动组合模式
+## Motion Combination Patterns
 
-### 静态主体 + 镜头运动
+### Static Subject + Camera Motion
 
 ```
 Flower stands still in center of frame. Camera orbits around it clockwise.
 Smooth steady rotation. 5 seconds.
 ```
 
-**适用**: 产品展示、美学镜头、环境建立
+**Suitable for**: Product showcases, aesthetic shots, establishing environments
 
 ---
 
-### 动态主体 + 静态镜头
+### Moving Subject + Static Camera
 
 ```
 Runner sprints from left to right across frame. Camera static, wide shot.
 Fast running pace. 3 seconds.
 ```
 
-**适用**: 动作序列、追逐场景、运动展示
+**Suitable for**: Action sequences, chase scenes, showcasing movement
 
 ---
 
-### 同步运动（跟拍）
+### Synchronized Motion (Tracking Shot)
 
 ```
 Athlete runs toward camera while camera dollies backward at matching speed,
 maintaining consistent distance. Medium running pace. 4 seconds.
 ```
 
-**适用**: 对话行走、追逐场景、动态展示
+**Suitable for**: Walk-and-talk dialogue, chase scenes, dynamic showcases
 
 ---
 
-### 对比运动
+### Contrasting Motion
 
 ```
 Character walks slowly left to right in foreground while camera pans right
 to left, creating parallax effect. Slow walking, steady pan. 5 seconds.
 ```
 
-**适用**: 艺术镜头、视觉深度、情绪表达
+**Suitable for**: Artistic shots, visual depth, emotional expression
 
 ---
 
-## 物理合理性检查
+## Physical Plausibility Check
 
-### 时长与动作匹配
+### Matching Duration to Action
 
-**3 秒适合的动作**:
+**Actions suited to 3 seconds**:
 
-- 转头 180 度
-- 拿起桌上物体
-- 走 2-3 步
-- 微笑表情变化
-- 简单手势
+- Turn head 180 degrees
+- Pick up an object from a table
+- Take 2-3 steps
+- Change of expression into a smile
+- Simple gesture
 
-**5 秒适合的动作**:
+**Actions suited to 5 seconds**:
 
-- 穿过小房间
-- 坐下或站起
-- 开门走入
-- 转身走开
-- 镜头环绕 180 度
+- Cross a small room
+- Sit down or stand up
+- Open a door and walk in
+- Turn and walk away
+- Camera orbits 180 degrees
 
-**❌ 不现实的组合**:
+**❌ Unrealistic combinations**:
 
-- "角色跑 100 米" 在 3 秒 (人类极限 ~9 秒)
-- "完整战斗序列" 在 5 秒
-- "汽车从静止加速到高速" 在 2 秒
+- "Character runs 100 meters" in 3 seconds (human limit ~9 seconds)
+- "Complete fight sequence" in 5 seconds
+- "Car accelerates from standstill to high speed" in 2 seconds
 
 ---
 
-## 常见运动组合示例
+## Common Motion Combination Examples
 
-### 情绪转折时刻
+### Emotional Turning Point
 
 ```
 Character standing still, slowly looks up, eyes widen in realization.
 Camera static. Gradual expression change. 4 seconds.
 ```
 
-### 发现/揭示
+### Discovery / Reveal
 
 ```
 Camera dollies forward toward mysterious box on table. Box static.
 Slow steady dolly. 5 seconds.
 ```
 
-### 环境建立
+### Establishing the Environment
 
 ```
 Camera pans left to right across cityscape at sunset. Static buildings,
 moving clouds. Smooth steady pan. 5 seconds.
 ```
 
-### 对抗/冲突
+### Confrontation / Conflict
 
 ```
 Two characters walk toward each other from opposite sides of frame,
 stopping face to face. Camera static. Steady walk. 4 seconds.
 ```
 
-### 离开/结束
+### Departure / Ending
 
 ```
 Character walks away from camera toward door in background. Camera static.
@@ -443,14 +443,14 @@ Slow walking pace. 5 seconds.
 
 ---
 
-## 使用建议
+## Usage Recommendations
 
-1. **先确定主要运动** - 主体运动还是镜头运动？
-2. **选择速度** - 慢速/中速/快速，匹配情绪
-3. **检查时长** - 运动能在指定时长内完成吗？
-4. **参考平台特性** - 所选平台支持这种复杂度吗？
-5. **简化描述** - 去掉非运动相关的细节
+1. **Determine the primary motion first** - Subject motion or camera motion?
+2. **Choose the speed** - Slow/medium/fast, matching the emotion
+3. **Check the duration** - Can the motion be completed within the specified duration?
+4. **Refer to platform features** - Does the chosen platform support this level of complexity?
+5. **Simplify the description** - Remove details unrelated to motion
 
 ---
 
-**刷新日期**: 本库根据主流 AI 视频平台能力定期更新。
+**Refresh date**: This library is updated periodically according to the capabilities of mainstream AI video platforms.

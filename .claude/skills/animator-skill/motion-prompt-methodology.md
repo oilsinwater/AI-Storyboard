@@ -1,13 +1,13 @@
-# 📖 动态提示词方法论（仅供参考）
+# 📖 Motion Prompt Methodology (Reference Only)
 
-> **注意**: 这是参考指南。仅在复杂运动场景或有疑问时查阅。
-> 不要自动加载此文件 - 仅在需要时参考。
+> **Note**: This is a reference guide. Consult only for complex motion scenarios or when in doubt.
+> Do not load this file automatically - refer to it only when needed.
 
 # Motion Prompt Methodology
 
-AI 视频生成模型的动态 motion prompts 创建专业指南。
+A professional guide to creating dynamic motion prompts for AI video generation models.
 
-**说明**: 本方法论内容保持英文，因为包含专业运动术语和示例，保持英文便于理解标准视频制作术语。
+**Note**: The body of this methodology is written in English because it contains specialized motion terminology and examples; keeping it in English makes the standard video production terms easier to understand.
 
 ## Core Philosophy
 
@@ -614,7 +614,7 @@ Before submitting a motion prompt, verify:
 
 **Note**: These principles from traditional animation can guide better motion prompts for AI video generation.
 
-#### 1. Squash and Stretch (挤压与拉伸)
+#### 1. Squash and Stretch
 
 **Principle**: Objects deform to show impact, weight, or flexibility.
 
@@ -631,7 +631,7 @@ upward. Emphasize elastic deformation.
 - Characters jumping or landing
 - Flexible/organic materials
 
-#### 2. Anticipation (预备动作)
+#### 2. Anticipation
 
 **Principle**: Small preparatory movement before main action makes motion feel natural.
 
@@ -647,7 +647,7 @@ Character crouches down slightly, then jumps upward. Clear windup before the lea
 - Crouch before jump
 - Lean back before punch
 
-#### 3. Staging (演出布局)
+#### 3. Staging
 
 **Principle**: Present action clearly so viewer knows where to look.
 
@@ -660,7 +660,7 @@ Background elements static. Clear focal point.
 
 **Key**: One clear action, unambiguous staging.
 
-#### 4. Follow Through & Overlapping Action (跟随与重叠动作)
+#### 4. Follow Through & Overlapping Action
 
 **Principle**: Different parts move at different rates; motion doesn't stop instantly.
 
@@ -677,7 +677,7 @@ Overlapping motion, cloth settles last.
 - Loose clothing trails movement
 - Pendulum swings after stopping
 
-#### 5. Ease In / Ease Out (缓入缓出)
+#### 5. Ease In / Ease Out
 
 **Principle**: Motion starts slowly (ease in), accelerates, then slows (ease out). Natural acceleration curves.
 
@@ -690,7 +690,7 @@ Ease-in-out motion curve. 5 seconds.
 
 **Visual cue**: "Gradual acceleration and deceleration" or "smooth ease-in ease-out"
 
-#### 6. Arcs (弧形运动)
+#### 6. Arcs
 
 **Principle**: Most natural motion follows curved paths, not straight lines.
 
@@ -706,7 +706,7 @@ Character's hand swings in smooth arc from hip to overhead. Arc motion path, not
 - Head turns (circular path)
 - Thrown objects (parabolic arc)
 
-#### 7. Secondary Action (次要动作)
+#### 7. Secondary Action
 
 **Principle**: Supporting action emphasizes main action without distracting.
 
@@ -719,7 +719,7 @@ Both actions visible but walking is primary focus.
 
 **Balance**: Secondary shouldn't overpower primary.
 
-#### 8. Weight (重量感)
+#### 8. Weight
 
 **Principle**: Motion should convey object's mass and density.
 
@@ -740,7 +740,7 @@ Feather drifts gently through air, floating and swaying. Light, weightless motio
 
 ### Additional Useful Principles
 
-#### 9. Timing (时机掌握)
+#### 9. Timing
 
 **Principle**: Number of frames determines speed and weight perception.
 
@@ -752,7 +752,7 @@ Feather drifts gently through air, floating and swaying. Light, weightless motio
 8 seconds: Slow, contemplative action
 ```
 
-#### 10. Exaggeration (夸张)
+#### 10. Exaggeration
 
 **Principle**: Push beyond reality for emphasis (use sparingly for AI video).
 
@@ -772,7 +772,7 @@ Character's jaw drops comically low in shock, exaggerated surprise reaction.
 
 **Definition**: How motion accelerates/decelerates over time. Critical for natural movement.
 
-#### Linear (线性)
+#### Linear
 
 **Characteristic**: Constant speed throughout.
 
@@ -786,7 +786,7 @@ Character's jaw drops comically low in shock, exaggerated surprise reaction.
 "Constant speed, linear motion"
 ```
 
-#### Ease-In (渐快/加速)
+#### Ease-In (Accelerating)
 
 **Characteristic**: Starts slow, accelerates to full speed.
 
@@ -806,7 +806,7 @@ Character's jaw drops comically low in shock, exaggerated surprise reaction.
 Train starts slowly, gradually accelerating as it leaves station. Ease-in curve.
 ```
 
-#### Ease-Out (渐慢/减速)
+#### Ease-Out (Decelerating)
 
 **Characteristic**: Full speed, decelerates to stop.
 
@@ -826,7 +826,7 @@ Train starts slowly, gradually accelerating as it leaves station. Ease-in curve.
 Door swings open quickly then slows smoothly before stopping. Ease-out curve.
 ```
 
-#### Ease-In-Out (慢-快-慢)
+#### Ease-In-Out (Slow-Fast-Slow)
 
 **Characteristic**: Slow start, accelerate, full speed, decelerate, slow stop.
 
@@ -847,7 +847,7 @@ Camera pans left to right, starting slowly, accelerating through middle, slowing
 smoothly at end. Natural ease-in-out.
 ```
 
-#### Bounce (弹跳)
+#### Bounce
 
 **Characteristic**: Overshoots target, bounces back, settles.
 
@@ -861,7 +861,7 @@ smoothly at end. Natural ease-in-out.
 "Bounces slightly past target, rebounds, settles with diminishing bounces"
 ```
 
-#### Elastic (弹性)
+#### Elastic
 
 **Characteristic**: Extreme overshoot and oscillation before settling.
 
@@ -877,7 +877,7 @@ smoothly at end. Natural ease-in-out.
 
 **Caution**: Can look unnatural in realistic styles.
 
-### Spacing (间距/节奏控制)
+### Spacing (Interval / Rhythm Control)
 
 **Definition**: Distance between positions in successive frames. Closer spacing = slower, wider spacing = faster.
 
@@ -951,7 +951,7 @@ cinematic stability.
 
 ### Dynamic Camera Techniques
 
-#### Whip Pan (快速摇镜)
+#### Whip Pan
 
 **Definition**: Extremely fast horizontal pan creating motion blur transition.
 
@@ -966,7 +966,7 @@ movement. 1 second.
 
 **Use**: Transitions, following fast action, shock moments.
 
-#### Crash Zoom (冲击变焦)
+#### Crash Zoom
 
 **Definition**: Rapid zoom in or out.
 
@@ -984,7 +984,7 @@ emphasis. 0.5 seconds.
 - **Zoom in**: Emphasis, revelation
 - **Zoom out**: Context reveal, surprise
 
-#### Focus Pull / Rack Focus (焦点转移)
+#### Focus Pull / Rack Focus
 
 **Definition**: Shift focus from foreground to background (or vice versa) mid-shot.
 
@@ -999,7 +999,7 @@ Focus shifts smoothly to character in background (now sharp), cup blurs out. Rac
 
 **Note**: AI video models vary in depth-of-field capability. This may work better in some models.
 
-#### Push-In (推进镜头)
+#### Push-In
 
 **Definition**: Camera moves steadily forward toward subject.
 
@@ -1017,7 +1017,7 @@ intensity. 4 seconds.
 - **Slow push-in**: Contemplative, building
 - **Fast push-in**: Urgent, intense
 
-#### Pull-Out (拉出镜头)
+#### Pull-Out
 
 **Definition**: Camera moves steadily backward from subject.
 
@@ -1062,7 +1062,7 @@ follows camera, leading shot.
 
 **Definition**: Blur created by rapid movement. Enhances sense of speed.
 
-####描述 Motion Blur 强度
+#### Describing Motion Blur Intensity
 
 **Subtle blur**:
 
@@ -1089,7 +1089,7 @@ Car speeds past camera left to right, extreme motion blur creating streaking eff
 emphasizing velocity. 2 seconds.
 ```
 
-### Impact Frames (冲击帧)
+### Impact Frames
 
 **Definition**: Brief frame emphasizing impact moment, often with distortion or white flash.
 
@@ -1102,7 +1102,7 @@ Impact frame effect.
 
 **Use**: Punches, collisions, explosions.
 
-### Smear Frames (拖影帧)
+### Smear Frames
 
 **Definition**: Exaggerated motion blur for very fast movements, stretching shape.
 
@@ -1117,7 +1117,7 @@ motion. Stylized smear effect.
 
 **Note**: Works better in stylized/animated aesthetics than photorealism.
 
-### Hold Frames (停顿帧)
+### Hold Frames
 
 **Definition**: Motion freezes for brief moment, then continues.
 

@@ -1,38 +1,38 @@
-# Motion Prompt 输出格式（参考）
+# Motion Prompt Output Format (Reference)
 
-**此模板展示结构 - 最终输出不应包含这些说明**
+**This template shows the structure - the final output must not contain these instructions**
 
-## 最终输出应包含：
+## The final output should contain:
 
 ```markdown
 # Motion Prompts - Episode {XX}
 
-## Motion 1 (来自 Sequence A, Panel 1)
+## Motion 1 (From Sequence A, Panel 1)
 
-[40-80 词的动作导向提示词，描述运动、镜头、节奏、时长]
+[40-80 word action-oriented prompt describing motion, camera, pacing, duration]
 
-## Motion 2 (来自 Sequence B, Panel 1)
+## Motion 2 (From Sequence B, Panel 1)
 
-[40-80 词提示词]
+[40-80 word prompt]
 
 ...
 ```
 
-## Motion Prompt 结构：
+## Motion Prompt Structure:
 
-[主体] [主要动作] [方向] [+ 镜头运动]. [镜头规格]. [节奏]. [时长: X 秒].
+[Subject] [primary action] [direction] [+ camera movement]. [Shot specification]. [Pacing]. [Duration: X seconds].
 
-## 示例：
+## Example:
 
 ```
 A woman with silver hair in a crimson coat walks from left to right along a train platform,
 wind blowing her hair. Camera pans right to follow her. Steady walking pace. 5 seconds.
 ```
 
-## Agent 注意事项：
+## Agent Notes:
 
-- 无需 frontmatter 元数据
-- 无需模板说明
-- 仅输出实际 motion prompts（每个 40-80 词）
-- 着重于：运动、方向、速度、时长
-- 比图像提示词更简化 - 着重动作
+- No frontmatter metadata
+- No template instructions
+- Output only the actual motion prompts (40-80 words each)
+- Focus on: motion, direction, speed, duration
+- Simpler than image prompts - focus on action

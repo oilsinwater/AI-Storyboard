@@ -1,46 +1,46 @@
-# Beat Breakdown 输出格式（参考）
+# Beat Breakdown Output Format (Reference)
 
-**此模板仅供参考 - 最终输出不应包含这些说明**
+**This template is for reference only - the final output must not contain these instructions**
 
-**❌ 严禁输出**：
+**❌ Strictly prohibited in output**:
 
-- Frontmatter 元数据
-- 模板说明
-- "下一步"指令
-- 任何非内容的说明
+- Frontmatter metadata
+- Template instructions
+- "Next step" directives
+- Any non-content notes
 
-**✅ 仅输出**：实际的 beat breakdown 内容
+**✅ Output only**: The actual beat breakdown content
 
 ---
 
-## 最终输出应包含：
+## The final output should contain:
 
 ```markdown
 # Beat Breakdown - Episode {XX}
 
-**场景**: [场景引用]
-**描述**: [发生了什么]
-**目的**: [叙事功能]
+**Scene**: [Scene reference]
+**Description**: [What happens]
+**Purpose**: [Narrative function]
 
-## Beat 2: [标题]
+## Beat 2: [Title]
 
-**场景**: ...
-**描述**: ...
-**目的**: ...
+**Scene**: ...
+**Description**: ...
+**Purpose**: ...
 
 ...
 
-## Beat 9: [标题]
+## Beat 9: [Title]
 
-**场景**: ...
-**描述**: ...
-**目的**: ...
+**Scene**: ...
+**Description**: ...
+**Purpose**: ...
 ```
 
-## Agent 注意事项：
+## Agent Notes:
 
-- 无需 frontmatter 元数据
-- 无需模板说明
-- 仅输出实际 beat breakdown 内容
-- 恰好 9 个 beats
-- 每个 beat 包含：标题、场景、描述、目的
+- No frontmatter metadata
+- No template instructions
+- Output only the actual beat breakdown content
+- Exactly 9 beats
+- Each beat includes: title, scene, description, purpose

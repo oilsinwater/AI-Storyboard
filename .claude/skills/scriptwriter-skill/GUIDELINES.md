@@ -1,344 +1,344 @@
 # Scriptwriter Skill - Writing Guidelines
 
-本文档包含详细的编剧指导，包括场景格式规范、角色描述最佳实践和 Beats 分布建议。
+This document contains detailed screenwriting guidance, including the scene format specification, character description best practices, and beat distribution recommendations.
 
 ---
 
-## 场景格式规范
+## Scene Format Specification
 
-### 标准场景头
+### Standard Scene Heading
 
 ```markdown
-## 场景 {X} - {INT./EXT.} {地点} - {时间}
+## Scene {X} - {INT./EXT.} {Location} - {Time}
 
-{场景建立描述 - 2-3 句，视觉化}
+{Scene-establishing description - 2-3 sentences, visual}
 
-{角色动作和对话}
+{Character action and dialogue}
 ```
 
-**示例**:
+**Example**:
 
 ```markdown
-## 场景 5 - INT. 地铁车厢内 - 夜晚
+## Scene 5 - INT. Subway Car - Night
 
-车厢内昏暗，白色荧光灯忽明忽暗。空荡的座椅上散落着几张废弃报纸。
+The car is dim; white fluorescent lights flicker on and off. A few discarded newspapers lie scattered across the empty seats.
 
-EMMA（25 岁，银色长发，穿深红色大衣）坐在靠窗位置，翻开古旧的皮质笔记本。
-里面密密麻麻的手写符号和发光的六芒星图案映照在她脸上。
+EMMA (25, long silver hair, wearing a dark red coat) sits by the window and opens an old leather-bound notebook.
+Dense handwritten symbols and a glowing six-pointed star pattern inside are reflected on her face.
 
-突然，所有灯光熄灭。
+Suddenly, all the lights go out.
 ```
 
-### 场景类型标注
+### Scene Type Labels
 
-- **INT.** = Interior (内景)
-- **EXT.** = Exterior (外景)
-- **INT./EXT.** = 同时包含内外景
+- **INT.** = Interior
+- **EXT.** = Exterior
+- **INT./EXT.** = Contains both interior and exterior
 
-### 时间标注
+### Time Labels
 
-- 具体时间：早晨、中午、下午、傍晚、夜晚、深夜
-- 相对时间：同时、稍后、第二天
+- Specific time: morning, noon, afternoon, dusk, night, late night
+- Relative time: same time, later, the next day
 
 ---
 
-## 角色首次出场
+## Character First Appearance
 
-**必须包含**:
+**Must include**:
 
-1. 姓名（如有）
-2. 年龄范围
-3. 关键外观特征（头发、服装、标志物）
+1. Name (if any)
+2. Age range
+3. Key appearance features (hair, clothing, signature items)
 
-### 示例
+### Examples
 
 ```markdown
-MARCUS（50 多岁，灰白短发，海军蓝西装配红领带）推门进入。
+MARCUS (50s, short gray hair, navy blue suit with a red tie) pushes the door open and enters.
 
-LILY（teenage, 16 岁左右，黑色短发配紫色挑染，破洞牛仔裤配乐队 T 恤）靠在墙边。
+LILY (teenage, around 16, short black hair with purple streaks, ripped jeans and a band T-shirt) leans against the wall.
 
-神秘人（性别不明，全身黑色斗篷，面具遮挡，唯有银色十字架项链可见）站在阴影中。
+MYSTERIOUS FIGURE (gender unknown, full-length black cloak, face hidden by a mask, only a silver cross necklace visible) stands in the shadows.
 ```
 
-### 规范描述（Canonical Description）
+### Canonical Description
 
-首次出场建立的外观描述应在后续所有场景中保持一致：
+The appearance description established on first appearance should remain consistent in all later scenes:
 
-**第一次**:
-
-```
-EMMA（25 岁，银色长发，深红色大衣，紫罗兰色眼睛）
-```
-
-**之后**:
+**First time**:
 
 ```
-Emma 的银色长发在风中飘动，深红色大衣紧裹身体。
-她的紫罗兰色眼睛盯着远方。
+EMMA (25, long silver hair, dark red coat, violet eyes)
 ```
 
----
-
-## 动作描述最佳实践
-
-### 使用现在时，主动语态
-
-✅ **正确**:
+**Afterwards**:
 
 ```
-Emma 冲向门口。她的手抓住门把，用力推开。
-```
-
-❌ **错误**:
-
-```
-Emma 应该向门口跑去，然后她会打开门。
-```
-
-### 视觉化优先
-
-❌ **抽象描述**:
-
-```
-Emma 感到困惑和恐惧。
-```
-
-✅ **视觉化描述**:
-
-```
-Emma 的眼睛瞪大，手指颤抖着翻动笔记本的页面。汗珠从额头滑落。
-她向后退了一步，背靠在墙上，呼吸急促。
-```
-
-### 具体而非概括
-
-❌ **模糊**:
-
-```
-房间很乱。
-```
-
-✅ **具体**:
-
-```
-书籍散落在地板上，椅子倾倒，窗帘被扯下一半。桌上的咖啡杯翻倒，深褐色液体蔓延在文件上。
+Emma's long silver hair blows in the wind, her dark red coat wrapped tightly around her.
+Her violet eyes stare into the distance.
 ```
 
 ---
 
-## Beats 分布指导
+## Action Description Best Practices
 
-### 三幕结构中的 9 Beats 分布
+### Use Present Tense, Active Voice
 
-确保剧本包含**9 个以上**清晰的关键时刻：
-
-**第一幕 (Setup, ~25%)**:
-
-- **Beat 1** (开场): 建立世界和主角日常
-- **Beat 2** (触发事件): 打破常态的事件
-- **Beat 3** (初步反应): 主角对触发事件的反应
-
-**第二幕 (Confrontation, ~50%)**:
-
-- **Beat 4** (首次尝试): 主角采取行动
-- **Beat 5** (上升复杂化): 遇到障碍或发现新信息
-- **Beat 6** (中点转折): 重大转折，改变方向
-- **Beat 7** (低谷): 最大的挫折或失败时刻
-
-**第三幕 (Resolution, ~25%)**:
-
-- **Beat 8** (最终对抗/高潮): 决定性行动
-- **Beat 9** (新平衡): 结局，新常态建立
-
-### 示例：30 页剧本的 Beats 分布
-
-| Beat 编号 | 页码 | 类型     | 示例                     |
-| --------- | ---- | -------- | ------------------------ |
-| Beat 1    | p.3  | 开场     | 主角在日常工作中         |
-| Beat 2    | p.7  | 触发事件 | 收到神秘包裹             |
-| Beat 3    | p.11 | 初步反应 | 调查包裹来源             |
-| Beat 4    | p.15 | 首次尝试 | 找到第一条线索           |
-| Beat 5    | p.19 | 复杂化   | 发现更深的阴谋           |
-| Beat 6    | p.23 | 中点转折 | 意识到真相与想象不同     |
-| Beat 7    | p.26 | 低谷     | 被背叛，失去重要信息     |
-| Beat 8    | p.28 | 高潮     | 最终对抗幕后黑手         |
-| Beat 9    | p.30 | 新平衡   | 解决问题，但留下新的伏笔 |
-
-### Beat 质量标准
-
-每个 beat 应该是：
-
-- **视觉化的** - 可以转化为具体画面
-- **情感充沛的** - 有明确的情绪价值
-- **叙事转折点** - 推动故事前进
-- **独立可识别** - 能作为独立时刻被提取
-
----
-
-## 系列连续性管理
-
-### 查看之前剧集的要点
-
-**分析清单**:
-
-- [ ] 主要角色及其发展轨迹
-- [ ] 已建立的世界观设定和规则
-- [ ] 未解决的情节线
-- [ ] 角色关系变化
-- [ ] 视觉风格和氛围基调
-- [ ] 已使用的关键场景和地点
-
-### 首次出场 vs 重复出场
-
-**第一集中**:
+✅ **Correct**:
 
 ```
-EMMA（25 岁，银色长发及腰，苍白瓷肌，明亮的紫罗兰色眼睛，穿深红色大衣）走进房间。
+Emma rushes to the door. Her hand grabs the handle and shoves it open.
 ```
 
-**第二集及之后**:
+❌ **Wrong**:
 
 ```
-Emma 走进房间，她的银色长发和深红色大衣在昏暗的光线中依然醒目。
+Emma should run toward the door, and then she would open it.
 ```
 
-**关键**: 外观关键词保持一致，但不需要每次都完整重复年龄和所有细节。
+### Visual First
 
-### 世界观一致性
-
-**已建立规则必须遵守**:
-
-如果 ep01 建立了"魔法在白天失效"，ep02 就不能出现"正午的魔法决斗"。
-
-**可扩展但不矛盾**:
-
-- ✅ ep02 引入新的魔法类型（扩展）
-- ❌ ep02 改变已建立的魔法规则（矛盾）
-
----
-
-## 三幕结构详解
-
-### 第一幕 (Setup, ~25%)
-
-**目标**: 建立世界、介绍角色、埋下冲突种子
-
-**包含元素**:
-
-1. **开场影像** - 视觉化建立世界
-2. **日常世界** - 展示主角的常态
-3. **角色介绍** - 主要角色登场
-4. **触发事件** - 打破常态（通常在 10-15% 处）
-
-**示例**:
+❌ **Abstract description**:
 
 ```
-场景 1-3: Emma 的日常工作（图书管理员）
-场景 4: 发现古书中的隐藏信息（触发事件）
-场景 5: 决定调查
+Emma feels confused and afraid.
 ```
 
-### 第二幕 (Confrontation, ~50%)
-
-**目标**: 主角面对障碍，冲突升级，情节复杂化
-
-**包含元素**:
-
-1. **首次尝试** - 主角采取行动
-2. **上升动作** - 连串障碍和挑战
-3. **中点转折** (~50% 处) - 重大发现或逆转
-4. **低谷时刻** - 最大的失败或背叛
-
-**示例**:
+✅ **Visual description**:
 
 ```
-场景 6-10: 调查线索，遇到神秘组织
-场景 11: 发现真相比想象复杂（中点）
-场景 12-14: 失去盟友，被追杀（低谷）
+Emma's eyes widen, her fingers trembling as she turns the pages of the notebook. A bead of sweat slides down her forehead.
+She takes a step back, her back against the wall, breathing hard.
 ```
 
-### 第三幕 (Resolution, ~25%)
+### Specific, Not General
 
-**目标**: 解决冲突，达到高潮，建立新平衡
-
-**包含元素**:
-
-1. **重新振作** - 主角找到新力量/方法
-2. **最终对抗** - 高潮场景
-3. **决议** - 冲突解决
-4. **新常态** - 展示改变后的世界/角色
-
-**示例**:
+❌ **Vague**:
 
 ```
-场景 15: Emma 获得关键知识
-场景 16-17: 最终对抗组织领导（高潮）
-场景 18: 解决危机，但留下续集伏笔
+The room is a mess.
+```
+
+✅ **Specific**:
+
+```
+Books are scattered across the floor, a chair is overturned, the curtains half torn down. A coffee cup on the desk has tipped over, dark brown liquid spreading across the documents.
 ```
 
 ---
 
-## 对话写作技巧
+## Beat Distribution Guidance
 
-### 角色声音一致性
+### Distribution of 9 Beats Across the Three-Act Structure
 
-每个角色应有独特的说话方式：
+Ensure the script contains **9 or more** clear key moments:
 
-**Marcus（50 多岁，老派绅士）**:
+**Act One (Setup, ~25%)**:
+
+- **Beat 1** (Opening): Establish the world and the protagonist's daily life
+- **Beat 2** (Inciting Incident): The event that breaks the normalcy
+- **Beat 3** (Initial Reaction): The protagonist's reaction to the inciting incident
+
+**Act Two (Confrontation, ~50%)**:
+
+- **Beat 4** (First Attempt): The protagonist takes action
+- **Beat 5** (Rising Complication): Obstacles encountered or new information discovered
+- **Beat 6** (Midpoint Turn): A major turn that changes direction
+- **Beat 7** (Low Point): The moment of greatest setback or failure
+
+**Act Three (Resolution, ~25%)**:
+
+- **Beat 8** (Final Confrontation/Climax): Decisive action
+- **Beat 9** (New Equilibrium): Ending, a new normal is established
+
+### Example: Beat Distribution for a 30-Page Script
+
+| Beat Number | Page | Type                | Example                                        |
+| ----------- | ---- | ------------------- | ---------------------------------------------- |
+| Beat 1      | p.3  | Opening             | Protagonist at everyday work                   |
+| Beat 2      | p.7  | Inciting Incident   | Receives a mysterious package                  |
+| Beat 3      | p.11 | Initial Reaction    | Investigates the package's origin              |
+| Beat 4      | p.15 | First Attempt       | Finds the first clue                           |
+| Beat 5      | p.19 | Complication        | Discovers a deeper conspiracy                  |
+| Beat 6      | p.23 | Midpoint Turn       | Realizes the truth differs from what they imagined |
+| Beat 7      | p.26 | Low Point           | Betrayed, loses crucial information            |
+| Beat 8      | p.28 | Climax              | Final confrontation with the mastermind        |
+| Beat 9      | p.30 | New Equilibrium     | Problem solved, but a new thread is planted    |
+
+### Beat Quality Standards
+
+Each beat should be:
+
+- **Visual** - Can be turned into a concrete image
+- **Emotionally charged** - Has a clear emotional value
+- **A narrative turning point** - Pushes the story forward
+- **Independently identifiable** - Can be extracted as a standalone moment
+
+---
+
+## Series Continuity Management
+
+### Key Points When Reviewing Previous Episodes
+
+**Analysis checklist**:
+
+- [ ] Main characters and their development arcs
+- [ ] Established world-building and rules
+- [ ] Unresolved plot threads
+- [ ] Changes in character relationships
+- [ ] Visual style and atmospheric tone
+- [ ] Key scenes and locations already used
+
+### First Appearance vs Repeat Appearance
+
+**In the first episode**:
 
 ```
-"年轻人，这件事远比你想象的复杂。我建议你三思而后行。"
+EMMA (25, waist-length silver hair, pale porcelain skin, bright violet eyes, wearing a dark red coat) walks into the room.
 ```
 
-**Lily（16 岁，叛逆少女）**:
+**In the second episode and after**:
 
 ```
-"得了吧，Marcus。你那套老古董规矩在这儿不管用。"
+Emma walks into the room, her long silver hair and dark red coat still striking in the dim light.
 ```
 
-### 少用无意义填充词
+**Key**: Keep the appearance keywords consistent, but there is no need to repeat the age and every detail in full each time.
 
-❌ **冗余**:
+### World-Building Consistency
+
+**Established rules must be obeyed**:
+
+If ep01 established that "magic fails during the day", ep02 cannot feature a "magic duel at noon".
+
+**Extendable but not contradictory**:
+
+- ✅ ep02 introduces a new type of magic (extension)
+- ❌ ep02 changes the established rules of magic (contradiction)
+
+---
+
+## Three-Act Structure in Detail
+
+### Act One (Setup, ~25%)
+
+**Goal**: Establish the world, introduce characters, plant the seeds of conflict
+
+**Elements included**:
+
+1. **Opening image** - Establish the world visually
+2. **Ordinary world** - Show the protagonist's normal life
+3. **Character introductions** - Main characters enter
+4. **Inciting incident** - Break the normalcy (usually at the 10-15% mark)
+
+**Example**:
 
 ```
-"嗯，我觉得，可能，也许，我们应该，你知道的，试试看..."
+Scenes 1-3: Emma's everyday work (librarian)
+Scene 4: Discovers a hidden message in an ancient book (inciting incident)
+Scene 5: Decides to investigate
 ```
 
-✅ **简洁**:
+### Act Two (Confrontation, ~50%)
+
+**Goal**: The protagonist faces obstacles, conflict escalates, the plot becomes complicated
+
+**Elements included**:
+
+1. **First attempt** - The protagonist takes action
+2. **Rising action** - A series of obstacles and challenges
+3. **Midpoint turn** (~50% mark) - Major discovery or reversal
+4. **Low point** - The greatest failure or betrayal
+
+**Example**:
 
 ```
-"我们试试。"
+Scenes 6-10: Investigates clues, encounters a mysterious organization
+Scene 11: Discovers the truth is more complicated than imagined (midpoint)
+Scenes 12-14: Loses an ally, is hunted (low point)
 ```
 
-### 潜台词
+### Act Three (Resolution, ~25%)
 
-不要说出所有内容，让对话有层次：
+**Goal**: Resolve the conflict, reach the climax, establish a new equilibrium
 
-❌ **直白**:
+**Elements included**:
+
+1. **Rallying** - The protagonist finds new strength/methods
+2. **Final confrontation** - Climax scene
+3. **Resolution** - Conflict resolved
+4. **New normal** - Show the changed world/character
+
+**Example**:
 
 ```
-"我不信任你，因为你曾经背叛过我。"
-```
-
-✅ **潜台词**:
-
-```
-"上次你也这么说。" (暗示不信任和过去的背叛)
+Scene 15: Emma gains crucial knowledge
+Scenes 16-17: Final confrontation with the organization's leader (climax)
+Scene 18: Crisis resolved, but a sequel thread is planted
 ```
 
 ---
 
-## 输出检查清单
+## Dialogue Writing Techniques
 
-创作完成后，检查：
+### Character Voice Consistency
 
-- [ ] 每个场景有清晰的场景头（INT./EXT., 地点, 时间）
-- [ ] 首次出场角色有完整外观描述
-- [ ] 动作描述使用现在时、主动语态
-- [ ] 至少包含 9 个清晰的 beats
-- [ ] 三幕结构完整
-- [ ] 对话符合角色性格
-- [ ] 视觉化描述充足，避免抽象心理描写
-- [ ] 如果是续集，角色外观与前作一致
-- [ ] 世界观设定无矛盾
-- [ ] 无 frontmatter 元数据或模板说明
+Each character should have a distinctive way of speaking:
+
+**Marcus (50s, old-fashioned gentleman)**:
+
+```
+"Young man, this matter is far more complicated than you imagine. I suggest you think twice before acting."
+```
+
+**Lily (16, rebellious teenager)**:
+
+```
+"Come on, Marcus. Your antique rulebook doesn't work here."
+```
+
+### Avoid Meaningless Filler
+
+❌ **Redundant**:
+
+```
+"Um, I think, maybe, perhaps, we should, you know, give it a try..."
+```
+
+✅ **Concise**:
+
+```
+"Let's try."
+```
+
+### Subtext
+
+Do not say everything outright; give the dialogue layers:
+
+❌ **On the nose**:
+
+```
+"I don't trust you, because you betrayed me before."
+```
+
+✅ **Subtext**:
+
+```
+"That's what you said last time." (implies distrust and past betrayal)
+```
+
+---
+
+## Output Checklist
+
+After finishing, check:
+
+- [ ] Every scene has a clear scene heading (INT./EXT., location, time)
+- [ ] Characters have a full appearance description on first appearance
+- [ ] Action descriptions use present tense, active voice
+- [ ] Contains at least 9 clear beats
+- [ ] Three-act structure is complete
+- [ ] Dialogue matches each character's personality
+- [ ] Sufficient visual description, avoiding abstract psychological description
+- [ ] If a sequel, character appearance is consistent with previous episodes
+- [ ] World-building has no contradictions
+- [ ] No frontmatter metadata or template instructions

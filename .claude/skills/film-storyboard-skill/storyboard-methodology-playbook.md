@@ -1,13 +1,13 @@
-# 📖 影视分镜方法论手册（仅供参考）
+# 📖 Film Storyboard Methodology Playbook (Reference Only)
 
-> **注意**: 这是参考指南。仅在遇到方法论问题时查阅。
-> 不要自动加载此文件 - 仅在困惑或需要时参考。
+> **Note**: This is a reference guide. Consult only when you run into methodology questions.
+> Do not load this file automatically - refer to it only when confused or when needed.
 
 # Film Storyboard Methodology Playbook
 
-专业的影视和动画分镜方法论，优化用于 AI 图像生成工作流。
+Professional film and animation storyboard methodology, optimized for AI image generation workflows.
 
-**说明**: 本手册内容保持英文，因为包含大量专业术语和示例，保持英文便于理解标准摄影和分镜术语。
+**Note**: The body of this playbook is written in English because it contains extensive specialized terminology and examples; keeping it in English makes the standard cinematography and storyboarding terms easier to understand.
 
 This playbook defines the professional methodology for creating film and animation storyboards optimized for AI image generation workflows.
 
@@ -444,7 +444,7 @@ Prompt 9: [description]. Anime style, soft shading, vibrant colors, cinematic co
 
 ## Advanced Film Techniques
 
-### Montage (蒙太奇)
+### Montage
 
 **Definition**: A sequence of short shots edited together to condense time, convey ideas, or create emotional impact.
 
@@ -457,7 +457,7 @@ Prompt 9: [description]. Anime style, soft shading, vibrant colors, cinematic co
 
 #### Montage Types
 
-**Narrative Montage** (叙事蒙太奇):
+**Narrative Montage**:
 
 Compress time by showing key moments of a process.
 
@@ -488,7 +488,7 @@ and confident, wraps hands in tape before a championship fight. Professional
 gym setting. Powerful, heroic lighting.
 ```
 
-**Thematic Montage** (主题蒙太奇):
+**Thematic Montage**:
 
 Juxtapose contrasting or related images to convey a theme.
 
@@ -502,7 +502,7 @@ Juxtapose contrasting or related images to convey a theme.
 
 **In beat board**: Choose one representative moment from each "side" of the theme.
 
-**Parallel Montage** (平行蒙太奇):
+**Parallel Montage**:
 
 Cross-cut between two or more simultaneous actions to build tension.
 
@@ -534,11 +534,11 @@ Cross-cut between two or more simultaneous actions to build tension.
 - Loss or grief
 - Contemplative moments
 
-### Transitions Between Scenes (场景转场)
+### Transitions Between Scenes
 
 **Definition**: How one scene connects to the next. Choice of transition affects pacing and meaning.
 
-#### Cut (直切)
+#### Cut
 
 **Most common**: Direct cut from one shot to the next.
 
@@ -555,7 +555,7 @@ Panel 3: Character closes laptop, stands up
 Panel 4: [CUT] Character walks down street
 ```
 
-#### Match Cut (匹配剪辑)
+#### Match Cut
 
 **Definition**: Transition using visual or thematic similarity.
 
@@ -584,7 +584,7 @@ Panel 4: [MATCH CUT] Roulette wheel in casino (years later)
 
 **How to note in prompts**: Add descriptor like "Match cut - circular composition continues"
 
-#### Dissolve / Cross-fade (叠化)
+#### Dissolve / Cross-fade
 
 **Definition**: One image gradually fades into another, briefly overlapping.
 
@@ -606,7 +606,7 @@ Panel 4: [DISSOLVE] Character wakes in same position, but room now sunny
          (days later). Lighting shift indicates time passage.
 ```
 
-#### Fade to Black (淡至黑)
+#### Fade to Black
 
 **Definition**: Image fades to complete black screen.
 
@@ -619,7 +619,7 @@ Panel 4: [DISSOLVE] Character wakes in same position, but room now sunny
 
 **In beat board**: Note after beat - "Fade to black before next beat"
 
-#### Smash Cut (冲击切)
+#### Smash Cut
 
 **Definition**: Abrupt, jarring transition for shock effect.
 
@@ -636,7 +636,7 @@ Panel 3: Character sleeps peacefully, serene quiet bedroom
 Panel 4: [SMASH CUT] Explosion fills frame, chaos, fire
 ```
 
-#### Wipe (划变)
+#### Wipe
 
 **Definition**: One image "pushes" another off screen (less common, stylistic).
 
@@ -648,9 +648,9 @@ Panel 4: [SMASH CUT] Explosion fills frame, chaos, fire
 
 **Note**: Rarely needed for AI storyboarding, mentioned for completeness.
 
-### Time and Space Manipulation (时空处理)
+### Time and Space Manipulation
 
-#### Flashback (闪回)
+#### Flashback
 
 **Definition**: Interrupts present timeline to show past events.
 
@@ -682,7 +682,7 @@ Visual Description: Back to full color saturation...
 - INTO flashback: Dissolve with desaturation
 - OUT of flashback: Dissolve back to full color
 
-#### Flash-forward (闪前)
+#### Flash-forward
 
 **Definition**: Jump forward to show future events.
 
@@ -695,7 +695,7 @@ Visual Description: Back to full color saturation...
 
 **Use sparingly**: Can confuse narrative if overused.
 
-#### Dream Sequence (梦境序列)
+#### Dream Sequence
 
 **Visual Indicators**:
 
@@ -718,7 +718,7 @@ Blue-purple otherworldly color palette. Dream logic.
 
 **Transition in/out**: Usually fade to black or dissolve.
 
-#### Slow Motion (慢动作)
+#### Slow Motion
 
 **When to use**:
 
@@ -741,7 +741,7 @@ Visual Description: ...water droplets frozen mid-splash, crystalline and
 detailed. [Slow motion aesthetic]
 ```
 
-#### Fast Motion / Time Lapse (快动作/延时)
+#### Fast Motion / Time Lapse
 
 **When to use**:
 
@@ -758,7 +758,7 @@ racing overhead, traffic streaks of light, sun arcing across sky.
 [Time lapse effect]. Represents dawn to dusk in seconds.
 ```
 
-#### Freeze Frame (定格)
+#### Freeze Frame
 
 **Definition**: Motion stops, becomes still image.
 

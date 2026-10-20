@@ -8,132 +8,132 @@ user-invocable: false
 
 # Film Storyboard Skill
 
-为 Storyboard Artist 提供专业的影视分镜方法论和提示词生成能力。
+Provides the Storyboard Artist with professional film storyboarding methodology and prompt generation capabilities.
 
-## 概述
+## Overview
 
-此技能帮助将剧本转换为视觉化分镜，支持完整的三阶段流程：
+This skill helps convert scripts into visual storyboards, supporting the complete three-stage process:
 
-1. **Beat Breakdown** - 从剧本识别 9 个关键叙事时刻
-2. **Beat Board (9 宫格)** - 为每个 beat 生成视觉提示词
-3. **Sequence Board (4 格)** - 展开关键 beat 为连续镜头序列
+1. **Beat Breakdown** - Identify 9 key narrative moments from the script
+2. **Beat Board (9-Grid)** - Generate a visual prompt for each beat
+3. **Sequence Board (4-Panel)** - Expand a key beat into a continuous shot sequence
 
-## 核心原则：4C Framework
+## Core Principles: 4C Framework
 
-1. **Clear 清晰** - 每个提示词明确无歧义
-2. **Concise 简洁** - 详细但不臃肿（Visual Description: 80-120 词，Lighting & Mood: 30-50 词）
-3. **Consistent 一致** - 角色/场景/光色在所有 prompts 中保持一致
-4. **Progressive 渐进** - 从 9 宫格到 4 格逐层细化
+1. **Clear** - Every prompt is unambiguous
+2. **Concise** - Detailed but not bloated (Visual Description: 80-120 words, Lighting & Mood: 30-50 words)
+3. **Consistent** - Character/scene/lighting and color stay consistent across all prompts
+4. **Progressive** - Refine layer by layer from the 9-grid to the 4-panel sequence
 
-## 快速开始
+## Quick Start
 
-### 生成 Beat Breakdown
+### Generate a Beat Breakdown
 
 ```markdown
-从剧本中识别 9 个关键叙事时刻，包含：
+Identify 9 key narrative moments from the script, including:
 
-- Beat 编号和标题
-- 时间戳/页码
-- 核心动作
-- 情感价值
-  使用模板: templates/beat-breakdown-template.md
+- Beat number and title
+- Timestamp/page number
+- Core action
+- Emotional value
+  Use template: templates/beat-breakdown-template.md
 ```
 
-### 生成 Beat Board
+### Generate a Beat Board
 
-为 Nano Banner（推荐）:
+For Nano Banner (recommended):
 
 ```markdown
 EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
 
-Beat 1: [标题]
-Visual Description: [80-120 词视觉描述]
-Lighting & Mood: [30-50 词光影氛围]
+Beat 1: [Title]
+Visual Description: [80-120 word visual description]
+Lighting & Mood: [30-50 words on lighting and atmosphere]
 ```
 
-为 Midjourney:
+For Midjourney:
 
 ```
-每个 beat 独立 prompt + --ar 16:9 --style cinematic --v 6
+One independent prompt per beat + --ar 16:9 --style cinematic --v 6
 ```
 
-### 生成 Sequence Board
+### Generate a Sequence Board
 
-选择关键 beat 展开为 4 个连续镜头，保持：
+Select a key beat and expand it into 4 continuous shots, maintaining:
 
-- 180 度轴线规则
-- 角色外观一致性
-- 光影连贯性
+- The 180-degree rule
+- Character appearance consistency
+- Lighting continuity
 
-## 关键约束
+## Key Constraints
 
-**严格禁止**:
+**Strictly prohibited**:
 
-- ❌ Frontmatter 元数据在输出文件中
-- ❌ 模板说明或注释
-- ❌ "下一步"指令
+- ❌ Frontmatter metadata in output files
+- ❌ Template instructions or notes
+- ❌ "Next step" directives
 
-**必须包含**:
+**Must include**:
 
-- ✅ 角色规范描述（canonical description）
-- ✅ 逐字重复的关键识别符
-- ✅ 适当平台格式（Nano Banner/Midjourney/Gemini）
+- ✅ Canonical character description
+- ✅ Key identifiers repeated verbatim
+- ✅ The appropriate platform format (Nano Banner/Midjourney/Gemini)
 
-## 详细资源
+## Detailed Resources
 
-### 方法论指南 📖
+### Methodology Guide 📖
 
-- [storyboard-methodology-playbook.md](storyboard-methodology-playbook.md) - 完整分镜方法论
-  - 四大支柱详解
+- [storyboard-methodology-playbook.md](storyboard-methodology-playbook.md) - Complete storyboard methodology
+  - The four pillars in detail
   - Beat selection criteria
-  - 镜头构图和摄影
-  - 连贯性管理
-  - 高级电影技巧（蒙太奇、转场、时空处理）
+  - Shot composition and cinematography
+  - Continuity management
+  - Advanced film techniques (montage, transitions, time and space manipulation)
 
-### 提示词写法 📖
+### Prompt Writing 📖
 
-- [gemini-image-prompt-guide.md](gemini-image-prompt-guide.md) - 提示词优化指南
-  - 叙事描述式风格
-  - 角色一致性技巧
-  - 光影描述方法
-  - Nano Banner 格式优化
+- [gemini-image-prompt-guide.md](gemini-image-prompt-guide.md) - Prompt optimization guide
+  - Narrative descriptive style
+  - Character consistency techniques
+  - Lighting description methods
+  - Nano Banner format optimization
 
-### 平台和风格参考 📖
+### Platform and Style Reference 📖
 
-- [REFERENCE.md](REFERENCE.md) - 平台特性和风格库
-  - Nano Banner vs Midjourney vs Gemini 格式对比
-  - 7 种视觉风格库（写实、动漫、概念艺术等）
-  - 6 种光影方案候选
-  - 宽高比选项
+- [REFERENCE.md](REFERENCE.md) - Platform features and style library
+  - Nano Banner vs Midjourney vs Gemini format comparison
+  - Library of 7 visual styles (photorealistic, anime, concept art, etc.)
+  - 6 candidate lighting schemes
+  - Aspect ratio options
 
-### 模板
+### Templates
 
 - [templates/beat-breakdown-template.md](templates/beat-breakdown-template.md)
 - [templates/beat-board-template.md](templates/beat-board-template.md)
 - [templates/sequence-board-template.md](templates/sequence-board-template.md)
 
-## 何时使用
+## When to Use
 
-**自动触发场景**:
+**Automatic trigger scenarios**:
 
-- 用户请求"生成 beat breakdown"
-- 用户请求"创建 beat board"或"9 宫格"
-- 用户请求"生成 sequence board"或"4 格序列"
-- Director 反馈需要修订视觉一致性
+- User requests "generate beat breakdown"
+- User requests "create beat board" or "9-grid"
+- User requests "generate sequence board" or "4-panel sequence"
+- Director feedback requires visual consistency revisions
 
-**手动参考场景**:
+**Manual reference scenarios**:
 
-- 不确定提示词格式
-- 选择视觉风格
-- 解决角色一致性问题
-- 优化平台特定格式
+- Unsure about prompt format
+- Choosing a visual style
+- Resolving character consistency issues
+- Optimizing platform-specific formats
 
-## 平台快速选择
+## Quick Platform Selection
 
-- **追求一致性** → Nano Banner（一次生成完整 3x3 网格）
-- **需要精细控制** → Midjourney v6
-- **快速原型** → Gemini Imagen 3
+- **Prioritizing consistency** → Nano Banner (generates the full 3x3 grid in one pass)
+- **Need fine-grained control** → Midjourney v6
+- **Rapid prototyping** → Gemini Imagen 3
 
 ---
 
-**用法**: Storyboard Artist agent 自动引用此技能。方法论和指南（标记 📖）采用渐进式披露，仅在需要时查阅。
+**Usage**: The Storyboard Artist agent references this skill automatically. The methodology and guides (marked 📖) use progressive disclosure and are consulted only when needed.

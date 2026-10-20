@@ -8,168 +8,168 @@ user-invocable: false
 
 # Scriptwriter Skill
 
-为 Scriptwriter 提供创作高质量、结构化剧本的专业知识，支持系列连续性和基于前作的续集创作。
+Provides the Scriptwriter with the expertise to create high-quality, structured scripts, supporting series continuity and sequel creation based on previous episodes.
 
-## 概述
+## Overview
 
-此技能支持创作：
+This skill supports creating:
 
-- **结构完整的剧本** - 三幕结构，包含 9+ 个关键叙事时刻
-- **系列连续剧集** - 保持角色、设定、风格一致性
-- **视觉化场景** - 便于分镜转换的详细描述
+- **Structurally complete scripts** - Three-act structure containing 9+ key narrative moments
+- **Continuing series episodes** - Maintaining character, setting, and style consistency
+- **Visual scenes** - Detailed descriptions that are easy to convert into storyboards
 
-## 核心原则
+## Core Principles
 
-### 1. 视觉优先
+### 1. Visual First
 
-剧本必须便于分镜转换。避免抽象心理描写，使用具体视觉化描述。
+The script must be easy to convert into storyboards. Avoid abstract psychological description; use concrete visual description.
 
-❌ **抽象**: Emma 感到困惑和恐惧。
-✅ **视觉化**: Emma 的眼睛瞪大，手指颤抖着翻动页面。汗珠从额头滑落。
+❌ **Abstract**: Emma feels confused and afraid.
+✅ **Visual**: Emma's eyes widen, her fingers trembling as she turns the pages. A bead of sweat slides down her forehead.
 
-### 2. 角色一致性
+### 2. Character Consistency
 
-- 建立规范外观描述（首次出场）
-- 后续剧集保持关键识别符一致
-- 性格发展合理渐进
+- Establish a canonical appearance description (first appearance)
+- Keep key identifiers consistent in later episodes
+- Develop personality gradually and plausibly
 
-### 3. 结构清晰
+### 3. Clear Structure
 
-**三幕结构**:
+**Three-act structure**:
 
-- 第一幕 (~25%): Setup - 建立世界、触发事件
-- 第二幕 (~50%): Confrontation - 上升动作、中点转折、低谷
-- 第三幕 (~25%): Resolution - 高潮、决议、新平衡
+- Act One (~25%): Setup - Establish the world, inciting incident
+- Act Two (~50%): Confrontation - Rising action, midpoint turn, low point
+- Act Three (~25%): Resolution - Climax, resolution, new equilibrium
 
-### 4. Beats 充足
+### 4. Sufficient Beats
 
-确保剧本包含**至少 9 个**清晰的视觉化转折点，分布在三幕中。
+Ensure the script contains **at least 9** clear, visual turning points distributed across the three acts.
 
-## 快速开始
+## Quick Start
 
-### 创作新剧集的流程
+### Process for Creating a New Episode
 
-**步骤 1: 查看系列历史**
+**Step 1: Review the series history**
 
 ```bash
-# 查看已有剧集
+# View existing episodes
 ls script/
 
-# 阅读前作了解角色和情节发展
+# Read previous episodes to understand character and plot development
 ```
 
-**步骤 2: 基于用户输入设想故事**
+**Step 2: Conceive the story from user input**
 
-用户可能提供：
+The user may provide:
 
-- 主题关键词（如"背叛"、"发现真相"）
-- 情节方向（如"角色 A 发现秘密"）
-- 情感基调（如"悬疑"、"温馨"）
+- Theme keywords (e.g. "betrayal", "discovering the truth")
+- Plot direction (e.g. "Character A discovers a secret")
+- Emotional tone (e.g. "suspenseful", "heartwarming")
 
-**步骤 3: 规划结构**
+**Step 3: Plan the structure**
 
-- 承接前作世界观和角色状态
-- 设计 9+ 个关键叙事时刻
-- 安排三幕结构
+- Carry forward the previous episodes' world and character states
+- Design 9+ key narrative moments
+- Arrange the three-act structure
 
-**步骤 4: 创作剧本**
+**Step 4: Write the script**
 
-使用标准场景格式，确保：
+Use the standard scene format, ensuring:
 
-- 场景头: `## 场景 {X} - {INT./EXT.} {地点} - {时间}`
-- 首次出场角色有完整外观描述
-- 动作使用现在时、视觉化
-- 足够的 beats 候选（≥9 个）
+- Scene heading: `## Scene {X} - {INT./EXT.} {Location} - {Time}`
+- Characters have a full appearance description on first appearance
+- Action is in present tense and visual
+- Enough beat candidates (≥9)
 
-**步骤 5: 输出**
+**Step 5: Output**
 
 ```
-文件命名: script/ep{XX}-{title}.md
-示例: script/ep03-betrayal.md
+File naming: script/ep{XX}-{title}.md
+Example: script/ep03-betrayal.md
 ```
 
-## 系列连续性检查清单
+## Series Continuity Checklist
 
-创作新剧集前：
+Before creating a new episode:
 
-- [ ] 已阅读所有之前的剧集
-- [ ] 角色外观描述与前作一致
-- [ ] 角色关系状态符合前作结尾
-- [ ] 未解决情节线被考虑或推进
-- [ ] 世界观设定无矛盾
-- [ ] 视觉风格和氛围保持一致
+- [ ] All previous episodes have been read
+- [ ] Character appearance descriptions are consistent with previous episodes
+- [ ] Character relationship states match the end of the previous episode
+- [ ] Unresolved plot threads are considered or advanced
+- [ ] World-building has no contradictions
+- [ ] Visual style and atmosphere remain consistent
 
-## 输出约束
+## Output Constraints
 
-**严格禁止**:
+**Strictly prohibited**:
 
-- ❌ Frontmatter 元数据
-- ❌ 模板说明
-- ❌ 过于抽象的心理描写
-- ❌ 缺少视觉细节的场景
+- ❌ Frontmatter metadata
+- ❌ Template instructions
+- ❌ Overly abstract psychological description
+- ❌ Scenes lacking visual detail
 
-**必须包含**:
+**Must include**:
 
-- ✅ 场景编号、位置、时间
-- ✅ 首次出场角色的外观描述
-- ✅ 视觉化场景和动作
-- ✅ 足够的关键时刻（≥9 个 beats 候选）
-- ✅ 三幕结构完整
+- ✅ Scene number, location, time
+- ✅ Appearance description for characters on first appearance
+- ✅ Visual scenes and action
+- ✅ Enough key moments (≥9 beat candidates)
+- ✅ Complete three-act structure
 
-## 详细资源
+## Detailed Resources
 
-### 方法论指南 📖
+### Methodology Guide 📖
 
-- [screenplay-methodology.md](screenplay-methodology.md) - 剧本创作方法论
-  - 三幕结构和故事弧线
-  - 角色发展原则
-  - 场景构建技巧
-  - 视觉化描述方法
-  - 系列连续性管理
+- [screenplay-methodology.md](screenplay-methodology.md) - Screenplay creation methodology
+  - Three-act structure and story arcs
+  - Character development principles
+  - Scene construction techniques
+  - Visual description methods
+  - Series continuity management
 
-### 写作指导 📖
+### Writing Guidance 📖
 
-- [GUIDELINES.md](GUIDELINES.md) - 详细写作规范
-  - 场景格式规范（场景头、时间标注）
-  - 角色首次出场规则
-  - 动作描述最佳实践
-  - Beats 分布指导（9 beats 在三幕中的分配）
-  - 对话写作技巧
-  - 输出检查清单
+- [GUIDELINES.md](GUIDELINES.md) - Detailed writing guidelines
+  - Scene format specification (scene headings, time labels)
+  - Character first-appearance rules
+  - Action description best practices
+  - Beat distribution guidance (allocating 9 beats across three acts)
+  - Dialogue writing techniques
+  - Output checklist
 
-### 模板
+### Templates
 
-- [templates/episode-template.md](templates/episode-template.md) - Episode 剧本标准格式
-- [templates/series-continuity-guide.md](templates/series-continuity-guide.md) - 系列连续性检查清单
+- [templates/episode-template.md](templates/episode-template.md) - Standard episode script format
+- [templates/series-continuity-guide.md](templates/series-continuity-guide.md) - Series continuity checklist
 
-## 何时使用
+## When to Use
 
-**自动触发场景**:
+**Automatic trigger scenarios**:
 
-- 用户请求"创作新剧集"
-- 用户提供故事概念需要转为剧本
-- 需要为 Storyboard Artist 准备素材
+- User requests "create a new episode"
+- User provides a story concept that needs to be turned into a script
+- Material needs to be prepared for the Storyboard Artist
 
-**手动参考场景**:
+**Manual reference scenarios**:
 
-- 不确定场景格式
-- 处理系列连续性问题
-- 规划 beats 分布
-- 解决角色一致性问题
+- Unsure about scene format
+- Handling series continuity issues
+- Planning beat distribution
+- Resolving character consistency issues
 
-## 示例场景格式
+## Example Scene Format
 
 ```markdown
-## 场景 5 - INT. 地铁车厢内 - 夜晚
+## Scene 5 - INT. Subway Car - Night
 
-车厢内昏暗，白色荧光灯忽明忽暗。空荡的座椅上散落着几张废弃报纸。
+The car is dim; white fluorescent lights flicker on and off. A few discarded newspapers lie scattered across the empty seats.
 
-EMMA（25 岁，银色长发，穿深红色大衣）坐在靠窗位置，翻开古旧的皮质笔记本。
-里面密密麻麻的手写符号和发光的六芒星图案映照在她脸上。
+EMMA (25, long silver hair, wearing a dark red coat) sits by the window and opens an old leather-bound notebook.
+Dense handwritten symbols and a glowing six-pointed star pattern inside are reflected on her face.
 
-突然，所有灯光熄灭。
+Suddenly, all the lights go out.
 ```
 
 ---
 
-**用法**: Scriptwriter agent 自动引用此技能。方法论和指南（标记 📖）采用渐进式披露，仅在需要时查阅。
+**Usage**: The Scriptwriter agent references this skill automatically. The methodology and guides (marked 📖) use progressive disclosure and are consulted only when needed.

@@ -1,121 +1,121 @@
-# Episode 剧本输出格式（参考）
+# Episode Script Output Format (Reference)
 
-**此模板展示标准 episode 剧本结构**
+**This template shows the standard episode script structure**
 
-**❌ 严禁输出**：
+**❌ Strictly prohibited in output**:
 
-- Frontmatter 元数据
-- 模板说明
-- "下一步"指令
-- 任何非内容的说明
+- Frontmatter metadata
+- Template instructions
+- "Next step" directives
+- Any non-content notes
 
-**✅ 仅输出**：实际的剧本内容
+**✅ Output only**: The actual script content
 
 ---
 
-## 最终输出格式：
+## Final output format:
 
 ```markdown
-# Episode {XX}: {标题}
+# Episode {XX}: {Title}
 
-> **系列连续性说明**: {简要说明本集与前作的联系，1-2 句}
+> **Series Continuity Note**: {Brief note on how this episode connects to previous ones, 1-2 sentences}
 
-## 主要角色
+## Main Characters
 
-- **{角色名}**: {简短描述 - 首次出场的外观规范}
-- **{角色名}**: {简短描述}
+- **{Character name}**: {Short description - canonical appearance on first appearance}
+- **{Character name}**: {Short description}
 
-## 场景 1 - {INT./EXT.} {地点} - {时间}
+## Scene 1 - {INT./EXT.} {Location} - {Time}
 
-{场景建立描述 - 2-3 句视觉化描述}
+{Scene-establishing description - 2-3 sentences of visual description}
 
-{角色名}（{年龄}，{关键外观}）{动作描述}。
+{Character name} ({age}, {key appearance}) {action description}.
 
-{对话或继续动作}
-
----
-
-## 场景 2 - {INT./EXT.} {地点} - {时间}
-
-{场景描述}
-
-{角色动作和对话}
+{Dialogue or continued action}
 
 ---
 
-[继续场景 3-N...]
+## Scene 2 - {INT./EXT.} {Location} - {Time}
+
+{Scene description}
+
+{Character action and dialogue}
 
 ---
 
-## 关键 Beats 候选
+[Continue Scenes 3-N...]
 
-（**注**: 此部分仅供 Storyboard Artist 参考，实际输出可选）
+---
 
-1. **Beat 1** (场景 X) - {简要描述关键时刻}
-2. **Beat 2** (场景 X) - {简要描述}
+## Key Beat Candidates
+
+(**Note**: This section is for the Storyboard Artist's reference only; optional in the actual output)
+
+1. **Beat 1** (Scene X) - {Brief description of the key moment}
+2. **Beat 2** (Scene X) - {Brief description}
    ...
-3. **Beat 9** (场景 X) - {简要描述}
+3. **Beat 9** (Scene X) - {Brief description}
 ```
 
-## 示例：
+## Example:
 
 ```markdown
-# Episode 02: 裂缝
+# Episode 02: The Rift
 
-> **系列连续性说明**: 紧接 ep01，Emma 发现日记后首次进入异世界图书馆。
+> **Series Continuity Note**: Picks up directly after ep01; having found the diary, Emma enters the otherworldly library for the first time.
 
-## 主要角色
+## Main Characters
 
-- **Emma**: 25 岁，银色齐腰长直发，苍白肤色，紫罗兰色眼睛，穿黑色长风衣和白色高领衫
-- **图书馆守护者**: 年龄不详，发光的虚体形态，穿深蓝色长袍
+- **Emma**: 25, waist-length straight silver hair, pale skin, violet eyes, wearing a long black trench coat and a white turtleneck
+- **Library Guardian**: Age unknown, glowing incorporeal form, wearing a dark blue robe
 
-## 场景 1 - INT. Emma 公寓 - 清晨
+## Scene 1 - INT. Emma's Apartment - Early Morning
 
-小小的单间公寓，阳光透过脏污的窗户洒入。墙上贴满便利贴和照片。
+A tiny studio apartment, sunlight spilling in through grimy windows. The walls are covered with sticky notes and photographs.
 
-EMMA 坐在床边，手中紧握着那本皮质日记。她的眼睛布满血丝，显然一夜未眠。
+EMMA sits on the edge of the bed, clutching the leather diary. Her eyes are bloodshot; she clearly has not slept all night.
 
-日记自动翻开到六芒星图案的那页，发出微弱的金色光芒。
+The diary falls open on its own to the page with the six-pointed star pattern, giving off a faint golden glow.
 
 EMMA
-（小声自语）
-这不可能...
+(murmuring to herself)
+This can't be...
 
-她伸手触碰图案。瞬间，房间内的所有物体开始漂浮。
-
----
-
-## 场景 2 - INT. 虚空通道 - 时间无意义
-
-Emma 被紫蓝色能量流包围，漂浮在无尽虚空中。她的黑色风衣如水下般飘动。
-
-碎片般的现实片段从身边飞过 - 地铁站台的一角、陌生建筑的影子。
-
-日记在她胸前发光，形成保护性金色光球。
-
-EMMA 的表情从恐惧转为专注。她开始理解这不是梦。
+She reaches out to touch the pattern. In an instant, every object in the room begins to float.
 
 ---
 
-[继续...]
+## Scene 2 - INT. Void Passage - Time Has No Meaning
 
-## 关键 Beats 候选
+Emma is surrounded by streams of violet-blue energy, floating in an endless void. Her black trench coat drifts as if underwater.
 
-1. **Beat 1** (场景 1) - 日记自发激活，房间物品漂浮
-2. **Beat 2** (场景 2) - Emma 穿越虚空通道
-3. **Beat 3** (场景 3) - 抵达异世界图书馆
-4. **Beat 4** (场景 5) - 首次遇见图书馆守护者
-5. **Beat 5** (场景 7) - 发现自己家族的秘密
-6. **Beat 6** (场景 9) - 守护者测试 Emma 的意志
-7. **Beat 7** (场景 11) - Emma 通过测试
-8. **Beat 8** (场景 13) - 获得第一个魔法能力
-9. **Beat 9** (场景 15) - 决定接受命运，返回现实世界准备下一步
+Fragments of reality fly past her - a corner of the subway platform, the shadow of an unfamiliar building.
+
+The diary glows against her chest, forming a protective sphere of golden light.
+
+EMMA's expression shifts from fear to focus. She begins to understand this is not a dream.
+
+---
+
+[Continue...]
+
+## Key Beat Candidates
+
+1. **Beat 1** (Scene 1) - The diary activates on its own, objects in the room float
+2. **Beat 2** (Scene 2) - Emma travels through the void passage
+3. **Beat 3** (Scene 3) - Arrives at the otherworldly library
+4. **Beat 4** (Scene 5) - First encounter with the Library Guardian
+5. **Beat 5** (Scene 7) - Discovers her own family's secret
+6. **Beat 6** (Scene 9) - The Guardian tests Emma's will
+7. **Beat 7** (Scene 11) - Emma passes the test
+8. **Beat 8** (Scene 13) - Gains her first magical ability
+9. **Beat 9** (Scene 15) - Decides to accept her destiny and returns to the real world to prepare for the next step
 ```
 
-## 关键要点：
+## Key Points:
 
-1. **场景头部** - 必须包含编号、位置类型、地点、时间
-2. **首次出场** - 角色首次出现时必须有完整外观描述
-3. **视觉化** - 所有描述具体、可视化
-4. **Beats 候选** - 至少 9 个明确的关键时刻
-5. **无元数据** - 输出不包含 frontmatter 或说明
+1. **Scene headings** - Must include number, location type, location, time
+2. **First appearance** - Characters must have a full appearance description when they first appear
+3. **Visual** - All descriptions are concrete and visualizable
+4. **Beat candidates** - At least 9 clear key moments
+5. **No metadata** - Output contains no frontmatter or instructions

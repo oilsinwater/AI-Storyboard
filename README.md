@@ -1,238 +1,238 @@
-# AI 分镜制作系统
+# AI Storyboard Production System
 
-基于 Claude Agent + Skill 架构构建的 AI 驱动分镜师系统，用于自动化影视分镜工作流程。
+An AI-driven storyboard artist system built on the Claude Agent + Skill architecture, used to automate the film storyboarding workflow.
 
-## 系统概览
+## System Overview
 
-此系统协调一个**Producer**与四个专业子 agent，自动生成结构化的分镜提示词：
+This system coordinates a **Producer** with four specialized sub-agents to automatically generate structured storyboard prompts:
 
 ```
 Producer Agent (CLAUDE.md)
-├── Scriptwriter — 生成故事剧本
-├── Storyboard Artist — 创建beat breakdowns、9宫格、4格提示词
-├── Director — 审查所有输出进行质量控制
-└── Animator — 生成视频生成的motion prompts
+├── Scriptwriter — Generates story scripts
+├── Storyboard Artist — Creates beat breakdowns, 9-grid and 4-panel prompts
+├── Director — Reviews all outputs for quality control
+└── Animator — Generates motion prompts for video generation
 ```
 
-### 核心价值
+### Core Value
 
-- **效率提升**：从概念到提示词的自动化工作流，减少约 80%的手动工作
-- **一致性保证**：严格的角色/场景/光影继承减少 AI 生成的随机性
-- **专业标准**：基于影视分镜方法论，遵循摄影和剪辑原则
-- **质量控制**：自动化导演审查与修订循环
-- **可恢复**：文档驱动，中断后可通过查看进度恢复
-- **多平台**：支持 Nano Banner、Midjourney、Gemini、DALL-E
+- **Efficiency**: An automated workflow from concept to prompts, reducing manual work by roughly 80%
+- **Consistency**: Strict character/scene/lighting inheritance reduces the randomness of AI generation
+- **Professional standards**: Based on film storyboarding methodology, following cinematography and editing principles
+- **Quality control**: Automated director review and revision loop
+- **Resumable**: Document-driven; after an interruption, work can resume by checking progress
+- **Multi-platform**: Supports Nano Banner, Midjourney, Gemini, DALL-E
 
-## 完整工作流程
+## Complete Workflow
 
-### 5 阶段完整流程
+### The Full 5-Stage Process
 
 ```
-0. 剧本生成 (故事创作)
-   输入: 故事概念、类型、主题
-   输出: 完整剧本，包含场景、角色、对话
+0. Script Generation (story creation)
+   Input: Story concept, genre, theme
+   Output: Complete script with scenes, characters, dialogue
 
-1. Beat Breakdown (9个关键叙事时刻)
-   输入: 剧本 + 视觉风格配置
-   输出: 9个关键叙事锚点
-   审查: Director检查完整性、清晰度、选择质量
+1. Beat Breakdown (9 key narrative moments)
+   Input: Script + visual style configuration
+   Output: 9 key narrative anchors
+   Review: Director checks completeness, clarity, selection quality
 
-2. Beat Board (9宫格分镜)
-   输入: 已批准的beat breakdown
-   输出: 9个静态图像提示词（视觉基准）
-   审查: Director检查一致性、覆盖度、提示词格式
+2. Beat Board (9-grid storyboard)
+   Input: Approved beat breakdown
+   Output: 9 static image prompts (visual baseline)
+   Review: Director checks consistency, coverage, prompt format
 
-3. Sequence Board (4格序列)
-   输入: 已批准的beat board
-   输出: 连续4镜头序列提示词（展开关键时刻）
-   审查: Director检查运动连贯性、轴线稳定性、继承规则
+3. Sequence Board (4-panel sequence)
+   Input: Approved beat board
+   Output: Continuous 4-shot sequence prompts (expanding a key moment)
+   Review: Director checks motion continuity, axis stability, inheritance rules
 
-4. Motion Prompts (视频生成)
-   输入: 已批准的sequence board
-   输出: 视频模型的动态motion prompts
-   审查: Director检查简洁性、物理可行性、焦点
+4. Motion Prompts (video generation)
+   Input: Approved sequence board
+   Output: Dynamic motion prompts for video models
+   Review: Director checks conciseness, physical feasibility, focus
 
-所有提示词使用英文以获得最佳AI兼容性
+All prompts are written in English for the best AI compatibility
 ```
 
-## 项目结构
+## Project Structure
 
 ```
 project/
-├── script/                              # 剧本源文件（用户创建）
+├── script/                              # Script source files (created by the user)
 │   ├── ep01-awakening.md
 │   └── ep02-revelation.md
 │
-├── outputs/                             # 生成的artifacts（自动创建）
+├── outputs/                             # Generated artifacts (created automatically)
 │   ├── beat-breakdown-ep01.md           # Beat breakdown
-│   ├── beat-board-prompt-ep01.md        # 9宫格提示词
-│   ├── sequence-board-prompt-ep01.md    # 4格序列提示词
+│   ├── beat-board-prompt-ep01.md        # 9-grid prompts
+│   ├── sequence-board-prompt-ep01.md    # 4-panel sequence prompts
 │   └── motion-prompt-ep01.md            # Motion prompts
 │
-└── .claude/                             # 系统配置
-    ├── agents/                          # Agent定义
+└── .claude/                             # System configuration
+    ├── agents/                          # Agent definitions
     │   ├── storyboard-artist.md
     │   ├── director.md
     │   ├── animator.md
     │   └── scriptwriter.md
     │
-    └── skills/                          # Skill包
-        ├── film-storyboard-skill/       # 分镜方法论
-        ├── storyboard-review-skill/     # 审查标准
-        ├── animator-skill/              # Motion prompt方法论
-        └── scriptwriter-skill/          # 剧本创作方法论
+    └── skills/                          # Skill packages
+        ├── film-storyboard-skill/       # Storyboard methodology
+        ├── storyboard-review-skill/     # Review standards
+        ├── animator-skill/              # Motion prompt methodology
+        └── scriptwriter-skill/          # Screenplay creation methodology
 ```
 
-## 快速开始
+## Quick Start
 
-### 1. 创建剧本
+### 1. Create a Script
 
-在`script/`目录创建新的 episode 剧本：
+Create a new episode script in the `script/` directory:
 
 ```markdown
-# Episode 01: 觉醒
+# Episode 01: Awakening
 
-> **系列连续性说明**: 系列首集，介绍主角和世界观。
+> **Series Continuity Note**: First episode of the series, introducing the protagonist and the world.
 
-## 场景 1 - INT. Emma 公寓 - 清晨
+## Scene 1 - INT. Emma's Apartment - Early Morning
 
-小小的单间公寓，阳光透过脏污的窗户洒入...
+A tiny studio apartment, sunlight spilling in through grimy windows...
 
-EMMA（25 岁，银色齐腰长直发，苍白肤色，紫罗兰色眼睛，
-穿黑色长风衣和白色高领衫）坐在床边...
+EMMA (25, waist-length straight silver hair, pale skin, violet eyes,
+wearing a long black trench coat and a white turtleneck) sits on the edge of the bed...
 ```
 
-### 2. 生成 Beat Breakdown
+### 2. Generate a Beat Breakdown
 
-与 Claude 交互：
-
-```
-请为ep01生成beat breakdown
-```
-
-系统将自动：
-
-1. Scriptwriter 读取`script/ep01-awakening.md`
-2. Storyboard Artist 识别 9 个关键叙事时刻
-3. Director 审查质量
-4. 输出到`outputs/beat-breakdown-ep01.md`
-
-### 3. 生成 Beat Board (9 宫格)
+Interact with Claude:
 
 ```
-请为ep01生成beat board
+Please generate a beat breakdown for ep01
 ```
 
-系统将：
+The system will automatically:
 
-1. Storyboard Artist 基于 approved breakdown 创建 9 个提示词
-2. 应用 visual style 和 platform 配置
-3. Director 审查一致性
-4. 输出到`outputs/beat-board-prompt-ep01.md`
+1. Scriptwriter reads `script/ep01-awakening.md`
+2. Storyboard Artist identifies 9 key narrative moments
+3. Director reviews quality
+4. Output to `outputs/beat-breakdown-ep01.md`
 
-#### 九宫格 Demo 效果
-
-![九宫格 Demo 效果](images/demo.jpeg)
-
-### 4. 生成 Sequence Board (4 格)
+### 3. Generate a Beat Board (9-Grid)
 
 ```
-请为ep01生成sequence board
+Please generate a beat board for ep01
 ```
 
-系统将：
+The system will:
 
-1. Storyboard Artist 从 9 个 beats 中选择关键 beat
-2. 展开为 4 镜头连续序列
-3. Director 检查运动连贯性和轴线规则
-4. 输出到`outputs/sequence-board-prompt-ep01.md`
+1. Storyboard Artist creates 9 prompts based on the approved breakdown
+2. Apply the visual style and platform configuration
+3. Director reviews consistency
+4. Output to `outputs/beat-board-prompt-ep01.md`
 
-### 5. 生成 Motion Prompts
+#### 9-Grid Demo Result
+
+![9-Grid Demo Result](images/demo.jpeg)
+
+### 4. Generate a Sequence Board (4-Panel)
 
 ```
-请为ep01生成motion prompts
+Please generate a sequence board for ep01
 ```
 
-系统将：
+The system will:
 
-1. Animator 将 4 格序列转换为 motion prompts
-2. 优化用于视频生成模型
-3. Director 审查物理合理性
-4. 输出到`outputs/motion-prompt-ep01.md`
+1. Storyboard Artist selects a key beat from the 9 beats
+2. Expand it into a continuous 4-shot sequence
+3. Director checks motion continuity and axis rules
+4. Output to `outputs/sequence-board-prompt-ep01.md`
 
-## 视觉风格配置
+### 5. Generate Motion Prompts
 
-系统支持多种预设风格和平台：
+```
+Please generate motion prompts for ep01
+```
 
-### 风格预设
+The system will:
 
-**写实风格**:
+1. Animator converts the 4-panel sequence into motion prompts
+2. Optimize for video generation models
+3. Director reviews physical plausibility
+4. Output to `outputs/motion-prompt-ep01.md`
+
+## Visual Style Configuration
+
+The system supports multiple preset styles and platforms:
+
+### Style Presets
+
+**Photorealistic style**:
 
 ```
 photorealistic, professional photography, cinematic lighting, high detail
 ```
 
-**动漫风格**:
+**Anime style**:
 
 ```
 anime style, soft cel shading, vibrant colors, expressive characters
 ```
 
-**概念艺术风格**:
+**Concept art style**:
 
 ```
 digital concept art, painterly style, dramatic atmosphere, detailed environment
 ```
 
-### 支持的平台
+### Supported Platforms
 
-**Nano Banner** (默认推荐):
+**Nano Banner** (default, recommended):
 
-- 3x3 网格，一次性生成 9 个 beats
-- Episode Visual Script 格式
-- Visual Description (80-120 词) + Lighting & Mood (30-50 词)
+- 3x3 grid, generates all 9 beats in one pass
+- Episode Visual Script format
+- Visual Description (80-120 words) + Lighting & Mood (30-50 words)
 
-![九宫格 Demo 效果 (Nano Banner)](images/demo.jpeg)
+![9-Grid Demo Result (Nano Banner)](images/demo.jpeg)
 
 **Midjourney v6**:
 
-- 独立 prompts + 参数
+- Independent prompts + parameters
 - `--ar 16:9 --style cinematic --v 6`
 
 **Gemini Imagen 3 / DALL-E 3**:
 
-- 标准叙事描述式 prompts
-- 无特殊参数要求
+- Standard narrative descriptive prompts
+- No special parameter requirements
 
-## 核心方法论
+## Core Methodology
 
-### 四大支柱 (4C Framework)
+### The Four Pillars (4C Framework)
 
-1. **Clear (清晰)**: 每个提示词明确无歧义
-2. **Concise (简洁)**: 详细但不臃肿
-   - Visual Description: 80-120 词
-   - Lighting & Mood: 30-50 词
-   - Motion Prompt: 40-80 词
-3. **Consistent (一致)**: 角色/场景/光影在所有 prompts 中保持一致
-4. **Progressive (渐进)**: 9 宫格 →4 宫格逐层细化，继承视觉元素
+1. **Clear**: Every prompt is unambiguous
+2. **Concise**: Detailed but not bloated
+   - Visual Description: 80-120 words
+   - Lighting & Mood: 30-50 words
+   - Motion Prompt: 40-80 words
+3. **Consistent**: Character/scene/lighting stay consistent across all prompts
+4. **Progressive**: Refine layer by layer from 9-grid → 4-panel, inheriting visual elements
 
-### 分层渐进流程
+### Layered Progressive Process
 
 ```
-Beat Breakdown (9个锚点)
-  ↓ 继承叙事结构
-Beat Board (9宫格) — 建立视觉基准（角色、场景、光色）
-  ↓ 继承视觉元素
-Sequence Board (4格) — 展开动作序列，保持一致性
-  ↓ 继承主体描述
-Motion Prompts — 转换为时间动态描述
+Beat Breakdown (9 anchors)
+  ↓ inherits narrative structure
+Beat Board (9-grid) — Establishes the visual baseline (character, scene, lighting and color)
+  ↓ inherits visual elements
+Sequence Board (4-panel) — Expands the action sequence, maintaining consistency
+  ↓ inherits subject description
+Motion Prompts — Converts to temporal, dynamic descriptions
 ```
 
-## 关键约束
+## Key Constraints
 
-### 角色一致性
+### Character Consistency
 
-**规范描述**（在 Beat 1 建立）：
+**Canonical description** (established in Beat 1):
 
 ```
 A young woman in her late 20s with waist-length straight silver hair,
@@ -240,233 +240,233 @@ pale porcelain skin, and bright violet eyes, wearing a long black coat
 over a white high-neck shirt
 ```
 
-**在所有后续 beats 中逐字重复**关键识别符：
+**Repeat the key identifiers verbatim** in all subsequent beats:
 
-- 发型、发色、发长
-- 眼睛颜色
-- 主要服装
-- 肤色
-- 显著标记
+- Hairstyle, hair color, hair length
+- Eye color
+- Main clothing
+- Skin tone
+- Distinguishing marks
 
-### 输出纯净性
+### Output Purity
 
-**严格禁止**在输出文件中包含：
+**Strictly prohibited** in output files:
 
-- ❌ Frontmatter 元数据（`---\nepisode: ep01\n---`）
-- ❌ 模板说明或注释
-- ❌ "下一步"指令
-- ❌ 任何非 prompt 内容
+- ❌ Frontmatter metadata (`---\nepisode: ep01\n---`)
+- ❌ Template instructions or notes
+- ❌ "Next step" directives
+- ❌ Any non-prompt content
 
-**仅输出**：实际的提示词内容本身
+**Output only**: The actual prompt content itself
 
-## 高级功能
+## Advanced Features
 
-### 系列连续性
+### Series Continuity
 
-Scriptwriter 支持查看之前的剧集并创作续集：
+The Scriptwriter can review previous episodes and write sequels:
 
 ```
-基于ep01和ep02，为ep03设想一个关于背叛的故事
+Based on ep01 and ep02, conceive a story about betrayal for ep03
 ```
 
-系统将：
+The system will:
 
-1. 读取`script/ep01-*.md`和`script/ep02-*.md`
-2. 分析角色发展和未解决情节线
-3. 基于用户输入创作新剧集
-4. 保持角色外观和世界观一致性
+1. Read `script/ep01-*.md` and `script/ep02-*.md`
+2. Analyze character development and unresolved plot threads
+3. Create a new episode based on user input
+4. Maintain character appearance and world-building consistency
 
-### 专业电影技巧
+### Professional Film Techniques
 
-系统包含高级电影技巧支持：
+The system includes support for advanced film techniques:
 
-**蒙太奇**:
+**Montage**:
 
-- Narrative Montage (叙事) - 压缩时间
-- Thematic Montage (主题) - 对比并置
-- Parallel Montage (平行) - 交叉剪辑
+- Narrative Montage - Compresses time
+- Thematic Montage - Contrasting juxtaposition
+- Parallel Montage - Cross-cutting
 
-**转场**:
+**Transitions**:
 
 - Cut, Match Cut, Dissolve
 - Fade to Black, Smash Cut
-- 每种都有使用时机指导
+- Each with guidance on when to use it
 
-**时空处理**:
+**Time and Space Manipulation**:
 
-- Flashback (闪回) - 含视觉指标
-- Dream Sequence (梦境)
-- Slow Motion (慢动作)
-- Time Lapse (延时)
-- Freeze Frame (定格)
+- Flashback - With visual indicators
+- Dream Sequence
+- Slow Motion
+- Time Lapse
+- Freeze Frame
 
-### 质量控制
+### Quality Control
 
-Director 自动审查每个阶段，提供 PASS/FAIL 判决：
+The Director automatically reviews every stage and delivers a PASS/FAIL verdict:
 
-**审查标准**：
+**Review criteria**:
 
-- Beat 数量正确
-- 描述清晰具体
-- 角色外观一致
-- 镜头规格完整
-- 物理合理性
-- 无跳切或轴线违规
+- Correct beat count
+- Clear, specific descriptions
+- Consistent character appearance
+- Complete shot specifications
+- Physical plausibility
+- No jump cuts or axis violations
 
-**修订循环**：
+**Revision loop**:
 
-- FAIL → Storyboard Artist 修订 → Director 复审
-- 连续 3 次 FAIL → 升级给 Producer/用户干预
+- FAIL → Storyboard Artist revises → Director re-reviews
+- 3 consecutive FAILs → Escalate for Producer/user intervention
 
-## Agent 架构
+## Agent Architecture
 
 ### Producer (CLAUDE.md)
 
-你（Claude）作为 Producer：
+You (Claude) act as the Producer:
 
-- 协调所有 sub-agents
-- 理解用户意图
-- 调度工作流程
-- 处理升级问题
+- Coordinate all sub-agents
+- Understand user intent
+- Schedule the workflow
+- Handle escalations
 
 ### Scriptwriter
 
-**职责**：
+**Responsibilities**:
 
-- 创作结构化剧本
-- 查看之前剧集保持连续性
-- 基于用户输入设想新故事
-- 提供 ≥9 个 beats 候选
+- Create structured scripts
+- Review previous episodes to maintain continuity
+- Conceive new stories based on user input
+- Provide ≥9 beat candidates
 
 **Skills**: `scriptwriter-skill`
 
 ### Storyboard Artist
 
-**职责**：
+**Responsibilities**:
 
-- 从剧本识别 9 个关键 beats
-- 生成 9 宫格 beat board 提示词
-- 生成 4 格 sequence board 提示词
-- 保持角色/场景/光影一致性
+- Identify 9 key beats from the script
+- Generate 9-grid beat board prompts
+- Generate 4-panel sequence board prompts
+- Maintain character/scene/lighting consistency
 
 **Skills**: `film-storyboard-skill`
 
 ### Director
 
-**职责**：
+**Responsibilities**:
 
-- 审查所有 outputs (beat breakdown, beat board, sequence board, motion prompts)
-- 提供 PASS/FAIL 判决
-- 指出具体问题和修复建议
-- 仅读取，不创作
+- Review all outputs (beat breakdown, beat board, sequence board, motion prompts)
+- Deliver PASS/FAIL verdicts
+- Point out specific issues and suggested fixes
+- Read-only, does not create
 
 **Skills**: `storyboard-review-skill`
 
 ### Animator
 
-**职责**：
+**Responsibilities**:
 
-- 将 4 格静态序列转换为 motion prompts
-- 优化用于 AI 视频生成模型
-- 保持主体一致性
-- 确保物理合理的运动
+- Convert 4-panel static sequences into motion prompts
+- Optimize for AI video generation models
+- Maintain subject consistency
+- Ensure physically plausible motion
 
 **Skills**: `animator-skill`
 
-## Skill 架构 (2.0 标准化)
+## Skill Architecture (2.0 Standardization)
 
-所有 Skills 已按照 [Claude Code 官方标准](https://code.claude.com/docs/en/skills) 重构，采用**渐进式披露**模式。
+All Skills have been refactored according to the [official Claude Code standard](https://code.claude.com/docs/en/skills), using the **progressive disclosure** pattern.
 
 ### film-storyboard-skill
 
-**核心文件**:
+**Core files**:
 
-- `SKILL.md` (139 行) - 概述、核心原则、快速开始、导航
-- `REFERENCE.md` 📖 - 平台特性和风格库（渐进式披露）
-  - Nano Banner vs Midjourney vs Gemini 格式对比
-  - 7 种视觉风格库（写实、动漫、概念艺术等）
-  - 6 种光影方案候选
-  - 宽高比选项
-- `storyboard-methodology-playbook.md` 📖 - 完整方法论
-- `gemini-image-prompt-guide.md` 📖 - 提示词写法指南
-- `templates/` - 输出模板
+- `SKILL.md` (139 lines) - Overview, core principles, quick start, navigation
+- `REFERENCE.md` 📖 - Platform features and style library (progressive disclosure)
+  - Nano Banner vs Midjourney vs Gemini format comparison
+  - Library of 7 visual styles (photorealistic, anime, concept art, etc.)
+  - 6 candidate lighting schemes
+  - Aspect ratio options
+- `storyboard-methodology-playbook.md` 📖 - Complete methodology
+- `gemini-image-prompt-guide.md` 📖 - Prompt writing guide
+- `templates/` - Output templates
 
 ### scriptwriter-skill
 
-**核心文件**:
+**Core files**:
 
-- `SKILL.md` (175 行) - 概述、核心原则、快速开始、导航
-- `GUIDELINES.md` 📖 - 详细写作规范（渐进式披露）
-  - 场景格式规范
-  - 角色首次出场规则
-  - Beats 分布指导
-  - 对话写作技巧
-- `screenplay-methodology.md` 📖 - 剧本创作方法论
-- `templates/` - 输出模板
+- `SKILL.md` (175 lines) - Overview, core principles, quick start, navigation
+- `GUIDELINES.md` 📖 - Detailed writing guidelines (progressive disclosure)
+  - Scene format specification
+  - Character first-appearance rules
+  - Beat distribution guidance
+  - Dialogue writing techniques
+- `screenplay-methodology.md` 📖 - Screenplay creation methodology
+- `templates/` - Output templates
 
 ### animator-skill
 
-**核心文件**:
+**Core files**:
 
-- `SKILL.md` (225 行) - 概述、核心原则、快速开始、导航
-- `MOTION_LIBRARY.md` 📖 - 完整运动库（渐进式披露）
-  - 主体运动库（人物移动、动作、表情）
-  - 镜头运动库（Pan、Dolly、Crane、Orbit）
-  - 自然运动（风、水、光影）
-  - 运动速度指导
-  - 平台特性和优化
-- `motion-prompt-methodology.md` 📖 - Motion prompt 方法论
-- `templates/` - 输出模板
+- `SKILL.md` (225 lines) - Overview, core principles, quick start, navigation
+- `MOTION_LIBRARY.md` 📖 - Complete motion library (progressive disclosure)
+  - Subject motion library (character locomotion, actions, expressions)
+  - Camera motion library (Pan, Dolly, Crane, Orbit)
+  - Natural motion (wind, water, light and shadow)
+  - Motion speed guidance
+  - Platform features and optimization
+- `motion-prompt-methodology.md` 📖 - Motion prompt methodology
+- `templates/` - Output templates
 
 ### storyboard-review-skill
 
-**核心文件**:
+**Core files**:
 
-- `SKILL.md` (68 行) - 审查理念和检查清单引用
-- `review-checklist.md` - 详细审查标准
+- `SKILL.md` (68 lines) - Review philosophy and checklist references
+- `review-checklist.md` - Detailed review criteria
 
-## 技术细节
+## Technical Details
 
-### 文件命名规范
+### File Naming Conventions
 
 ```
-script/ep{XX}-{title}.md               # 剧本
+script/ep{XX}-{title}.md               # Script
 outputs/beat-breakdown-ep{XX}.md       # Beat breakdown
 outputs/beat-board-prompt-ep{XX}.md    # Beat board
 outputs/sequence-board-prompt-ep{XX}.md # Sequence board
 outputs/motion-prompt-ep{XX}.md        # Motion prompts
 ```
 
-### Nano Banner 3x3 网格
+### Nano Banner 3x3 Grid
 
-9 个 beats 对应网格位置：
+The 9 beats map to grid positions:
 
 ```
 ┌─────────┬─────────┬─────────┐
 │ Beat 1  │ Beat 2  │ Beat 3  │
-│ 左上    │ 中上    │ 右上    │
+│ Top-L   │ Top-C   │ Top-R   │
 ├─────────┼─────────┼─────────┤
 │ Beat 4  │ Beat 5  │ Beat 6  │
-│ 左中    │ 中心    │ 右中    │
+│ Mid-L   │ Center  │ Mid-R   │
 ├─────────┼─────────┼─────────┤
 │ Beat 7  │ Beat 8  │ Beat 9  │
-│ 左下    │ 中下    │ 右下    │
+│ Bot-L   │ Bot-C   │ Bot-R   │
 └─────────┴─────────┴─────────┘
 ```
 
-### 提示词语言
+### Prompt Language
 
-- **中文**: 系统内部交互、说明、元数据
-- **英文**: 实际的 AI 提示词内容
+- **Documentation, agent instructions, and metadata**: English (this repository was originally authored in Chinese and has been translated)
+- **Actual AI prompt content**: English
   - Visual Description
   - Lighting & Mood
   - Motion Prompts
 
-**原因**: AI 图像/视频模型在英文提示词下表现最佳
+**Reason**: AI image/video models perform best with English prompts
 
-## 示例输出
+## Example Output
 
-### Beat Board (Nano Banner 格式)
+### Beat Board (Nano Banner format)
 
 ```markdown
 EPISODE 01: BEAT BOARD VISUAL SCRIPT
@@ -489,13 +489,13 @@ long black coat sits in a dimly lit subway car...
 Lighting & Mood: Flickering cool fluorescent overhead light mixing with warm
 amber glow from the journal pages...
 
-[继续 Beat 3-9...]
+[Continue Beat 3-9...]
 ```
 
 ### Motion Prompt
 
 ```markdown
-序列 1 (基于 Beat 1-2)
+Sequence 1 (based on Beat 1-2)
 
 A woman with long silver hair in a black coat walks from left to right along
 a train platform, wind blowing her hair gently. Other commuters move quickly
@@ -503,85 +503,85 @@ past in opposite direction. Camera static, eye-level. Steady walking pace,
 contemplative mood. 5 seconds.
 ```
 
-## 最佳实践
+## Best Practices
 
-### 创作高质量剧本
+### Writing High-Quality Scripts
 
-1. **视觉化优先** - 用可视化动作描述，避免抽象心理描写
-2. **角色首次出场** - 提供完整外观描述
-3. **足够的 beats** - 确保 ≥9 个清晰的关键时刻
-4. **三幕结构** - Setup (25%) → Confrontation (50%) → Resolution (25%)
+1. **Visual first** - Describe with visualizable action, avoid abstract psychological description
+2. **Character first appearance** - Provide a full appearance description
+3. **Sufficient beats** - Ensure ≥9 clear key moments
+4. **Three-act structure** - Setup (25%) → Confrontation (50%) → Resolution (25%)
 
-### 保持一致性
+### Maintaining Consistency
 
-1. **建立规范** - 在 Beat 1 确定角色外观
-2. **逐字重复** - 关键识别符在所有 beats 中完全相同
-3. **继承规则** - 4 格序列必须继承源 9 格的视觉元素
-4. **检查清单** - 使用 Director 的审查标准自查
+1. **Establish the canon** - Fix character appearance in Beat 1
+2. **Repeat verbatim** - Key identifiers are identical across all beats
+3. **Inheritance rules** - The 4-panel sequence must inherit the visual elements of the source 9-grid
+4. **Checklist** - Self-check against the Director's review criteria
 
-### 优化提示词
+### Optimizing Prompts
 
-1. **叙事描述式** - 流畅句子，非关键词堆砌
-2. **适当长度** - Visual Description 80-120 词，Lighting & Mood 30-50 词
-3. **明确镜头** - 每个提示词包含镜头类型和角度
-4. **光影描述** - 指定光源、方向、色温、氛围
+1. **Narrative descriptive** - Flowing sentences, not keyword stuffing
+2. **Appropriate length** - Visual Description 80-120 words, Lighting & Mood 30-50 words
+3. **Explicit shots** - Every prompt includes shot type and angle
+4. **Lighting description** - Specify light source, direction, color temperature, atmosphere
 
-## 故障排除
+## Troubleshooting
 
-### Beat Board 一致性问题
+### Beat Board Consistency Issues
 
-**症状**: Director 反馈角色外观不一致
+**Symptom**: Director reports inconsistent character appearance
 
-**解决**:
+**Fix**:
 
-1. 检查 Beat 1 的规范描述
-2. 确保所有 beats 使用相同的关键词
-3. 验证服装、发型、眼睛颜色等完全匹配
+1. Check the canonical description in Beat 1
+2. Make sure all beats use the same keywords
+3. Verify that clothing, hairstyle, eye color, etc. match exactly
 
-### Sequence Board 跳切
+### Sequence Board Jump Cuts
 
-**症状**: Director 指出轴线违规或跳切
+**Symptom**: Director points out axis violations or jump cuts
 
-**解决**:
+**Fix**:
 
-1. 检查屏幕方向（180 度法则）
-2. 确保镜头类型变化明显
-3. 添加过渡指示（Cut, Dissolve 等）
+1. Check screen direction (180-degree rule)
+2. Make sure shot type changes are clear
+3. Add transition indicators (Cut, Dissolve, etc.)
 
-### Motion Prompt 过长
+### Motion Prompt Too Long
 
-**症状**: Director 反馈超过 80 词
+**Symptom**: Director reports more than 80 words
 
-**解决**:
+**Fix**:
 
-1. 简化场景描述
-2. 专注于运动本身
-3. 移除过度的视觉细节
+1. Simplify the scene description
+2. Focus on the motion itself
+3. Remove excessive visual detail
 
-## 系统要求
+## System Requirements
 
-- Claude Code 或 claude.ai/code
-- 工作区：本地文件系统访问
-- 无需外部依赖
+- Claude Code or claude.ai/code
+- Workspace: local file system access
+- No external dependencies
 
-## 许可
+## License
 
-本系统为内部工具，方法论基于公开的影视制作标准。
+This system is an internal tool; its methodology is based on publicly available film production standards.
 
-## 贡献
+## Contributing
 
-改进建议：
+Suggested improvements:
 
-- 新的视觉风格预设
-- 额外的电影技巧文档
-- 更多的模板示例
-- 平台特定优化
+- New visual style presets
+- Additional film technique documentation
+- More template examples
+- Platform-specific optimizations
 
 ---
 
-**系统版本**: 2.0 (Skills 标准化)
-**最后更新**: 2026-01-11
-**Agents**: 4 个专业 sub-agents
-**Skills**: 4 个标准化技能包（渐进式披露模式）
-**Skills 总行数**: 607 行（优化 -39.4%）
-**符合标准**: 100% [Claude Code 官方标准](https://code.claude.com/docs/en/skills)
+**System version**: 2.0 (Skills standardization)
+**Last updated**: 2026-01-11
+**Agents**: 4 specialized sub-agents
+**Skills**: 4 standardized skill packages (progressive disclosure pattern)
+**Total Skills lines**: 607 lines (optimized -39.4%)
+**Standards compliance**: 100% [official Claude Code standard](https://code.claude.com/docs/en/skills)

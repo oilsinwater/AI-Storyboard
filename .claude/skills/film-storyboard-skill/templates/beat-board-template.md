@@ -1,88 +1,88 @@
-# Beat Board 输出格式（参考）
+# Beat Board Output Format (Reference)
 
-**此模板展示正确的 nano banner 输出结构**
+**This template shows the correct nano banner output structure**
 
-**❌ 严禁输出**：
+**❌ Strictly prohibited in output**:
 
-- Frontmatter 元数据（`---\nepisode: ep01\n---`）
-- 模板说明、注意事项
-- "下一步"或 workflow 指令
-- 任何非 prompt 内容
+- Frontmatter metadata (`---\nepisode: ep01\n---`)
+- Template instructions, notes
+- "Next step" or workflow directives
+- Any non-prompt content
 
-**✅ 仅输出**：实际的 beat board 内容（见下方格式）
+**✅ Output only**: The actual beat board content (see format below)
 
 ---
 
-## Nano Banner 格式（默认 - 推荐）:
+## Nano Banner Format (Default - Recommended):
 
 ```markdown
 EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
 
-Visual Description: [详细视觉描述：镜头类型、角色/主体、动作、场景、关键视觉元素 - 80-120 词]
-Lighting & Mood: [灯光方向、质量、色温和情绪氛围 - 30-50 词]
+Visual Description: [Detailed visual description: shot type, character/subject, action, scene, key visual elements - 80-120 words]
+Lighting & Mood: [Light direction, quality, color temperature, and emotional atmosphere - 30-50 words]
 
-Beat 2: [Beat 标题]
+Beat 2: [Beat title]
 Visual Description: ...
 Lighting & Mood: ...
 
-Beat 3: [Beat 标题]
+Beat 3: [Beat title]
 Visual Description: ...
 Lighting & Mood: ...
 
-Beat 4: [Beat 标题]
+Beat 4: [Beat title]
 Visual Description: ...
 Lighting & Mood: ...
 
-Beat 5: [Beat 标题]
+Beat 5: [Beat title]
 Visual Description: ...
 Lighting & Mood: ...
 
-Beat 6: [Beat 标题]
+Beat 6: [Beat title]
 Visual Description: ...
 Lighting & Mood: ...
 
-Beat 7: [Beat 标题]
+Beat 7: [Beat title]
 Visual Description: ...
 Lighting & Mood: ...
 
-Beat 8: [Beat 标题]
+Beat 8: [Beat title]
 Visual Description: ...
 Lighting & Mood: ...
 
-Beat 9: [Beat 标题]
+Beat 9: [Beat title]
 Visual Description: ...
 Lighting & Mood: ...
 ```
 
-## 为什么这个格式适合 Nano Banner:
+## Why This Format Suits Nano Banner:
 
-1. **清晰结构** - 每个 beat 明确标注
-2. **关注点分离** - Visual description 独立于 lighting/mood
-3. **一致格式** - 便于 nano banner 解析
-4. **叙事流** - 读起来像视觉脚本
-5. **角色一致性** - 规范描述在所有 beats 中重复
+1. **Clear structure** - Each beat is explicitly labeled
+2. **Separation of concerns** - Visual description is independent of lighting/mood
+3. **Consistent format** - Easy for nano banner to parse
+4. **Narrative flow** - Reads like a visual script
+5. **Character consistency** - The canonical description is repeated across all beats
 
-## Midjourney v6 格式:
+## Midjourney v6 Format:
 
 ```markdown
-## Beat 1: [标题] (左上)
+## Beat 1: [Title] (Top-Left)
 
-[详细提示词] --ar 16:9 --style cinematic --v 6
+[Detailed prompt] --ar 16:9 --style cinematic --v 6
 
-## Beat 2: [标题] (中上)
+## Beat 2: [Title] (Top-Center)
 
 ...
 ```
 
-## Gemini/DALL-E 格式:
+## Gemini/DALL-E Format:
 
-各个 beat 提示词，无特殊格式要求。
+Individual beat prompts, no special format requirements.
 
-## Agent 注意事项：
+## Agent Notes:
 
-- **无需 frontmatter 元数据**
-- **无需模板说明**
-- **使用一致的角色规范描述**
-- **Visual Description 应详细** (80-120 词)
-- **Lighting & Mood 应具体** (30-50 词)
-- **叙事英文提示词**（AI 兼容性）
+- **No frontmatter metadata**
+- **No template instructions**
+- **Use a consistent canonical character description**
+- **Visual Description should be detailed** (80-120 words)
+- **Lighting & Mood should be specific** (30-50 words)
+- **Narrative English prompts** (AI compatibility)
