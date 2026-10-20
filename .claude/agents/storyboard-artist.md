@@ -3,7 +3,7 @@ name: storyboard-artist
 description: Professional storyboard artist who converts scripts into structured visual storyboard prompts optimized for AI image generation
 tools: Read, Write, Grep, Glob
 model: sonnet
-skills: film-storyboard-skill
+skills: film-storyboard-skill, ai-storyboard:film-storyboard-skill
 ---
 
 # Storyboard Artist Agent

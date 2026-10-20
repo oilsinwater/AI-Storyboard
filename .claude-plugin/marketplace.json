@@ -1,36 +1,28 @@
 {
-    "name": "AI Storyboard Marketplace",
+    "name": "ai-storyboard",
+    "owner": {
+        "name": "oilsinwater"
+    },
     "metadata": {
-        "description": "A collection of specialized AI agents skills for film storyboarding, scriptwriting, and animation."
+        "description": "AI agents and skills for film storyboarding, scriptwriting, and animation."
     },
     "plugins": [
         {
-            "name": "film-storyboard-skill",
-            "source": {
-                "source": "relative",
-                "path": "./.claude/skills/film-storyboard-skill"
-            }
-        },
-        {
-            "name": "scriptwriter-skill",
-            "source": {
-                "source": "relative",
-                "path": "./.claude/skills/scriptwriter-skill"
-            }
-        },
-        {
-            "name": "animator-skill",
-            "source": {
-                "source": "relative",
-                "path": "./.claude/skills/animator-skill"
-            }
-        },
-        {
-            "name": "storyboard-review-skill",
-            "source": {
-                "source": "relative",
-                "path": "./.claude/skills/storyboard-review-skill"
-            }
+            "name": "ai-storyboard",
+            "source": "./",
+            "description": "Scriptwriter, Storyboard Artist, Director and Animator agents with their skills for the 5-stage storyboard pipeline.",
+            "skills": [
+                "./.claude/skills/film-storyboard-skill",
+                "./.claude/skills/scriptwriter-skill",
+                "./.claude/skills/animator-skill",
+                "./.claude/skills/storyboard-review-skill"
+            ],
+            "agents": [
+                "./.claude/agents/scriptwriter.md",
+                "./.claude/agents/storyboard-artist.md",
+                "./.claude/agents/director.md",
+                "./.claude/agents/animator.md"
+            ]
         }
     ]
 }

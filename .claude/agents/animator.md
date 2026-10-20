@@ -3,7 +3,7 @@ name: animator
 description: Animation specialist who converts static 4-panel sequences into dynamic motion prompts for AI video generation
 tools: Read, Write, Grep
 model: sonnet
-skills: animator-skill
+skills: animator-skill, ai-storyboard:animator-skill
 ---
 
 # Animator Agent

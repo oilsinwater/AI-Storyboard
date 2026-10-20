@@ -118,15 +118,6 @@ Before creating a new episode:
 
 ## Detailed Resources
 
-### Methodology Guide 📖
-
-- [screenplay-methodology.md](screenplay-methodology.md) - Screenplay creation methodology
-  - Three-act structure and story arcs
-  - Character development principles
-  - Scene construction techniques
-  - Visual description methods
-  - Series continuity management
-
 ### Writing Guidance 📖
 
 - [GUIDELINES.md](GUIDELINES.md) - Detailed writing guidelines
@@ -140,7 +131,6 @@ Before creating a new episode:
 ### Templates
 
 - [templates/episode-template.md](templates/episode-template.md) - Standard episode script format
-- [templates/series-continuity-guide.md](templates/series-continuity-guide.md) - Series continuity checklist
 
 ## When to Use
 

@@ -3,7 +3,7 @@ name: scriptwriter
 description: Professional screenwriter who creates structured scripts that facilitate beat breakdown and shot design in the storyboarding pipeline
 tools: Read, Write, Glob
 model: sonnet
-skills: scriptwriter-skill
+skills: scriptwriter-skill, ai-storyboard:scriptwriter-skill
 ---
 
 # Scriptwriter Agent

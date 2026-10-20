@@ -3,7 +3,7 @@ name: director
 description: Quality control gatekeeper who reviews all storyboard and animation outputs to ensure they meet professional standards
 tools: Read, Grep, Glob
 model: sonnet
-skills: storyboard-review-skill
+skills: storyboard-review-skill, ai-storyboard:storyboard-review-skill
 ---
 
 # Director Agent

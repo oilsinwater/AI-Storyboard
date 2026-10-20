@@ -83,6 +83,29 @@ project/
         └── scriptwriter-skill/          # Screenplay creation methodology
 ```
 
+## Installation
+
+There are two ways to make the agents and skills available to Claude Code.
+
+**Option A: Work inside this repository**
+
+Clone the repo and start Claude Code in it. The agents in `.claude/agents/` and the skills in `.claude/skills/` are loaded automatically as project-level components, and `.claude/CLAUDE.md` configures Claude as the Producer.
+
+**Option B: Install as a plugin in another project**
+
+```
+/plugin install ai-storyboard --marketplace oilsinwater/AI-Storyboard
+```
+
+On Claude Code versions before 2.1.275, add the marketplace first:
+
+```
+/plugin marketplace add oilsinwater/AI-Storyboard
+/plugin install ai-storyboard@ai-storyboard
+```
+
+The plugin ships the four sub-agents and their skills. It does not ship the Producer instructions, so copy the contents of `.claude/CLAUDE.md` into the consuming project's own `CLAUDE.md`.
+
 ## Quick Start
 
 ### 1. Create a Script
@@ -395,13 +418,12 @@ All Skills have been refactored according to the [official Claude Code standard]
 
 **Core files**:
 
-- `SKILL.md` (175 lines) - Overview, core principles, quick start, navigation
+- `SKILL.md` (165 lines) - Overview, core principles, quick start, navigation
 - `GUIDELINES.md` 📖 - Detailed writing guidelines (progressive disclosure)
   - Scene format specification
   - Character first-appearance rules
   - Beat distribution guidance
   - Dialogue writing techniques
-- `screenplay-methodology.md` 📖 - Screenplay creation methodology
 - `templates/` - Output templates
 
 ### animator-skill
