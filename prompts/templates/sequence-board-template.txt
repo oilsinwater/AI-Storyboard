@@ -1,0 +1,51 @@
+SEQUENCE BOARD TEMPLATE
+File name: sequence-board-prompt-ep{XX}.md
+One or two sequences, each expanding one beat of the approved beat board into exactly 4 panels following Setup, Revelation, Conflict, Aftermath.
+The output contains only the sequences. No metadata block, no notes, no instructions.
+
+# Sequence Board - Episode {XX}
+
+## Sequence A: [From Beat X]
+
+### Panel 1
+
+[Shot type, camera angle]. [80-150 words of visual description, inheriting the character descriptors verbatim, the setting, the lighting approach, the color scheme, and the style keywords from Beat X]
+
+### Panel 2
+
+[Shot type, camera angle]. [Continuous action from Panel 1]
+
+### Panel 3
+
+[Shot type, camera angle]. [Continuous action from Panel 2]
+
+### Panel 4
+
+[Shot type, camera angle]. [Continuous action from Panel 3; the new state]
+
+## Sequence B: [From Beat Y]
+
+### Panel 1
+
+...
+
+### Panel 2
+
+...
+
+### Panel 3
+
+...
+
+### Panel 4
+
+...
+
+Rules: inherit descriptors word for word from the source beat; action continuous with no gaps and nothing teleporting; geography consistent across the four panels; the 180-degree rule kept (characters stay on their side of frame unless they visibly move); every cut changes shot size or angle clearly (no jump cuts); at most three characters per panel; 80-150 words per panel.
+
+----------------------------------------------------------------------
+EXAMPLE OF ONE PANEL
+
+### Panel 1
+
+Wide shot, eye-level. A 25-year-old woman with waist-length straight silver hair, pale skin, violet eyes, wearing a dark red wool coat over a grey turtleneck stands at frame left with her back against a wet stone embankment wall, a glowing leather diary held out in both hands in front of her, its six-pointed star burning gold. At frame right, a tall figure in a full-length black raincoat with pale gloved hands and a smooth, featureless waxy face stands a step from the black river; a high stone wall rises behind him beside the water. A railway bridge arches overhead in darkness. Rain falls steadily. Digital concept art, painterly style, detailed environment. Cold blue night light with the gold glow of the diary as the only warm source, throwing her shadow long across the wet stones.

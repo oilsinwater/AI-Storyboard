@@ -1,0 +1,100 @@
+EPISODE SCRIPT TEMPLATE
+File name: ep{XX}-{title}.md
+The output contains only the script. No metadata block, no notes, no instructions.
+
+# Episode {XX}: {Title}
+
+> **Series Continuity Note**: {How this episode connects to previous ones, 1-2 sentences. For a first episode, what it establishes.}
+
+## Main Characters
+
+- **{Name}**: {Canonical appearance on first appearance: age, hair, eyes, skin, clothing, signature item}
+- **{Name}**: {Canonical appearance}
+
+## Scene 1 - {INT./EXT.} {Location} - {Time}
+
+{Scene-establishing description, 2-3 visual sentences}
+
+{CHARACTER NAME} ({age}, {key appearance}) {action}.
+
+{Dialogue or continued action}
+
+---
+
+## Scene 2 - {INT./EXT.} {Location} - {Time}
+
+{Scene description}
+
+{Character action and dialogue}
+
+---
+
+[Continue Scenes 3 to N]
+
+---
+
+## Key Beat Candidates
+
+1. **Beat 1** (Scene X, Hook) - {The specific visible moment and its turn}
+2. **Beat 2** (Scene X, Inciting Event) - {...}
+3. **Beat 3** (Scene X, First Plot Point) - {...}
+4. **Beat 4** (Scene X, First Attempt) - {...}
+5. **Beat 5** (Scene X, First Pinch Point) - {...}
+6. **Beat 6** (Scene X, Midpoint) - {...}
+7. **Beat 7** (Scene X, Third Plot Point) - {...}
+8. **Beat 8** (Scene X, Climax) - {...}
+9. **Beat 9** (Scene X, Resolution) - {...}
+
+----------------------------------------------------------------------
+EXAMPLE
+
+# Episode 02: The Rift
+
+> **Series Continuity Note**: Picks up directly after ep01; having found the diary, Emma enters the otherworldly library for the first time.
+
+## Main Characters
+
+- **Emma**: 25, waist-length straight silver hair, pale skin, violet eyes, wearing a long black trench coat and a white turtleneck
+- **Library Guardian**: Age unknown, glowing incorporeal form, wearing a dark blue robe
+
+## Scene 1 - INT. Emma's Apartment - Early Morning
+
+A tiny studio apartment, sunlight spilling in through grimy windows. The walls are covered with sticky notes and photographs.
+
+EMMA sits on the edge of the bed, clutching the leather diary. Her eyes are bloodshot; she clearly has not slept all night.
+
+The diary falls open on its own to the page with the six-pointed star pattern, giving off a faint golden glow.
+
+EMMA
+(to herself)
+This can't be...
+
+She reaches out to touch the pattern. In an instant, every object in the room begins to float.
+
+---
+
+## Scene 2 - INT. Void Passage - Continuous
+
+Emma is surrounded by streams of violet-blue energy, floating in an endless void. Her black trench coat drifts as if underwater.
+
+Fragments of reality fly past her - a corner of the subway platform, the shadow of an unfamiliar building.
+
+The diary glows against her chest, forming a protective sphere of golden light.
+
+Emma's expression shifts from fear to focus.
+
+---
+
+[Continue...]
+
+## Key Beat Candidates
+
+1. **Beat 1** (Scene 1, Hook) - Sleepless, Emma hides the diary under her mattress; it falls open on its own and every object in the room floats
+2. **Beat 2** (Scene 2, Inciting Event) - Emma is pulled through the void passage
+3. **Beat 3** (Scene 3, First Plot Point) - At the library gate, Emma chooses to enter rather than flee back through the rift
+4. **Beat 4** (Scene 5, First Attempt) - First encounter with the Library Guardian; Emma demands answers
+5. **Beat 5** (Scene 7, First Pinch Point) - The Guardian reveals her family sealed this place; the shelves turn against her
+6. **Beat 6** (Scene 9, Midpoint) - The Guardian tests Emma's will; she stops running and faces it
+7. **Beat 7** (Scene 11, Third Plot Point) - Emma fails the test; the diary burns out and the way home closes
+8. **Beat 8** (Scene 13, Climax) - Emma relights the diary with her own will and gains her first magical ability
+9. **Beat 9** (Scene 15, Resolution) - Accepts her destiny and returns to the real world; the Guardian's last words plant the next question

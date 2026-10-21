@@ -8,12 +8,12 @@
             "title": "Awakening",
             "script": "Completed",
             "beat_breakdown": "Completed",
-            "beat_board": "Not Started",
-            "sequence_board": "Not Started",
-            "motion_prompt": "Not Started"
+            "beat_board": "Completed",
+            "sequence_board": "Completed",
+            "motion_prompt": "Completed"
         }
     },
     "version": "1.0.0",
     "created_at": "2026-01-10T00:00:00Z",
-    "last_updated": "2026-01-11T00:00:00Z"
+    "last_updated": "2026-10-20T00:00:00Z"
 }

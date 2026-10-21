@@ -1,0 +1,37 @@
+BEAT BREAKDOWN TEMPLATE
+File name: beat-breakdown-ep{XX}.md
+Exactly 9 beats, one per structural anchor in order: Hook, Inciting Event, First Plot Point, First Attempt, First Pinch Point, Midpoint, Third Plot Point, Climax, Resolution.
+The output contains only the breakdown. No metadata block, no notes, no instructions.
+
+# Beat Breakdown - Episode {XX}
+
+## Beat 1: [Title]
+
+**Scene**: [Scene reference: scene number, page, or timestamp]
+**Description**: [What happens: 1-2 specific sentences naming the action and the emotional turn]
+**Purpose**: [Why it matters: 1 sentence naming the anchor's job]
+
+## Beat 2: [Title]
+
+**Scene**: ...
+**Description**: ...
+**Purpose**: ...
+
+## Beat 3: [Title]
+
+...
+
+## Beat 9: [Title]
+
+**Scene**: ...
+**Description**: ...
+**Purpose**: ...
+
+----------------------------------------------------------------------
+EXAMPLE OF ONE BEAT
+
+## Beat 4: The First Clue
+
+**Scene**: Scene 5, warehouse
+**Description**: Maya pries open a crate and finds the stolen artifact wrapped in oilcloth, then freezes as footsteps approach on the catwalk above. Triumph turns to dread.
+**Purpose**: First Attempt. She has what she wants and is now in immediate danger; the antagonist's reach is shown for the first time.

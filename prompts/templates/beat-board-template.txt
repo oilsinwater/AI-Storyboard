@@ -1,0 +1,71 @@
+BEAT BOARD TEMPLATE
+File name: beat-board-prompt-ep{XX}.md
+Exactly 9 prompts, one per beat of the approved breakdown.
+The output contains only the prompts. No metadata block, no notes, no instructions.
+
+DEFAULT FORMAT (Nano Banana, renders all nine as a 3x3 grid: Beats 1-3 top row, 4-6 middle, 7-9 bottom)
+
+EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
+
+Beat 1: [Beat title]
+Visual Description: [80-120 words: shot type and camera angle, subject with the canonical description, action or pose, setting with 2-4 distinctive features, key visual elements, style keywords]
+Lighting & Mood: [30-50 words: light source and direction, light quality, color temperature, emotional atmosphere]
+
+Beat 2: [Beat title]
+Visual Description: ...
+Lighting & Mood: ...
+
+Beat 3: [Beat title]
+Visual Description: ...
+Lighting & Mood: ...
+
+Beat 4: [Beat title]
+Visual Description: ...
+Lighting & Mood: ...
+
+Beat 5: [Beat title]
+Visual Description: ...
+Lighting & Mood: ...
+
+Beat 6: [Beat title]
+Visual Description: ...
+Lighting & Mood: ...
+
+Beat 7: [Beat title]
+Visual Description: ...
+Lighting & Mood: ...
+
+Beat 8: [Beat title]
+Visual Description: ...
+Lighting & Mood: ...
+
+Beat 9: [Beat title]
+Visual Description: ...
+Lighting & Mood: ...
+
+Rules: every beat is exactly three lines; 110-170 words per beat in total; the canonical character description is repeated word for word in every beat where the character appears; the same style keywords close every Visual Description; narrative sentences, never keyword lists.
+
+----------------------------------------------------------------------
+MIDJOURNEY FORMAT (only if requested)
+
+## Beat 1: [Title] (Top-Left)
+
+[One 80-150 word narrative prompt] --ar 16:9 --style cinematic --v 6
+
+## Beat 2: [Title] (Top-Center)
+
+...
+
+Grid positions: 1 Top-Left, 2 Top-Center, 3 Top-Right, 4 Middle-Left, 5 Center, 6 Middle-Right, 7 Bottom-Left, 8 Bottom-Center, 9 Bottom-Right.
+
+----------------------------------------------------------------------
+GEMINI / DALL-E FORMAT (only if requested)
+
+One 80-150 word narrative prompt per beat, labeled Beat N, no special parameters.
+
+----------------------------------------------------------------------
+EXAMPLE OF ONE BEAT (default format)
+
+Beat 1: The Torn Fine
+Visual Description: Medium shot, eye-level. A 25-year-old woman with waist-length straight silver hair, pale skin, violet eyes, wearing a dark red wool coat over a grey turtleneck sits behind a wooden returns desk in a cavernous, empty library reading room, tearing a printed fine slip in half while a small boy in a yellow raincoat watches from across the desk, eyes down. A cart of returned books stands beside her; high windows throw long shafts of light across empty oak tables behind them. Her face stays flat and unsmiling as the two halves drop toward a wastebasket. Digital concept art, painterly style, detailed environment.
+Lighting & Mood: Cool grey morning light falls in hard diagonal shafts from the tall windows, catching dust in the air and leaving the far shelves in shadow. Quiet, hushed, institutional calm with a small private act of mercy at its center.

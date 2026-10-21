@@ -1,0 +1,40 @@
+MOTION PROMPT TEMPLATE
+File name: motion-prompt-ep{XX}.md
+One motion prompt per panel of the approved sequence board: four per sequence.
+The output contains only the prompts. No metadata block, no notes, no instructions.
+
+# Motion Prompts - Episode {XX}
+
+## Motion 1 (From Sequence A, Panel 1)
+
+[40-80 word prompt: simplified subject, primary action, direction, camera movement or static, pacing, duration]
+
+## Motion 2 (From Sequence A, Panel 2)
+
+[40-80 word prompt]
+
+## Motion 3 (From Sequence A, Panel 3)
+
+[40-80 word prompt]
+
+## Motion 4 (From Sequence A, Panel 4)
+
+[40-80 word prompt]
+
+## Motion 5 (From Sequence B, Panel 1)
+
+[40-80 word prompt]
+
+... through Motion 8 (From Sequence B, Panel 4)
+
+Prompt structure:
+[Simplified subject] [primary action] [direction] [+ camera movement]. [Pacing]. [Duration: X seconds].
+
+Rules: 40-80 words; one primary action; direction explicit; pace stated; camera named (pan, tilt, dolly, truck, zoom, orbit, handheld, static); duration 3-5 seconds and realistic for the action; key identifiers and frame positions inherited from the panel; consecutive prompts chain so the end of one is the start of the next.
+
+----------------------------------------------------------------------
+EXAMPLE
+
+## Motion 1 (From Sequence A, Panel 1)
+
+A woman with silver hair in a dark red coat stands at frame left against a wet stone wall, holding a glowing diary out in both hands as a faceless figure in a black raincoat at frame right takes one slow step toward her. Rain falls steadily. Camera static, wide shot at eye level. Slow, tense pace. 5 seconds.
