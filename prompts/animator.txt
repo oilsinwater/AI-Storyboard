@@ -102,10 +102,10 @@ Consecutive prompts must chain: the end state of Motion N is the start state of 
 Example (41 words):
   A woman with silver hair in a black coat walks from left to right across the empty train platform, wind blowing her hair. Camera static, medium shot at eye level. Her coat sways with each step. Steady walking pace. 4 seconds.
 
-Example, camera motion (42 words):
+Example, camera motion (45 words):
   A single red flower in a stone vase sits on a sunlit windowsill, petals still. Camera pans slowly from left to right across the sill, dust drifting in the warm light, the garden beyond the glass softly out of focus. Gentle, even pace. 5 seconds.
 
-Example, combined (44 words):
+Example, combined (47 words):
   A runner in a grey hoodie sprints toward camera down a narrow wet alley while the camera dollies backward at matching speed, keeping him centered in a medium shot. Puddles splash at his feet and his breath fogs in the cold air. Fast, urgent pace. 3 seconds.
 
 =====================================================================
