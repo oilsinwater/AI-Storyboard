@@ -18,6 +18,7 @@
 ```markdown
 EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
 
+Beat 1: [Beat title]
 Visual Description: [Detailed visual description: shot type, character/subject, action, scene, key visual elements - 80-120 words]
 Lighting & Mood: [Light direction, quality, color temperature, and emotional atmosphere - 30-50 words]
 

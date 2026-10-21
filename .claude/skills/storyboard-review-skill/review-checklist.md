@@ -39,12 +39,7 @@ Comprehensive quality standards for the output of each production stage.
 - [ ] **Story-essential**: Removing any beat would leave a gap; the Purpose names the anchor's job
 - [ ] **Emotional significance**: Beats carry structural emotion (curiosity, anticipation, surprise) or thematic emotion (sympathy, identification, empathy); setbacks outnumber good news
 - [ ] **Promises kept**: Anything planted in an early beat pays off in a later one
-
-### Character and Location Tracking
-
-- [ ] **Key characters listed**: All recurring characters are identified with canonical descriptions
-- [ ] **Key locations listed**: All recurring settings are identified
-- [ ] **Consistency foundation**: Enough information is provided to maintain continuity in later stages
+- [ ] **Consistency foundation**: Descriptions name characters and settings specifically enough to keep continuity in later stages
 
 ### Common Failure Patterns
 
@@ -63,17 +58,17 @@ Comprehensive quality standards for the output of each production stage.
 ### Count and Structure
 
 - [ ] **Exactly 9 prompts** (one per beat, from the breakdown)
-- [ ] Each prompt has a **beat reference** (citing the corresponding beat in the breakdown)
-- [ ] Each prompt has **narrative context** (explaining what is happening)
+- [ ] Each prompt is labeled **Beat N: [title]**, matching the breakdown's beat number and title
+- [ ] Each prompt has both fields: **Visual Description** and **Lighting & Mood**
 
 ### Prompt Format and Style
 
 - [ ] **Narrative descriptive style**: Flowing sentences, not keyword lists
   - ❌ Fail: "woman, red dress, beach, sunset, 8k, detailed"
   - ✓ Pass: "A woman in a red dress stands on a beach at sunset..."
-- [ ] **Appropriate length**: 80-150 words per prompt
-  - Too short (<60 words) → missing detail
-  - Too long (>180 words) → bloated, unfocused
+- [ ] **Appropriate length**: 110-170 words per prompt in total (Visual Description 80-120 + Lighting & Mood 30-50)
+  - Too short (<110 words) → missing detail
+  - Too long (>170 words) → bloated, unfocused
 - [ ] **Shot specification**: Each prompt includes shot type and camera angle
   - Required: "Medium shot, eye-level" or similar wording
 
@@ -104,8 +99,6 @@ Comprehensive quality standards for the output of each production stage.
 ### Style Marker Application
 
 - [ ] **Project style applied**: The visual style from the project configuration is used in all prompts
-- [ ] **Aspect ratio noted**: Specified in the metadata (e.g. 16:9, 1:1)
-- [ ] **Target model noted**: The AI model is identified (e.g. Gemini Imagen 3)
 
 ### Common Failure Patterns
 
@@ -125,9 +118,7 @@ Comprehensive quality standards for the output of each production stage.
 ### Structure and Count
 
 - [ ] **Exactly 4 panels per sequence** (not 3, not 5)
-- [ ] **Source beat identified**: Each sequence references its source in the beat board
-- [ ] **Narrative context provided**: What happens across the 4 panels is explained
-- [ ] **Estimated duration**: Real-time duration is noted (e.g. "8 seconds")
+- [ ] **Source beat identified**: Each sequence heading names its source beat ("From Beat X")
 
 ### Inheritance (Critical)
 
@@ -140,11 +131,11 @@ Comprehensive quality standards for the output of each production stage.
 ### Action Continuity
 
 - [ ] **Logical progression**: Action flows naturally from Panel 1 → 2 → 3 → 4
-- [ ] **Physically possible**: The action can occur within the estimated duration
-  - ❌ Fail: "Character runs 100 meters" in 3 seconds
-  - ✓ Pass: "Character takes 3 steps forward" in 3 seconds
+- [ ] **Physically possible**: The action between consecutive panels can happen in continuous real time
+  - ❌ Fail: Panel 1 "stands at the door", Panel 2 "has crossed the city"
+  - ✓ Pass: Panel 1 "stands at the door", Panel 2 "takes three steps into the room"
 - [ ] **No teleporting**: Characters/objects move through space, not jump positions
-- [ ] **Clear transitions**: Transitions between panels are specified (cut, pan, push, etc.)
+- [ ] **Clear transitions**: Each cut between panels is readable (shot type or angle changes clearly)
 
 ### Cinematography (180-Degree Rule)
 
@@ -165,11 +156,11 @@ Comprehensive quality standards for the output of each production stage.
 
 - [ ] **80-150 words per panel**: Appropriate length maintained
 - [ ] **Narrative descriptive style**: Not keyword lists
-- [ ] **Includes shot specification**: Shot type, camera angle, transition type
+- [ ] **Includes shot specification**: Shot type and camera angle
 
 ### Sequence Pacing
 
-- [ ] **Action fits the duration**: The described motion can realistically be completed in the time
+- [ ] **Action fits the panel count**: The described motion can realistically happen across 4 consecutive panels
 - [ ] **Pacing variety**: Not all sequences are the same speed (some slow, some fast)
 - [ ] **Camera movement clear**: If the camera moves, direction and type are specified
 
@@ -179,8 +170,8 @@ Comprehensive quality standards for the output of each production stage.
 - ❌ Character appearance differs from the source beat (inheritance violation)
 - ❌ Screen direction violation (character switches from left to right with no motion)
 - ❌ Jump cuts (Panel 1 medium shot, Panel 2 slightly different medium shot)
-- ❌ Impossible action (character flies across the room in 1 second, no superpowers)
-- ❌ Unclear transitions (no indication of how Panel 1 connects to Panel 2)
+- ❌ Impossible action (character crosses the room between two consecutive panels, no superpowers)
+- ❌ Unclear transitions (no readable change between Panel 1 and Panel 2)
 - ❌ Unexpected scene change (Panel 1 in an office, Panel 3 suddenly in a forest, no explanation)
 
 ---
@@ -191,14 +182,14 @@ Comprehensive quality standards for the output of each production stage.
 
 ### Structure and Count
 
-- [ ] **One prompt per sequence**: Each 4-panel sequence gets one motion prompt
-- [ ] **Source sequence identified**: References which sequence it is based on
+- [ ] **One prompt per panel**: Each panel of each 4-panel sequence gets one motion prompt (4 per sequence)
+- [ ] **Source sequence and panel identified**: Each heading reads "Motion N (From Sequence X, Panel Y)"
 - [ ] **Duration specified**: Target video duration is noted (typically 3-5 seconds)
 
 ### Conciseness (Critical for Video Models)
 
 - [ ] **Appropriate length**: 40-80 words (significantly shorter than static prompts)
-  - Too long (>100 words) → the model may ignore parts
+  - Too long (>80 words) → the model may ignore parts
   - Too short (<30 words) → missing necessary detail
 - [ ] **Focused description**: Describes motion, not exhaustive scene detail
   - ❌ Fail: "In a beautifully lit Victorian room with ornate furniture, tall windows, red velvet curtains..."
@@ -247,7 +238,7 @@ Comprehensive quality standards for the output of each production stage.
 
 ### Common Failure Patterns
 
-- ❌ Too verbose (120+ words, reads like a static image prompt)
+- ❌ Too verbose (over 80 words, reads like a static image prompt)
 - ❌ Multiple competing motions ("runs, jumps, spins, waves, turns")
 - ❌ Vague direction ("character moves around")
 - ❌ Impossible timing ("character runs across the city" in 3 seconds)

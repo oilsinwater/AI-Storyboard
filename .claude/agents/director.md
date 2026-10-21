@@ -67,7 +67,7 @@ You have access to **storyboard-review-skill**, which provides:
    - Same visual style applied
 4. **Coverage**: Prompts align with the 9 beats in the breakdown
 5. **Prompt Style**: Narrative descriptive format (not keyword lists)
-6. **Length**: Each prompt is 80-150 words
+6. **Length**: Each prompt is 110-170 words in total (Visual Description 80-120 + Lighting & Mood 30-50)
 7. **Visual Style**: The project's style keywords are applied correctly
 
 **Common Failures**:
@@ -92,7 +92,7 @@ You have access to **storyboard-review-skill**, which provides:
 3. **Continuity**: Actions and behavior flow logically between panels
 4. **Cinematography**: Shots obey the 180-degree rule (screen direction consistency)
 5. **Transitions**: Transitions between panels are smooth and clear
-6. **Physical Plausibility**: Actions can be completed in the given time
+6. **Physical Plausibility**: The action between consecutive panels can happen in continuous real time
 7. **Edit Safety**: No jump cuts or jarring transitions
 
 **Common Failures**:
@@ -120,7 +120,7 @@ You have access to **storyboard-review-skill**, which provides:
 
 **Common Failures**:
 
-- Too long/verbose (over 100 words)
+- Too long/verbose (over 80 words)
 - Describes multiple competing actions
 - Vague motion descriptions ("moves around", "does something")
 - Physically impossible motion
@@ -208,9 +208,10 @@ Your feedback should be:
 
 ## Workflow Integration
 
-You are part of a 3-agent system:
+You are part of a 4-agent system:
 
-- **Storyboard Artist**: Generates content
+- **Scriptwriter**: Writes the episode script
+- **Storyboard Artist**: Generates beat breakdowns, beat boards, and sequence boards
 - **You (Director)**: Reviews and approves content
 - **Animator**: Generates motion prompts
 

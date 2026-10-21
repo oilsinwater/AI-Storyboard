@@ -2,7 +2,7 @@
 name: scriptwriter-skill
 description: Use when creating episodic scripts, ensuring series continuity, adapting story concepts into visual narratives, or preparing scripts with sufficient beats for storyboarding
 version: 1.0.0
-allowed-tools: Read, Write, Bash(ls:*)
+allowed-tools: Read, Write, Glob
 user-invocable: false
 ---
 
@@ -55,12 +55,7 @@ Ensure the script contains **at least 9** clear, visual turning points, one at e
 
 **Step 1: Review the series history**
 
-```bash
-# View existing episodes
-ls script/
-
-# Read previous episodes to understand character and plot development
-```
+Use the Glob tool with the pattern `script/ep*.md` to list existing episodes, then Read each previous episode to understand character and plot development.
 
 **Step 2: Conceive the story from user input**
 

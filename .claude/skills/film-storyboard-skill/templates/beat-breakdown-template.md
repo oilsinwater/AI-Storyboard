@@ -18,6 +18,8 @@
 ```markdown
 # Beat Breakdown - Episode {XX}
 
+## Beat 1: [Title]
+
 **Scene**: [Scene reference]
 **Description**: [What happens]
 **Purpose**: [Narrative function]
