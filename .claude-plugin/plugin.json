@@ -1,0 +1,22 @@
+{
+    "name": "ai-storyboard",
+    "version": "1.1.2",
+    "description": "Scriptwriter, Storyboard Artist, Director and Animator agents with their skills for the 5-stage storyboard pipeline.",
+    "author": {
+        "name": "oilsinwater"
+    },
+    "repository": "https://github.com/oilsinwater/AI-Storyboard",
+    "license": "MIT",
+    "keywords": [
+        "storyboard",
+        "screenwriting",
+        "image-prompts",
+        "video-prompts"
+    ],
+    "skills": [
+        "./.claude/skills/film-storyboard-skill",
+        "./.claude/skills/scriptwriter-skill",
+        "./.claude/skills/animator-skill",
+        "./.claude/skills/storyboard-review-skill"
+    ]
+}

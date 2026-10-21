@@ -10,19 +10,7 @@
         {
             "name": "ai-storyboard",
             "source": "./",
-            "description": "Scriptwriter, Storyboard Artist, Director and Animator agents with their skills for the 5-stage storyboard pipeline.",
-            "skills": [
-                "./.claude/skills/film-storyboard-skill",
-                "./.claude/skills/scriptwriter-skill",
-                "./.claude/skills/animator-skill",
-                "./.claude/skills/storyboard-review-skill"
-            ],
-            "agents": [
-                "./.claude/agents/scriptwriter.md",
-                "./.claude/agents/storyboard-artist.md",
-                "./.claude/agents/director.md",
-                "./.claude/agents/animator.md"
-            ]
+            "description": "Scriptwriter, Storyboard Artist, Director and Animator agents with their skills for the 5-stage storyboard pipeline."
         }
     ]
 }

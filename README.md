@@ -69,12 +69,16 @@ project/
 │   ├── sequence-board-prompt-ep01.md    # 4-panel sequence prompts
 │   └── motion-prompt-ep01.md            # Motion prompts
 │
+├── agents/                              # Agent definitions (plugin root location)
+│   ├── storyboard-artist.md
+│   ├── director.md
+│   ├── animator.md
+│   └── scriptwriter.md
+│
+├── prompts/                             # Harness-independent prompt pack for local models
+│
 └── .claude/                             # System configuration
-    ├── agents/                          # Agent definitions
-    │   ├── storyboard-artist.md
-    │   ├── director.md
-    │   ├── animator.md
-    │   └── scriptwriter.md
+    ├── agents/                          # Symlinks to ../../agents/ for project-level loading
     │
     └── skills/                          # Skill packages
         ├── film-storyboard-skill/       # Storyboard methodology
@@ -89,7 +93,16 @@ There are two ways to make the agents and skills available to Claude Code.
 
 **Option A: Work inside this repository**
 
-Clone the repo and start Claude Code in it. The agents in `.claude/agents/` and the skills in `.claude/skills/` are loaded automatically as project-level components, and `.claude/CLAUDE.md` configures Claude as the Producer.
+Clone the repo and start Claude Code in it. The agents in `agents/` (linked from `.claude/agents/`) and the skills in `.claude/skills/` are loaded automatically as project-level components, and `.claude/CLAUDE.md` configures Claude as the Producer.
+
+**Option C: Install from a local clone**
+
+```
+claude plugin marketplace add /path/to/AI-Storyboard
+claude plugin install ai-storyboard@ai-storyboard
+```
+
+The agents then appear in every project as `ai-storyboard:scriptwriter`, `ai-storyboard:storyboard-artist`, `ai-storyboard:director`, and `ai-storyboard:animator`.
 
 **Option B: Install as a plugin in another project**
 

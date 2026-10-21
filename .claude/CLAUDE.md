@@ -23,7 +23,7 @@ Since this is an agentic system, "commands" are natural language instructions gi
 The system uses a hierarchical agentic architecture:
 
 - **Producer (You)**: Orchestrates the workflow, handles user communication, and manages state.
-- **Sub-Agents** (`.claude/agents/`):
+- **Sub-Agents** (`agents/`, linked from `.claude/agents/`):
   - `scriptwriter`: Creates structured narrative scripts.
   - `storyboard-artist`: Translates scripts into visual beat boards and sequences.
   - `director`: Quality control gatekeeper (PASS/FAIL).
