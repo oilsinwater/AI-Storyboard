@@ -1,6 +1,6 @@
 # Beat Board Output Format (Reference)
 
-**This template shows the correct nano banner output structure**
+**This template shows the correct nano banana output structure**
 
 **❌ Strictly prohibited in output**:
 
@@ -13,7 +13,7 @@
 
 ---
 
-## Nano Banner Format (Default - Recommended):
+## Nano Banana Format (Default, Recommended)
 
 ```markdown
 EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
@@ -55,15 +55,15 @@ Visual Description: ...
 Lighting & Mood: ...
 ```
 
-## Why This Format Suits Nano Banner:
+## Why This Format Suits Nano Banana
 
 1. **Clear structure** - Each beat is explicitly labeled
 2. **Separation of concerns** - Visual description is independent of lighting/mood
-3. **Consistent format** - Easy for nano banner to parse
+3. **Consistent format** - Easy for nano banana to parse
 4. **Narrative flow** - Reads like a visual script
 5. **Character consistency** - The canonical description is repeated across all beats
 
-## Midjourney v6 Format:
+## Midjourney v6 Format
 
 ```markdown
 ## Beat 1: [Title] (Top-Left)
@@ -75,15 +75,15 @@ Lighting & Mood: ...
 ...
 ```
 
-## Gemini/DALL-E Format:
+## Gemini/DALL-E Format
 
 Individual beat prompts, no special format requirements.
 
-## Agent Notes:
+## Agent Notes
 
 - **No frontmatter metadata**
 - **No template instructions**
 - **Use a consistent canonical character description**
 - **Visual Description should be detailed** (80-120 words)
 - **Lighting & Mood should be specific** (30-50 words)
-- **Narrative English prompts** (AI compatibility)
+- **Write prompts as narrative English** (for AI compatibility)

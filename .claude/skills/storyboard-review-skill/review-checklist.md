@@ -141,8 +141,8 @@ Comprehensive quality standards for the output of each production stage.
 
 - [ ] **Screen direction maintained**: Characters do not flip positions without reason
   - Example: If Character A is on the left in Panel 1, they should remain on the left in Panels 2-4 unless they physically move
-- [ ] **Axis stability**: The imaginary line between subjects is maintained
-- [ ] **Line crossing justified**: If the 180-degree line is crossed, it is shown (not jumped)
+- [ ] **Line of action**: The imaginary line between subjects is maintained
+- [ ] **Line crossing justified**: If the 180-degree line is crossed, the crossing is shown on screen (the camera moves across it), not cut across
 
 ### Edit Safety (Avoiding Jump Cuts)
 
@@ -190,7 +190,7 @@ Comprehensive quality standards for the output of each production stage.
 
 - [ ] **Appropriate length**: 40-80 words (significantly shorter than static prompts)
   - Too long (>80 words) → the model may ignore parts
-  - Too short (<30 words) → missing necessary detail
+  - Too short (<40 words) → missing necessary detail
 - [ ] **Focused description**: Describes motion, not exhaustive scene detail
   - ❌ Fail: "In a beautifully lit Victorian room with ornate furniture, tall windows, red velvet curtains..."
   - ✓ Pass: "In a Victorian room,..."
@@ -212,7 +212,7 @@ Comprehensive quality standards for the output of each production stage.
 - [ ] **Motion source clear**: Specifies what is moving (subject, camera, or both)
   - "Character walks forward" (subject moves)
   - "Camera dollies backward" (camera moves)
-  - "Character runs left, camera pans right" (both move)
+  - "Character runs left, camera pans left to follow" (both move)
 - [ ] **Camera movement specified**: If the camera moves, the type is clear
   - Pan, tilt, dolly, truck, zoom, orbit
 
@@ -303,8 +303,8 @@ When conducting a review, the Director should structure feedback as follows:
 - ✗ Consistency issues (character appearance changes, screen direction violations)
 - ✗ Missing required elements (no shot specification, no lighting description)
 - ✗ Methodology violations (keyword format instead of narrative, wrong length)
-- ✗ Safety issues (continuity errors, jump cuts in sequences)
-- ✗ Inheritance failures (4-panel does not match the source 9-grid)
+- ✗ Edit-safety issues (continuity errors, jump cuts in sequences)
+- ✗ Inheritance failures (4-panel sequence does not match its source beat)
 
 **Important**: When in doubt, FAIL and request clarification. Ensuring quality now is always better than wasting generation resources on flawed prompts.
 

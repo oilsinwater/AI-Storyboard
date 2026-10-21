@@ -1,15 +1,11 @@
 # 📖 Film Storyboard Methodology Playbook (Reference Only)
 
 > **Note**: This is a reference guide. Consult only when you run into methodology questions.
-> Do not load this file automatically - refer to it only when confused or when needed.
+> Do not load this file automatically - refer to it only when unsure.
 
 # Film Storyboard Methodology Playbook
 
 Professional film and animation storyboard methodology, optimized for AI image generation workflows.
-
-**Note**: The body of this playbook is written in English because it contains extensive specialized terminology and examples; keeping it in English makes the standard cinematography and storyboarding terms easier to understand.
-
-This playbook defines the professional methodology for creating film and animation storyboards optimized for AI image generation workflows.
 
 ## Core Philosophy: The Four Pillars
 
@@ -41,7 +37,8 @@ Storyboards should be detailed without being bloated.
 
 **Optimal Prompt Length**:
 
-- Static image prompts: 80-150 words
+- Static image prompts, Nano Banana two-field format (default): Visual Description 80-120 words + Lighting & Mood 30-50 words (110-170 total)
+- Static image prompts, Gemini/Midjourney single block: 80-150 words
 - Motion prompts: 40-80 words
 
 **What to Include**:
@@ -59,10 +56,17 @@ Storyboards should be detailed without being bloated.
 **Example of Proper Conciseness**:
 
 ```
-Tight close-up, low angle. A rugged detective with a scarred face and grey stubble
-leans forward into dim lamplight, his intense eyes fixed on something off-camera.
-Dark office background blurred. Film noir aesthetic, high contrast lighting, moody shadows.
-(62 words)
+Visual Description: Tight close-up, low angle. A rugged detective in his 50s with a
+scarred left cheek, grey stubble, and a rumpled brown suit leans forward into the glow
+of a green-shaded desk lamp, his intense eyes fixed on something just off-camera. One
+hand rests on a scattered stack of case files; the other grips a cold cup of coffee.
+Behind him, a dark office dissolves into soft focus: venetian blinds, a dented filing
+cabinet, a coat rack. Rain streaks the window at the edge of frame. Film noir aesthetic.
+Lighting & Mood: Single warm lamp from below left carves hard shadows across his face,
+leaving the far side in darkness. Cool grey spill from the rain-streaked window. High
+contrast film noir lighting. Tense, brooding atmosphere of a man closing in on a truth
+he dreads.
+(88 + 43 words)
 ```
 
 ### 3. Consistent
@@ -104,20 +108,20 @@ Each stage builds on the previous, adding detail without contradicting.
 **Stage Hierarchy**:
 
 1. **Beat Breakdown**: Establishes narrative structure (9 key moments)
-2. **Beat Board (9-panel)**: Establishes visual baseline (what characters/settings look like)
+2. **Beat Board (9-grid)**: Establishes visual baseline (what characters/settings look like)
 3. **Sequence Board (4-panel)**: Expands specific beats into continuous action
 4. **Motion Prompts**: Adds temporal dimension to sequences
 
 **The Inheritance Principle**:
 
-- 4-panel sequences **must inherit** from their source 9-panel beat
+- 4-panel sequences **must inherit** from their source beat
 - Character appearance: identical
 - Setting: same or logically connected
 - Lighting: consistent unless story motivates change
 
 **Example of Inheritance**:
 
-_Beat 5 (9-panel):_
+_Beat 5 (9-grid):_
 
 ```
 Medium shot, eye-level. Detective Carter, a woman in her 40s with short grey hair
@@ -168,7 +172,7 @@ The 9 beats must follow the structural anchors:
 Beats are placed by anchor, not by equal page gaps.
 
 - Example for a 30-page script: Beats at pages 2, 4, 7, 10, 11, 15, 22, 27, 30
-- The gap between the Midpoint and the Third Plot Point is the longest; the gaps around the climax are the shortest
+- The gap between the Midpoint and the Third Plot Point is the longest; the gaps at the end of the script are short
 - **Promise and payoff**: a hazard, clue, or object planted in an early beat should return in a later one. The nine beats together must keep every promise they make
 
 ### Beat Description Format
@@ -460,7 +464,7 @@ Prompt 9: [description]. Anime style, soft shading, vibrant colors, cinematic co
 
 Compress time by showing key moments of a process.
 
-**Structure for 9-panel beat board**:
+**Structure for 9-grid beat board**:
 
 - Beat 4: Process begins
 - Beat 5: [MONTAGE IMPLIED] - Single representative image from montage
@@ -660,7 +664,7 @@ Panel 4: [SMASH CUT] Explosion fills frame, chaos, fire
 - Slightly blurred or dreamy quality
 - Different aspect ratio (optional)
 
-**Structure in 9-panel beat board**:
+**Structure in 9-grid beat board**:
 
 ```
 Beat 4: Present - Character sees old photograph
@@ -784,10 +788,10 @@ Before submitting work, verify:
 - [ ] Each beat turns (emotional state changes)
 - [ ] Descriptions are specific, not vague
 
-### Beat Board (9-panel):
+### Beat Board (9-grid):
 
 - [ ] Exactly 9 prompts
-- [ ] Each prompt 80-150 words
+- [ ] Each prompt 110-170 words total (80-120 + 30-50) for Nano Banana, or 80-150 words for a Gemini/Midjourney single block
 - [ ] Narrative descriptive style (not keyword lists)
 - [ ] Character appearance identical across all prompts
 - [ ] Setting details consistent
@@ -797,7 +801,7 @@ Before submitting work, verify:
 ### Sequence Board (4-panel):
 
 - [ ] Each sequence has exactly 4 panels
-- [ ] Panels inherit character, setting, lighting from source 9-panel
+- [ ] Panels inherit character, setting, lighting from the source beat
 - [ ] Motion is continuous and logical
 - [ ] Screen direction maintained (180-degree rule)
 - [ ] Transitions are smooth (no jump cuts)

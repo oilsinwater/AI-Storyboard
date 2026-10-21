@@ -1,28 +1,28 @@
-# 📖 Nano Banner Prompt Writing Guide (Reference Only)
+# 📖 Nano Banana Prompt Writing Guide (Reference Only)
 
-> **Note**: This is a reference guide. **Consult only when you have questions about the Nano Banner prompt format**.
-> **Do not load this file automatically** - refer to it only when confused or when needed.
+> **Note**: This is a reference guide. **Consult only when you have questions about the Nano Banana prompt format**.
+> **Do not load this file automatically** - refer to it only when unsure.
 
 ---
 
-# Nano Banner Prompt Guide
+# Nano Banana Prompt Guide
 
-A prompt writing guide optimized specifically for Nano Banner 3x3 grid generation.
+A prompt writing guide optimized specifically for Nano Banana 3x3 grid generation.
 
 **Important notes**:
 
-- This guide focuses on the **Nano Banner Episode Visual Script format**
-- The Nano Banner format is **different** from the standard Gemini/Midjourney format
-- Prompt content is **written in English** for the best generation results
+- This guide focuses on the **Nano Banana Episode Visual Script format**
+- The Nano Banana format is **different** from the standard Gemini/Midjourney format
+- Write prompts in English
 - This is a 📖 **Reference Only** document and is not loaded into context automatically
 
 ---
 
-## Nano Banner Core Format
+## Nano Banana Core Format
 
 ### Episode Visual Script Structure
 
-Nano Banner uses a special "Episode Visual Script" format, optimized for generating the complete 3x3 grid in one pass:
+Nano Banana uses a special "Episode Visual Script" format, optimized for generating the complete 3x3 grid in one pass:
 
 ```markdown
 EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
@@ -59,7 +59,7 @@ EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
 
 ### 3x3 Grid Layout
 
-The 9 beats correspond to the nano banner 3x3 grid positions:
+The 9 beats correspond to the nano banana 3x3 grid positions:
 
 ```
 ┌─────────┬─────────┬─────────┐
@@ -76,7 +76,7 @@ The 9 beats correspond to the nano banner 3x3 grid positions:
 
 **Key points**:
 
-- Nano banner renders these 9 beats simultaneously as a 3x3 grid
+- Nano banana renders these 9 beats simultaneously as a 3x3 grid
 - Beats 1-3 are the first row (top)
 - Beats 4-6 are the second row (middle)
 - Beats 7-9 are the third row (bottom)
@@ -133,7 +133,7 @@ The 9 beats correspond to the nano banner 3x3 grid positions:
 
 - **Optimal**: 80-120 words
 - **Too short** (<60 words): Missing necessary detail
-- **Too long** (>140 words): Information overload; nano banner may ignore parts
+- **Too long** (>140 words): Information overload; nano banana may ignore parts
 
 ### Narrative Descriptive Style
 
@@ -260,7 +260,7 @@ Lighting & Mood: Cool fluorescent car interior lighting contrasts with vibrant p
 
 Beat 5: Stepping Into the Unknown
 Visual Description: Full shot, eye-level. The silver-haired woman in her black coat steps through the subway doorway toward the swirling energy vortex. Her right foot crosses the threshold while her left remains in the car. Her silver hair begins to float and swirl as if caught in an invisible wind. The journal is clutched tightly to her chest. Reality appears to distort around the doorway, with warped perspective and bending light.
-Lighting & Mood: Dramatic contrast between flat subway lighting and the dynamic, swirling purple-blue glow of the portal. Hair-raising, momentous atmosphere. Point of no return energy.
+Lighting & Mood: Dramatic contrast between flat subway lighting and the dynamic, swirling purple-blue glow of the portal. Charged, momentous atmosphere. Point of no return energy.
 
 Beat 6: The In-Between
 Visual Description: Wide shot, Dutch angle. The woman with silver hair and violet eyes floats in a vast void of swirling purple, blue, and silver energy streams. The black coat billows around her as if underwater. Fragments of reality—pieces of the subway, glimpses of strange otherworldly architecture—float past in the background. She holds the glowing journal close, its light creating a protective sphere around her.
@@ -290,7 +290,7 @@ Beat 1: woman with long silver hair
 Beat 5: woman with short blonde hair
 ```
 
-**Problem**: Nano Banner will generate two people with different appearances
+**Problem**: Nano Banana will generate two people with different appearances
 
 ### ❌ Too short
 
@@ -298,7 +298,7 @@ Beat 5: woman with short blonde hair
 Visual Description: A woman stands in a train station. (7 words)
 ```
 
-**Problem**: Not enough information; nano banner cannot generate a detailed image
+**Problem**: Not enough information; nano banana cannot generate a detailed image
 
 ### ❌ Keyword stuffing
 
@@ -306,7 +306,7 @@ Visual Description: A woman stands in a train station. (7 words)
 Visual Description: woman, silver hair, black coat, subway, mysterious, 8k, cinematic, detailed
 ```
 
-**Problem**: Nano Banner needs narrative description, not keyword lists
+**Problem**: Nano Banana needs narrative description, not keyword lists
 
 ### ❌ Missing shot specification
 
@@ -323,7 +323,8 @@ Lighting & Mood: The lighting consists of harsh overhead fluorescent lights that
 create a very flat and institutional type of illumination with a cool blue-white
 color temperature, and the overall mood is one of isolation and contemplation,
 with a strong contrast between her stillness and the chaos of the surrounding
-commuters rushing past... (65 words)
+commuters rushing past her on every side as the train doors slide open and shut
+again behind them. (65 words)
 ```
 
 **Problem**: Exceeds the 50-word limit; should be moved into the Visual Description
@@ -353,4 +354,4 @@ commuters rushing past... (65 words)
 
 ---
 
-This guide is optimized specifically for Nano Banner 3x3 grid generation. Following these rules ensures the 9 generated panels have visual consistency and professional quality.
+This guide is optimized specifically for Nano Banana 3x3 grid generation. Following these rules ensures the 9 generated panels have visual consistency and professional quality.

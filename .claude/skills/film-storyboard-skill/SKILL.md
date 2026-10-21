@@ -1,6 +1,6 @@
 ---
 name: film-storyboard-skill
-description: Use when creating storyboards from scripts, generating visual prompts for beat boards or sequence boards, or converting narrative beats into AI-generated images across platforms (Nano Banner, Midjourney, Gemini)
+description: Use when creating storyboards from scripts, generating visual prompts for beat boards or sequence boards, or converting narrative beats into AI-generated images across platforms (Nano Banana, Midjourney, Gemini)
 version: 1.0.0
 allowed-tools: Read, Write
 user-invocable: false
@@ -34,16 +34,17 @@ Identify 9 key narrative moments from the script, one per structural anchor
 (Hook, Inciting Event, First Plot Point, First Attempt, First Pinch Point,
 Midpoint, Third Plot Point, Climax, Resolution), including:
 
-- Beat number and title
-- Timestamp/page number
-- Core action (a turn: the emotional state changes)
-- Emotional value
-  Use template: templates/beat-breakdown-template.md
+- Title
+- Scene reference
+- Description (a turn: the emotional state changes)
+- Purpose
+
+Use template: templates/beat-breakdown-template.md
 ```
 
 ### Generate a Beat Board
 
-For Nano Banner (recommended):
+For Nano Banana (recommended):
 
 ```markdown
 EPISODE {XX}: BEAT BOARD VISUAL SCRIPT
@@ -61,7 +62,7 @@ One independent prompt per beat + --ar 16:9 --style cinematic --v 6
 
 ### Generate a Sequence Board
 
-Select a key beat (usually the Midpoint or the Climax) and expand it into 4 continuous shots with the pulse Setup → Revelation → Conflict → Aftermath, maintaining:
+Select a key beat (usually the Midpoint or the Climax) and expand it into 4 continuous shots following the arc Setup → Revelation → Conflict → Aftermath, maintaining:
 
 - The 180-degree rule
 - Character appearance consistency
@@ -79,7 +80,7 @@ Select a key beat (usually the Midpoint or the Climax) and expand it into 4 cont
 
 - ✅ Canonical character description
 - ✅ Key identifiers repeated verbatim
-- ✅ The appropriate platform format (Nano Banner/Midjourney/Gemini)
+- ✅ The appropriate platform format (Nano Banana/Midjourney/Gemini)
 
 ## Detailed Resources
 
@@ -98,14 +99,14 @@ Select a key beat (usually the Midpoint or the Climax) and expand it into 4 cont
   - Narrative descriptive style
   - Character consistency techniques
   - Lighting description methods
-  - Nano Banner format optimization
+  - Nano Banana format optimization
 
 ### Platform and Style Reference 📖
 
 - [REFERENCE.md](REFERENCE.md) - Platform features and style library
-  - Nano Banner vs Midjourney vs Gemini format comparison
+  - Nano Banana vs Midjourney vs Gemini format comparison
   - Library of 7 visual styles (photorealistic, anime, concept art, etc.)
-  - 6 candidate lighting schemes
+  - 6 lighting scheme options
   - Aspect ratio options
 
 ### Templates
@@ -132,7 +133,7 @@ Select a key beat (usually the Midpoint or the Climax) and expand it into 4 cont
 
 ## Quick Platform Selection
 
-- **Prioritizing consistency** → Nano Banner (generates the full 3x3 grid in one pass)
+- **Prioritizing consistency** → Nano Banana (generates the full 3x3 grid in one pass)
 - **Need fine-grained control** → Midjourney v6
 - **Rapid prototyping** → Gemini Imagen 3
 

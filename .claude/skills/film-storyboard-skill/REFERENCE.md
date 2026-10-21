@@ -6,13 +6,13 @@ This document contains platform features, the visual style library, and technica
 
 ## Platform Support
 
-### Nano Banner (Default, Recommended)
+### Nano Banana (Default, Recommended)
 
 **Format**: Episode Visual Script mode
 
 - 9 beats, each containing Visual Description + Lighting & Mood
-- Optimized for nano banner 3x3 grid generation
-- Generates the complete 9-grid in a single pass, guaranteeing consistency
+- Optimized for nano banana 3x3 grid generation
+- Generates all 9 panels in a single pass, guaranteeing consistency
 
 **Format Specification**:
 
@@ -36,7 +36,7 @@ Lighting & Mood: ...
 
 - One independent prompt per beat
 - Includes the `--ar 16:9 --style cinematic --v 6` parameters
-- Grid position labeled
+- Label each beat's grid position
 
 **Example**:
 
@@ -118,7 +118,7 @@ watercolor painting style, soft edges, flowing colors, artistic paper texture
 
 ---
 
-## Candidate Lighting Schemes
+## Lighting Scheme Options
 
 ### Golden Hour
 
@@ -180,9 +180,9 @@ dramatic side lighting, split lighting effect, deep shadows
 
 ---
 
-## Differences from the Gemini Format
+## Nano Banana vs Gemini/Midjourney Formats
 
-| Feature     | Nano Banner                                      | Gemini/Midjourney          |
+| Feature     | Nano Banana                                      | Gemini/Midjourney          |
 | ----------- | ------------------------------------------------ | -------------------------- |
 | Structure   | Visual Description + Lighting & Mood separated   | Single prompt block        |
 | Length      | 80-120 words + 30-50 words                       | 80-150 words total         |
@@ -197,7 +197,7 @@ dramatic side lighting, split lighting effect, deep shadows
 
 ### Choosing a Platform
 
-- **Prioritizing consistency** → Nano Banner
+- **Prioritizing consistency** → Nano Banana
 - **Need fine-grained control** → Midjourney v6
 - **Rapid prototyping** → Gemini Imagen 3
 

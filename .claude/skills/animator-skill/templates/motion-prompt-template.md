@@ -11,7 +11,7 @@
 
 [40-80 word action-oriented prompt describing motion, camera, pacing, duration]
 
-## Motion 2 (From Sequence B, Panel 1)
+## Motion 2 (From Sequence A, Panel 2)
 
 [40-80 word prompt]
 
@@ -20,7 +20,7 @@
 
 ## Motion Prompt Structure:
 
-[Subject] [primary action] [direction] [+ camera movement]. [Shot specification]. [Pacing]. [Duration: X seconds].
+[Subject] [primary action] [direction] [+ camera movement]. [Pacing]. [Duration: X seconds].
 
 ## Example:
 

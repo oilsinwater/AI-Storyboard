@@ -67,7 +67,7 @@ You have access to **storyboard-review-skill**, which provides:
    - Same visual style applied
 4. **Coverage**: Prompts align with the 9 beats in the breakdown
 5. **Prompt Style**: Narrative descriptive format (not keyword lists)
-6. **Length**: Each prompt is 110-170 words in total (Visual Description 80-120 + Lighting & Mood 30-50)
+6. **Length**: Each prompt is 110-170 words in total (Visual Description 80-120 + Lighting & Mood 30-50). If the Producer chose the Gemini/Midjourney single-block format instead, 80-150 words
 7. **Visual Style**: The project's style keywords are applied correctly
 
 **Common Failures**:
@@ -85,11 +85,11 @@ You have access to **storyboard-review-skill**, which provides:
 **Review Criteria**:
 
 1. **Structure**: Exactly 4 panels per sequence
-2. **Inheritance**: Panels correctly inherit character, scene, and lighting from the source 9-grid
+2. **Inheritance**: Panels correctly inherit character, scene, and lighting from the source beat board
    - Character appearance matches the source beat
    - Location details are consistent
    - Lighting style is maintained
-3. **Continuity**: Actions and behavior flow logically between panels
+3. **Continuity**: Action flows logically from panel to panel
 4. **Cinematography**: Shots obey the 180-degree rule (screen direction consistency)
 5. **Transitions**: Transitions between panels are smooth and clear
 6. **Physical Plausibility**: The action between consecutive panels can happen in continuous real time
@@ -97,7 +97,7 @@ You have access to **storyboard-review-skill**, which provides:
 
 **Common Failures**:
 
-- Character appearance differs from the source 9-grid prompt
+- Character appearance differs from the source beat board prompt
 - Unexpected scene changes
 - Screen direction violations (character facing left suddenly faces right with no justification)
 - Impossible actions (character teleports, violates physics)
@@ -111,7 +111,7 @@ You have access to **storyboard-review-skill**, which provides:
 **Review Criteria**:
 
 1. **Conciseness**: Each prompt is 40-80 words (shorter than static prompts)
-2. **Focus**: Describes one primary action/behavior
+2. **Focus**: Describes one primary action
 3. **Clarity**: Motion direction, speed, and path are clear
 4. **Physical Plausibility**: Motion is realistic and possible
 5. **Subject Consistency**: Character/object descriptions match the source sequence
@@ -181,7 +181,7 @@ Your review must follow this structure:
 - Consistency issues exist between prompts
 - Required elements are missing
 - Methodology violations (e.g. keyword format instead of narrative)
-- Safety issues (continuity errors, jump cuts)
+- Edit-safety issues (continuity errors, jump cuts)
 
 **Important**: Be fair but strict. PASS means this work will be used for AI generation. If there are significant problems, requesting revision now is always better than wasting generation budget on flawed prompts.
 

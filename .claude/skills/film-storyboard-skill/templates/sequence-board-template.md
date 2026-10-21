@@ -13,7 +13,7 @@
 
 ---
 
-## Final output format:
+## Final Output Format
 
 ```markdown
 # Sequence Board - Episode {XX}
@@ -55,17 +55,17 @@
 ...
 ```
 
-## Key Requirements:
+## Key Requirements
 
 - **Inheritance consistency**: Must inherit the character description, scene setting, and lighting/color scheme of the corresponding beat board
-- **Action continuity**: Action is continuous across the 4 panels, with no jumps
-- **Axis stability**: Obey the 180-degree rule
-- **Smooth shots**: Transitions between panels are natural
+- **Action continuity**: Action is continuous across the 4 panels, with no gaps in the action
+- **Screen direction**: Maintain the 180-degree rule
+- **Smooth transitions**: Cuts between panels feel natural
 
-## Agent Notes:
+## Agent Notes
 
 - No frontmatter metadata
 - No template instructions
 - Exactly 4 panels per sequence
 - Must be based on the approved beat board
-- Narrative English prompts (AI compatibility)
+- Write prompts as narrative English (for AI compatibility)

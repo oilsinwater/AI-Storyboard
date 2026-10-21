@@ -3,11 +3,7 @@
 > **Note**: This is a reference guide. Consult only for complex motion scenarios or when in doubt.
 > Do not load this file automatically - refer to it only when needed.
 
-# Motion Prompt Methodology
-
 A professional guide to creating dynamic motion prompts for AI video generation models.
-
-**Note**: The body of this methodology is written in English because it contains specialized motion terminology and examples; keeping it in English makes the standard video production terms easier to understand.
 
 ## Core Philosophy
 
@@ -31,7 +27,7 @@ A good motion prompt is:
 
 **Principle**: AI video models perform better with focused instructions. Avoid over-description.
 
-**Static Image Prompt** (100+ words):
+**Static Image Prompt** (66 words):
 
 ```
 Medium shot, eye-level. A young woman in her 20s with long wavy brown hair wearing
@@ -42,19 +38,19 @@ creating soft shadows, serene and peaceful atmosphere. Cinematic composition,
 photorealistic style, high detail.
 ```
 
-**Motion Prompt** (60 words):
+**Motion Prompt** (41 words):
 
 ```
 A young woman in a flowing blue dress walks from left to right across a sunlit meadow,
-tall grass swaying around her. Camera static, following her motion with a slow pan.
-Golden afternoon light, serene atmosphere. Slow, graceful movement. 4 seconds.
+tall grass swaying gently around her. Camera pans slowly to follow her.
+Warm golden afternoon light, serene atmosphere. Slow, graceful walking pace. 4 seconds.
 ```
 
 **Notice the reduction**:
 
 - Fewer descriptive details (no exhaustive flower/butterfly/mountain description)
 - Focus on the motion (walks left to right, grass sways)
-- Camera specified (static with slow pan)
+- Camera specified (slow pan)
 - Duration noted (4 seconds)
 
 ### 2. One Primary Motion
@@ -494,7 +490,7 @@ Motion prompts created with this methodology are optimized for:
 
 ### Pitfall 1: Too Verbose
 
-**❌ Problem** (120 words):
+**❌ Problem** (89 words):
 
 ```
 In a dark, moody forest with towering ancient oak trees, their gnarled branches reaching
@@ -506,12 +502,12 @@ the leaves creating a mysterious and atmospheric scene. Cinematic lighting, fant
 detailed environment.
 ```
 
-**✓ Solution** (52 words):
+**✓ Solution** (41 words):
 
 ```
 A hooded figure walks slowly from left to right through a dark misty forest, moss-covered
-trees in the background. Camera static. Mist swirls around the figure's feet as they move.
-Slow, deliberate motion. Atmospheric lighting. 5 seconds.
+trees in the background. Camera static, wide shot. Mist swirls around the figure's feet as
+they move. Slow, deliberate walking pace. Dim atmospheric lighting. 5 seconds.
 ```
 
 ### Pitfall 2: Multiple Competing Motions
@@ -603,7 +599,7 @@ Before submitting a motion prompt, verify:
 - [ ] If camera moves, type and direction specified
 - [ ] Motion is physically plausible for the duration
 - [ ] Subject description matches source sequence board
-- [ ] Duration specified (3-8 seconds typical)
+- [ ] Duration specified (3-5 seconds typical)
 - [ ] No excessive detail (simplified compared to static prompts)
 
 ---
@@ -1194,11 +1190,10 @@ Particle spray emphasizes motion.
 
 **Very slow** (6-8 sec) = Contemplative, melancholy, dread
 **Slow** (4-5 sec) = Deliberate, careful, building
-**Medium** (2-3 sec) = Natural, conversational, neutral
-**Fast** (1-2 sec) = Energetic, dynamic, urgent
+**Medium** (3-4 sec) = Natural, conversational, neutral
+**Fast** (2-3 sec) = Energetic, dynamic, urgent
 **Very fast** (<1 sec) = Shocking, chaotic, impact
 
 ---
 
-This methodology is designed as reference material. Animator should internalize these principles and apply them selectively based on the specific motion being described.
-onsistency with the storyboard production pipeline.
+This methodology is designed as reference material. The Animator should internalize these principles and apply them selectively based on the specific motion being described, maintaining consistency with the storyboard production pipeline.

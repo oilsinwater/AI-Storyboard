@@ -13,7 +13,7 @@
 
 ---
 
-## The final output should contain:
+## Final Output Format
 
 ```markdown
 # Beat Breakdown - Episode {XX}
@@ -39,7 +39,7 @@
 **Purpose**: ...
 ```
 
-## Agent Notes:
+## Agent Notes
 
 - No frontmatter metadata
 - No template instructions

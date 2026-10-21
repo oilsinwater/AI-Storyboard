@@ -8,13 +8,13 @@ user-invocable: false
 
 # Scriptwriter Skill
 
-Provides the Scriptwriter with the expertise to create high-quality, structured scripts, supporting series continuity and sequel creation based on previous episodes.
+Provides the Scriptwriter with the expertise to create high-quality, structured scripts, supporting series continuity across episodes.
 
 ## Overview
 
 This skill supports creating:
 
-- **Structurally complete scripts** - Three-act structure with 9+ key narrative moments placed at the structural anchors (Hook, Inciting Event, First Plot Point, First Attempt, Pinch Point, Midpoint, Third Plot Point, Climax, Resolution)
+- **Structurally complete scripts** - Three-act structure with 9+ key narrative moments placed at the structural anchors (Hook, Inciting Event, First Plot Point, First Attempt, First Pinch Point, Midpoint, Third Plot Point, Climax, Resolution)
 - **Continuing series episodes** - Maintaining character, setting, and style consistency
 - **Visual scenes** - Detailed descriptions that are easy to convert into storyboards
 
@@ -116,7 +116,7 @@ Before creating a new episode:
 - ✅ Appearance description for characters on first appearance
 - ✅ Visual scenes and action
 - ✅ Enough key moments (≥9 beat candidates, one per structural anchor)
-- ✅ Complete three-act structure (Hook, Inciting Event, First Plot Point, Pinch, Midpoint, Third Plot Point, Climax, Resolution)
+- ✅ Complete three-act structure (Hook, Inciting Event, First Plot Point, First Attempt, First Pinch Point, Midpoint, Third Plot Point, Climax, Resolution)
 
 ## Detailed Resources
 
@@ -159,8 +159,8 @@ Before creating a new episode:
 
 The car is dim; white fluorescent lights flicker on and off. A few discarded newspapers lie scattered across the empty seats.
 
-EMMA (25, long silver hair, wearing a dark red coat) sits by the window and opens an old leather-bound notebook.
-Dense handwritten symbols and a glowing six-pointed star pattern inside are reflected on her face.
+EMMA (25, waist-length silver hair, violet eyes, wearing a dark red coat) sits by the window and opens an old leather-bound notebook.
+The glow of dense handwritten symbols and a six-pointed star pattern lights her face.
 
 Suddenly, all the lights go out.
 ```

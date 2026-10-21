@@ -13,7 +13,7 @@ Since this is an agentic system, "commands" are natural language instructions gi
 - **Create Script**: `@scriptwriter Create a script for [EPID] about [THEME].`
 - **Generate Breakdown**: `@storyboard-artist Generate beat breakdown for [EPID].`
 - **Generate Beat Board**: `@storyboard-artist Generate beat board (9-grid) for [EPID].`
-- **Generate Sequence**: `@storyboard-artist Generate sequence board (4-frame) for [EPID].`
+- **Generate Sequence**: `@storyboard-artist Generate sequence board (4-panel) for [EPID].`
 - **Generate Motion**: `@animator Generate motion prompts for [EPID].`
 - **Review Artifact**: `@director Review [FILE_PATH].`
 - **Check Progress**: Read `.agent-state.json` and `outputs/`.
@@ -49,5 +49,5 @@ The system uses a hierarchical agentic architecture:
 
 - **Agent Purity**: Generated files in `outputs/` must not contain markdown frontmatter, metadata, or instructions. They should only contain the actual prompt content.
 - **Character Consistency**: Strictly repeat character visual identifiers (silver hair, violet eyes, etc.) across all beats to ensure AI consistency.
-- **Skill Expansion**: Use "Progressive Disclosure" for skills. Core instructions are in `SKILL.md`, while detailed references are in `REFERENCE.md` or `MOTION_LIBRARY.md`.
+- **Skill Structure**: Use "Progressive Disclosure" for skills. Core instructions are in `SKILL.md`, while detailed references are in `REFERENCE.md` or `MOTION_LIBRARY.md`.
 - **State Updates**: Always update `.agent-state.json` after completing a stage.

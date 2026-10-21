@@ -1,6 +1,6 @@
 # AI Storyboard Production System
 
-An AI-driven storyboard artist system built on the Claude Agent + Skill architecture, used to automate the film storyboarding workflow.
+An AI-driven storyboard artist system built on the Claude Agent + Skill architecture, that automates the film storyboarding workflow.
 
 ## System Overview
 
@@ -21,7 +21,7 @@ Producer Agent (CLAUDE.md)
 - **Professional standards**: Based on film storyboarding methodology, following cinematography and editing principles
 - **Quality control**: Automated director review and revision loop
 - **Resumable**: Document-driven; after an interruption, work can resume by checking progress
-- **Multi-platform**: Supports Nano Banner, Midjourney, Gemini, DALL-E
+- **Multi-platform**: Supports Nano Banana, Midjourney, Gemini, DALL-E
 
 ## Complete Workflow
 
@@ -44,8 +44,8 @@ Producer Agent (CLAUDE.md)
 
 3. Sequence Board (4-panel sequence)
    Input: Approved beat board
-   Output: Continuous 4-shot sequence prompts (expanding a key moment)
-   Review: Director checks motion continuity, axis stability, inheritance rules
+   Output: 4-panel sequence prompts (expanding a key moment)
+   Review: Director checks motion continuity, screen-direction consistency, inheritance rules
 
 4. Motion Prompts (video generation)
    Input: Approved sequence board
@@ -135,7 +135,7 @@ Please generate a beat breakdown for ep01
 
 The system will automatically:
 
-1. Scriptwriter reads `script/ep01-awakening.md`
+1. Storyboard Artist reads `script/ep01-awakening.md`
 2. Storyboard Artist identifies 9 key narrative moments
 3. Director reviews quality
 4. Output to `outputs/beat-breakdown-ep01.md`
@@ -166,8 +166,8 @@ Please generate a sequence board for ep01
 The system will:
 
 1. Storyboard Artist selects a key beat from the 9 beats
-2. Expand it into a continuous 4-shot sequence
-3. Director checks motion continuity and axis rules
+2. Expand it into a 4-panel sequence
+3. Director checks motion continuity and the 180-degree rule
 4. Output to `outputs/sequence-board-prompt-ep01.md`
 
 ### 5. Generate Motion Prompts
@@ -209,13 +209,13 @@ digital concept art, painterly style, dramatic atmosphere, detailed environment
 
 ### Supported Platforms
 
-**Nano Banner** (default, recommended):
+**Nano Banana** (default, recommended):
 
 - 3x3 grid, generates all 9 beats in one pass
 - Episode Visual Script format
 - Visual Description (80-120 words) + Lighting & Mood (30-50 words)
 
-![9-Grid Demo Result (Nano Banner)](images/demo.jpeg)
+![9-Grid Demo Result (Nano Banana)](images/demo.jpeg)
 
 **Midjourney v6**:
 
@@ -239,7 +239,7 @@ digital concept art, painterly style, dramatic atmosphere, detailed environment
 3. **Consistent**: Character/scene/lighting stay consistent across all prompts
 4. **Progressive**: Refine layer by layer from 9-grid → 4-panel, inheriting visual elements
 
-### Layered Progressive Process
+### Progressive Refinement
 
 ```
 Beat Breakdown (9 anchors)
@@ -286,10 +286,10 @@ over a white high-neck shirt
 
 ### Series Continuity
 
-The Scriptwriter can review previous episodes and write sequels:
+The Scriptwriter can review previous episodes and write continuing episodes:
 
 ```
-Based on ep01 and ep02, conceive a story about betrayal for ep03
+Based on ep01 and ep02, develop a story about betrayal for ep03
 ```
 
 The system will:
@@ -334,7 +334,7 @@ The Director automatically reviews every stage and delivers a PASS/FAIL verdict:
 - Consistent character appearance
 - Complete shot specifications
 - Physical plausibility
-- No jump cuts or axis violations
+- No jump cuts or 180-degree rule violations
 
 **Revision loop**:
 
@@ -349,7 +349,7 @@ You (Claude) act as the Producer:
 
 - Coordinate all sub-agents
 - Understand user intent
-- Schedule the workflow
+- Drive the workflow
 - Handle escalations
 
 ### Scriptwriter
@@ -358,7 +358,7 @@ You (Claude) act as the Producer:
 
 - Create structured scripts
 - Review previous episodes to maintain continuity
-- Conceive new stories based on user input
+- Develop new stories based on user input
 - Provide ≥9 beat candidates
 
 **Skills**: `scriptwriter-skill`
@@ -381,7 +381,7 @@ You (Claude) act as the Producer:
 - Review all outputs (beat breakdown, beat board, sequence board, motion prompts)
 - Deliver PASS/FAIL verdicts
 - Point out specific issues and suggested fixes
-- Read-only, does not create
+- Read-only; does not create artifacts
 
 **Skills**: `storyboard-review-skill`
 
@@ -404,11 +404,11 @@ All Skills have been refactored according to the [official Claude Code standard]
 
 **Core files**:
 
-- `SKILL.md` (139 lines) - Overview, core principles, quick start, navigation
+- `SKILL.md` - Overview, core principles, quick start, navigation
 - `REFERENCE.md` 📖 - Platform features and style library (progressive disclosure)
-  - Nano Banner vs Midjourney vs Gemini format comparison
+  - Nano Banana vs Midjourney vs Gemini format comparison
   - Library of 7 visual styles (photorealistic, anime, concept art, etc.)
-  - 6 candidate lighting schemes
+  - 6 lighting scheme options
   - Aspect ratio options
 - `storyboard-methodology-playbook.md` 📖 - Complete methodology
 - `gemini-image-prompt-guide.md` 📖 - Prompt writing guide
@@ -418,7 +418,7 @@ All Skills have been refactored according to the [official Claude Code standard]
 
 **Core files**:
 
-- `SKILL.md` (165 lines) - Overview, core principles, quick start, navigation
+- `SKILL.md` - Overview, core principles, quick start, navigation
 - `GUIDELINES.md` 📖 - Detailed writing guidelines (progressive disclosure)
   - Scene format specification
   - Character first-appearance rules
@@ -430,7 +430,7 @@ All Skills have been refactored according to the [official Claude Code standard]
 
 **Core files**:
 
-- `SKILL.md` (225 lines) - Overview, core principles, quick start, navigation
+- `SKILL.md` - Overview, core principles, quick start, navigation
 - `MOTION_LIBRARY.md` 📖 - Complete motion library (progressive disclosure)
   - Subject motion library (character locomotion, actions, expressions)
   - Camera motion library (Pan, Dolly, Crane, Orbit)
@@ -444,7 +444,7 @@ All Skills have been refactored according to the [official Claude Code standard]
 
 **Core files**:
 
-- `SKILL.md` (68 lines) - Review philosophy and checklist references
+- `SKILL.md` - Review philosophy and checklist references
 - `review-checklist.md` - Detailed review criteria
 
 ## Technical Details
@@ -459,7 +459,7 @@ outputs/sequence-board-prompt-ep{XX}.md # Sequence board
 outputs/motion-prompt-ep{XX}.md        # Motion prompts
 ```
 
-### Nano Banner 3x3 Grid
+### Nano Banana 3x3 Grid
 
 The 9 beats map to grid positions:
 
@@ -488,7 +488,7 @@ The 9 beats map to grid positions:
 
 ## Example Output
 
-### Beat Board (Nano Banner format)
+### Beat Board (Nano Banana format)
 
 ```markdown
 EPISODE 01: BEAT BOARD VISUAL SCRIPT
@@ -517,11 +517,11 @@ amber glow from the journal pages...
 ### Motion Prompt
 
 ```markdown
-Sequence 1 (based on Beat 1-2)
+Sequence 1 (based on Beat 1)
 
 A woman with long silver hair in a black coat walks from left to right along
 a train platform, wind blowing her hair gently. Other commuters move quickly
-past in opposite direction. Camera static, eye-level. Steady walking pace,
+past in the opposite direction. Camera static, eye-level. Steady walking pace,
 contemplative mood. 5 seconds.
 ```
 
@@ -529,16 +529,16 @@ contemplative mood. 5 seconds.
 
 ### Writing High-Quality Scripts
 
-1. **Visual first** - Describe with visualizable action, avoid abstract psychological description
+1. **Visual first** - Describe through visible action; avoid abstract psychology
 2. **Character first appearance** - Provide a full appearance description
 3. **Sufficient beats** - Ensure ≥9 clear key moments
 4. **Three-act structure** - Setup (25%) → Confrontation (50%) → Resolution (25%), with 9 beats at the structural anchors (Hook, Inciting Event, First Plot Point, First Attempt, First Pinch Point, Midpoint, Third Plot Point, Climax, Resolution)
 
 ### Maintaining Consistency
 
-1. **Establish the canon** - Fix character appearance in Beat 1
+1. **Establish the canon** - Lock character appearance in Beat 1
 2. **Repeat verbatim** - Key identifiers are identical across all beats
-3. **Inheritance rules** - The 4-panel sequence must inherit the visual elements of the source 9-grid
+3. **Inheritance rules** - The 4-panel sequence must inherit the visual elements of the source beat board
 4. **Checklist** - Self-check against the Director's review criteria
 
 ### Optimizing Prompts
@@ -557,12 +557,12 @@ contemplative mood. 5 seconds.
 **Fix**:
 
 1. Check the canonical description in Beat 1
-2. Make sure all beats use the same keywords
+2. Make sure all beats use the same identifiers
 3. Verify that clothing, hairstyle, eye color, etc. match exactly
 
 ### Sequence Board Jump Cuts
 
-**Symptom**: Director points out axis violations or jump cuts
+**Symptom**: Director points out 180-degree rule violations or jump cuts
 
 **Fix**:
 
@@ -605,5 +605,4 @@ Suggested improvements:
 **Last updated**: 2026-01-11
 **Agents**: 4 specialized sub-agents
 **Skills**: 4 standardized skill packages (progressive disclosure pattern)
-**Total Skills lines**: 607 lines (optimized -39.4%)
 **Standards compliance**: 100% [official Claude Code standard](https://code.claude.com/docs/en/skills)

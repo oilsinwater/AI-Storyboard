@@ -57,11 +57,12 @@ wearing black coat over white shirt and black pants, silver ring on right hand,
 walks from left to right...
 ```
 
-✅ **Motion first** (25 words):
+✅ **Motion first** (41 words):
 
 ```
-A woman with silver hair in a black coat walks from left to right across platform.
-Steady pace. 4 seconds.
+A woman with silver hair in a black coat walks from left to right across the empty
+train platform, wind blowing her hair. Camera static, medium shot at eye level.
+Her coat sways with each step. Steady walking pace. 4 seconds.
 ```
 
 ### 4. Explicit Motion Source
@@ -178,7 +179,7 @@ According to platform and motion complexity:
 
 - User requests "generate motion prompts"
 - An approved sequence board needs to be converted to video
-- Director feedback on motion clarity issues
+- Director feedback flags motion clarity issues
 
 **Manual reference scenarios**:
 
@@ -202,7 +203,7 @@ According to platform and motion complexity:
 (120+ words with excessive scene description)
 ```
 
-✅ **Fix**: Simplify the scene, emphasize motion (~25 words)
+✅ **Fix**: Simplify the scene, emphasize motion (40-80 words)
 
 ### ❌ Mistake: Multiple actions
 

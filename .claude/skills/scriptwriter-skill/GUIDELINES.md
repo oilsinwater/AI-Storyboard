@@ -23,8 +23,8 @@ This document contains detailed screenwriting guidance, including the scene form
 
 The car is dim; white fluorescent lights flicker on and off. A few discarded newspapers lie scattered across the empty seats.
 
-EMMA (25, long silver hair, wearing a dark red coat) sits by the window and opens an old leather-bound notebook.
-Dense handwritten symbols and a glowing six-pointed star pattern inside are reflected on her face.
+EMMA (25, waist-length silver hair, violet eyes, wearing a dark red coat) sits by the window and opens an old leather-bound notebook.
+The glow of dense handwritten symbols and a six-pointed star pattern lights her face.
 
 Suddenly, all the lights go out.
 ```
@@ -33,12 +33,12 @@ Suddenly, all the lights go out.
 
 - **INT.** = Interior
 - **EXT.** = Exterior
-- **INT./EXT.** = Contains both interior and exterior
+- **INT./EXT.** = The scene moves between interior and exterior (a car, a doorway)
 
 ### Time Labels
 
 - Specific time: morning, noon, afternoon, dusk, night, late night
-- Relative time: same time, later, the next day
+- Relative time: continuous, same time, later, the next day
 
 ### Every Scene Must Turn
 
@@ -72,7 +72,7 @@ Setbacks and failure create suspense; success and good news do not. Prefer scene
 
 **Must include**:
 
-1. Name (if any)
+1. Name (or a descriptor if unnamed, e.g. MYSTERIOUS FIGURE)
 2. Age range
 3. Key appearance features (hair, clothing, signature items)
 
@@ -81,7 +81,7 @@ Setbacks and failure create suspense; success and good news do not. Prefer scene
 ```markdown
 MARCUS (50s, short gray hair, navy blue suit with a red tie) pushes the door open and enters.
 
-LILY (teenage, around 16, short black hair with purple streaks, ripped jeans and a band T-shirt) leans against the wall.
+LILY (16, short black hair with purple streaks, ripped jeans and a band T-shirt) leans against the wall.
 
 MYSTERIOUS FIGURE (gender unknown, full-length black cloak, face hidden by a mask, only a silver cross necklace visible) stands in the shadows.
 ```
@@ -102,7 +102,7 @@ The appearance description established on first appearance should remain consist
 **First time**:
 
 ```
-EMMA (25, long silver hair, dark red coat, violet eyes)
+EMMA (25, waist-length silver hair, violet eyes, dark red coat)
 ```
 
 **Afterwards**:
@@ -147,13 +147,13 @@ Before writing scenes, define the protagonist's spine. Every beat traces back to
 ✅ **Correct**:
 
 ```
-Emma rushes to the door. Her hand grabs the handle and shoves it open.
+Emma rushes to the door. She grabs the handle and shoves the door open.
 ```
 
 ❌ **Wrong**:
 
 ```
-Emma should run toward the door, and then she would open it.
+Emma ran to the door and it was opened.
 ```
 
 ### Visual First
@@ -219,8 +219,8 @@ Ensure the script contains **9 or more** clear key moments, one at each structur
 | Beat 2      | p.4  | Inciting Event      | Receives a mysterious package                  |
 | Beat 3      | p.7  | First Plot Point    | Decides to retrieve the diary the package points to |
 | Beat 4      | p.10 | First Attempt       | Finds the first clue, gains an unwanted ally   |
-| Beat 5      | p.11 | First Pinch Point   | The organization burns her apartment           |
-| Beat 6      | p.15 | Midpoint            | Realizes the truth differs from what she imagined; takes the offensive |
+| Beat 5      | p.11 | First Pinch Point   | The organization burns down her apartment      |
+| Beat 6      | p.15 | Midpoint            | Realizes the truth differs from what she imagined; goes on the offensive |
 | Beat 7      | p.22 | Third Plot Point    | Betrayed by the ally, loses the diary          |
 | Beat 8      | p.27 | Climax              | Final confrontation with the mastermind, trusting the ally again |
 | Beat 9      | p.30 | Resolution          | Problem solved, but a new question is planted  |
@@ -250,12 +250,12 @@ Each beat should be:
 - [ ] Visual style and atmospheric tone
 - [ ] Key scenes and locations already used
 
-### First Appearance vs Repeat Appearance
+### First Appearance vs Later Appearances
 
 **In the first episode**:
 
 ```
-EMMA (25, waist-length silver hair, pale porcelain skin, bright violet eyes, wearing a dark red coat) walks into the room.
+EMMA (25, waist-length silver hair, violet eyes, wearing a dark red coat) walks into the room.
 ```
 
 **In the second episode and after**:
@@ -307,7 +307,7 @@ Pose the dramatic question between one sixth and one third of the way in. Delay 
 ```
 Scenes 1-2: Emma's everyday work (librarian); she bends a rule to help a stranger (hook)
 Scene 3: Discovers a hidden message in an ancient book (inciting event)
-Scene 5: Decides to find the book's owner before the organization does (first plot point: Retrieve)
+Scene 5: Decides to retrieve the diary before the organization does (first plot point: Retrieve)
 ```
 
 ### Act Two (Confrontation / Acceptance, ~50%)
@@ -328,8 +328,8 @@ Every protagonist action should trigger an antagonist reaction that makes things
 
 ```
 Scenes 6-9: Investigates clues, encounters a mysterious organization
-Scene 10: The organization burns her apartment (first pinch point)
-Scene 11: Discovers the truth is more complicated than imagined; takes the offensive (midpoint)
+Scene 10: The organization burns down her apartment (first pinch point)
+Scene 11: Discovers the truth is more complicated than imagined; goes on the offensive (midpoint)
 Scenes 12-14: Hunted; loses the diary to the ally's betrayal (third plot point)
 ```
 
@@ -339,7 +339,7 @@ Scenes 12-14: Hunted; loses the diary to the ally's betrayal (third plot point)
 
 **Elements included**:
 
-1. **Rallying** - The protagonist acts on the Need, not the Lie, for the first time. Strip away tools, escape routes, and allies so they face the climax self-reliant
+1. **Regrouping** - The protagonist acts on the Need, not the Lie, for the first time. Strip away tools, escape routes, and allies so they face the climax self-reliant
 2. **Climax** (~90%) - The obligatory scene at the physical finish line. The Lie is rejected for good. Highest suspense sits here, not before
 3. **Resolution** (last ~2%) - The thematic question answered; the New Normal shown, not told
 4. **Next question** - A new dramatic question planted for the series
@@ -347,9 +347,9 @@ Scenes 12-14: Hunted; loses the diary to the ally's betrayal (third plot point)
 **Example**:
 
 ```
-Scene 15: Emma accepts the ally's help instead of going alone (rallying)
+Scene 15: Emma accepts the ally's help instead of going alone (regrouping)
 Scenes 16-17: Final confrontation with the organization's leader (climax)
-Scene 18: Crisis resolved, but a sequel question is planted
+Scene 18: Crisis resolved, but a question for the next episode is planted
 ```
 
 ### Where the Story Starts and Ends (MICE)
@@ -380,7 +380,7 @@ Each character should have a distinctive way of speaking:
 **Marcus (50s, old-fashioned gentleman)**:
 
 ```
-"Young man, this matter is far more complicated than you imagine. I suggest you think twice before acting."
+"Young man, this is a good deal more complicated than you think. I'd think twice before doing anything."
 ```
 
 **Lily (16, rebellious teenager)**:
@@ -437,9 +437,9 @@ After finishing, check:
 - [ ] Action descriptions use present tense, active voice
 - [ ] Protagonist has a Lie, Want, Need, Ghost, and Stakes; the Want is Win, Stop, Escape, or Retrieve
 - [ ] Contains at least 9 clear beats, one at each structural anchor
-- [ ] Three-act structure is complete (Hook, Inciting Event, First Plot Point, Pinch, Midpoint, Third Plot Point, Climax, Resolution)
+- [ ] Three-act structure is complete (Hook, Inciting Event, First Plot Point, First Attempt, First Pinch Point, Midpoint, Third Plot Point, Climax, Resolution)
 - [ ] Dialogue matches each character's personality
 - [ ] Sufficient visual description, avoiding abstract psychological description
-- [ ] If a sequel, character appearance is consistent with previous episodes
+- [ ] If a continuing episode, character appearance is consistent with previous episodes
 - [ ] World-building has no contradictions and any power system obeys Sanderson's laws
 - [ ] No frontmatter metadata or template instructions

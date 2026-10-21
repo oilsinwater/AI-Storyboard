@@ -29,7 +29,7 @@ opens door slowly
 sits down in chair
 stands up from seated position
 points finger forward
-waves hand greeting
+waves hand in greeting
 kneels down carefully
 ```
 
@@ -55,8 +55,6 @@ raises eyebrow
 ```
 camera pans left to right
 camera pans right to left following subject
-slow pan upward revealing environment
-camera pans down from sky to ground
 horizontal pan across cityscape
 ```
 
@@ -66,7 +64,7 @@ horizontal pan across cityscape
 camera dollies forward toward subject
 camera dollies backward revealing wider scene
 slow dolly in on subject's face
-dolly out from close-up to establish shot
+dolly out from close-up to establishing shot
 camera pushes in slowly
 ```
 
@@ -94,6 +92,8 @@ arc around object revealing different angles
 ```
 camera tilts up from feet to face
 camera tilts down from face to hands
+slow tilt upward revealing environment
+camera tilts down from sky to ground
 camera zooms in slowly
 camera zooms out revealing context
 handheld camera movement, slight shake
@@ -153,7 +153,7 @@ petals fall from tree
 
 ## Motion Speed Guidance
 
-### Slow Motion (Slow, Gradual)
+### Slow-Paced Motion (Slow, Gradual)
 
 **Keywords**:
 
@@ -170,7 +170,7 @@ petals fall from tree
 
 - Emotionally delicate moments
 - Building suspense
-- Aesthetic showcases
+- Beauty shots
 - Soft transitions
 - Contemplative atmosphere
 
@@ -202,7 +202,7 @@ A woman slowly turns her head toward the window. Gentle, deliberate movement.
 - Everyday actions
 - Narrative progression
 - Standard shots
-- Real-life pacing
+- Naturalistic pacing
 - Natural dialogue scenes
 
 **Duration**: 3-4 seconds
@@ -216,7 +216,7 @@ Steady walking pace. 4 seconds.
 
 ---
 
-### Fast Motion (Fast, Sudden)
+### Fast-Paced Motion (Fast, Sudden)
 
 **Keywords**:
 
@@ -361,7 +361,7 @@ Athlete runs toward camera while camera dollies backward at matching speed,
 maintaining consistent distance. Medium running pace. 4 seconds.
 ```
 
-**Suitable for**: Walk-and-talk dialogue, chase scenes, dynamic showcases
+**Suitable for**: Walk-and-talk dialogue, chase scenes, dynamic action
 
 ---
 
@@ -382,10 +382,10 @@ to left, creating parallax effect. Slow walking, steady pan. 5 seconds.
 
 **Actions suited to 3 seconds**:
 
-- Turn head 180 degrees
+- Turn head 90 degrees
 - Pick up an object from a table
 - Take 2-3 steps
-- Change of expression into a smile
+- Expression changes to a smile
 - Simple gesture
 
 **Actions suited to 5 seconds**:
@@ -453,4 +453,4 @@ Slow walking pace. 5 seconds.
 
 ---
 
-**Refresh date**: This library is updated periodically according to the capabilities of mainstream AI video platforms.
+**Maintenance note**: This library is updated periodically according to the capabilities of mainstream AI video platforms.
