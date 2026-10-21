@@ -532,7 +532,7 @@ contemplative mood. 5 seconds.
 1. **Visual first** - Describe with visualizable action, avoid abstract psychological description
 2. **Character first appearance** - Provide a full appearance description
 3. **Sufficient beats** - Ensure ≥9 clear key moments
-4. **Three-act structure** - Setup (25%) → Confrontation (50%) → Resolution (25%)
+4. **Three-act structure** - Setup (25%) → Confrontation (50%) → Resolution (25%), with 9 beats at the structural anchors (Hook, Inciting Event, First Plot Point, First Attempt, First Pinch Point, Midpoint, Third Plot Point, Climax, Resolution)
 
 ### Maintaining Consistency
 

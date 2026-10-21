@@ -35,17 +35,17 @@ You have access to **storyboard-review-skill**, which provides:
 
 1. **Count Accuracy**: Exactly 9 beats selected
 2. **Completeness**: All beats have a number, timestamp, description, and narrative purpose
-3. **Coverage**: Beats cover the full story arc (beginning, development, ending)
+3. **Coverage**: Beats cover the full story arc, one per structural anchor (Hook, Inciting Event, First Plot Point, First Attempt, First Pinch Point, Midpoint, Third Plot Point, Climax, Resolution)
 4. **Clarity**: Each beat description is specific and easy to understand
-5. **Selection Quality**: The selected beats are genuine turning points/key moments
-6. **Distribution**: Beats are reasonably distributed across the timeline
+5. **Selection Quality**: Each beat turns (the emotional state changes) and does its anchor's job
+6. **Distribution**: Beats follow the anchors, not equal page gaps, and are not clustered
 7. **Independence**: Each beat can convey its story moment on its own
 
 **Common Failures**:
 
 - Wrong beat count (not exactly 9)
 - Vague descriptions ("something happens", "a scene appears")
-- Missing story sections (e.g. no climax, no resolution)
+- Missing anchors (e.g. no Climax, no First Plot Point)
 - Beats too concentrated in one part of the story
 - Beats describing trivial moments rather than key narrative points
 

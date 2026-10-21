@@ -14,7 +14,7 @@ Provides the Scriptwriter with the expertise to create high-quality, structured 
 
 This skill supports creating:
 
-- **Structurally complete scripts** - Three-act structure containing 9+ key narrative moments
+- **Structurally complete scripts** - Three-act structure with 9+ key narrative moments placed at the structural anchors (Hook, Inciting Event, First Plot Point, First Attempt, Pinch Point, Midpoint, Third Plot Point, Climax, Resolution)
 - **Continuing series episodes** - Maintaining character, setting, and style consistency
 - **Visual scenes** - Detailed descriptions that are easy to convert into storyboards
 
@@ -33,17 +33,21 @@ The script must be easy to convert into storyboards. Avoid abstract psychologica
 - Keep key identifiers consistent in later episodes
 - Develop personality gradually and plausibly
 
-### 3. Clear Structure
+### 3. Character Spine
 
-**Three-act structure**:
+Define before writing: the protagonist's **Lie**, **Want** (a visible Outer Goal: Win, Stop, Escape, or Retrieve), **Need**, **Ghost** (prior wound), and **Stakes**. The story ends when the Want converges with the Need. An antagonist with a reason makes every protagonist move backfire.
 
-- Act One (~25%): Setup - Establish the world, inciting incident
-- Act Two (~50%): Confrontation - Rising action, midpoint turn, low point
-- Act Three (~25%): Resolution - Climax, resolution, new equilibrium
+### 4. Clear Structure
 
-### 4. Sufficient Beats
+**Three-act structure** with percentage anchors:
 
-Ensure the script contains **at least 9** clear, visual turning points distributed across the three acts.
+- Act One (~25%): Setup / Ask - Hook in the Normal World, Inciting Event (~12%), First Plot Point (20-25%: the choice that sets the goal and poses the dramatic question)
+- Act Two (~50%): Confrontation / Acceptance - First Attempt, First Pinch Point (~37%), Midpoint (50%: from reaction to action), Third Plot Point (~75%: the low point, the Act II/III turn)
+- Act Three (~25%): Resolution / Answer - Climax (~90%), Resolution (New Normal, last ~2%)
+
+### 5. Sufficient Beats
+
+Ensure the script contains **at least 9** clear, visual turning points, one at each anchor. Every scene must turn: the lead leaves in a different emotional state (mad, glad, sad, scared) than they entered, and the scene passes the Mamet check (who wants what, what if they fail, why now).
 
 ## Quick Start
 
@@ -69,7 +73,9 @@ The user may provide:
 **Step 3: Plan the structure**
 
 - Carry forward the previous episodes' world and character states
-- Design 9+ key narrative moments
+- Write the character spine (Lie, Want, Need, Ghost, Stakes) and a logline: when [inciting event] happens, [protagonist] decides to [action] against [antagonist]
+- Decide the story kind (Milieu, Idea, Character, Event) so the ending matches the beginning
+- Design 9+ key narrative moments, one per structural anchor
 - Arrange the three-act structure
 
 **Step 4: Write the script**
@@ -79,6 +85,7 @@ Use the standard scene format, ensuring:
 - Scene heading: `## Scene {X} - {INT./EXT.} {Location} - {Time}`
 - Characters have a full appearance description on first appearance
 - Action is in present tense and visual
+- Every scene turns (Goal → Conflict → Disaster, then Reaction → Dilemma → Decision)
 - Enough beat candidates (≥9)
 
 **Step 5: Output**
@@ -113,18 +120,21 @@ Before creating a new episode:
 - ✅ Scene number, location, time
 - ✅ Appearance description for characters on first appearance
 - ✅ Visual scenes and action
-- ✅ Enough key moments (≥9 beat candidates)
-- ✅ Complete three-act structure
+- ✅ Enough key moments (≥9 beat candidates, one per structural anchor)
+- ✅ Complete three-act structure (Hook, Inciting Event, First Plot Point, Pinch, Midpoint, Third Plot Point, Climax, Resolution)
 
 ## Detailed Resources
 
 ### Writing Guidance 📖
 
 - [GUIDELINES.md](GUIDELINES.md) - Detailed writing guidelines
-  - Scene format specification (scene headings, time labels)
-  - Character first-appearance rules
+  - Scene format specification (scene headings, time labels, the scene turn, Scene/Sequel, Mamet check)
+  - Character first-appearance rules and body-first design
+  - Character spine (Lie, Want, Need, Ghost, Stakes; the 4-Goal Rule)
   - Action description best practices
-  - Beat distribution guidance (allocating 9 beats across three acts)
+  - Beat distribution guidance (9 beats at the structural anchors)
+  - Three-act structure in detail, MICE, logline
+  - World-building rules (Sanderson's laws, transformations)
   - Dialogue writing techniques
   - Output checklist
 

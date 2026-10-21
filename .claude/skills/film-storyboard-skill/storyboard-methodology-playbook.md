@@ -147,30 +147,29 @@ Identify the 9 most critical narrative moments that, together, tell the complete
 
 A good beat is:
 
-1. **A Turning Point**: Something changes (character learns something, makes a decision, encounters obstacle)
-2. **Visually Distinct**: Can be represented in a single compelling image
-3. **Story-Essential**: Removing it would create a narrative gap
-4. **Emotionally Significant**: Heightened emotion or tension
+1. **A Turn**: The character's emotional state at the end of the moment differs from the start (mad, glad, sad, scared). A moment with no turn is an incident, not a beat
+2. **Anchored**: It sits at one of the nine structural anchors and does that anchor's job
+3. **Visually Distinct**: Can be represented in a single compelling image; no more than three characters in frame
+4. **Story-Essential**: Removing it would create a narrative gap. If you cannot say what job the moment does, it is dispensable
+5. **Emotionally Significant**: Carries a structural emotion (curiosity, anticipation, surprise) or a thematic one (sympathy, identification, empathy)
+
+Prefer **transfer stations**: moments where two story threads cross (the A-story goal and the B-story relationship or theme). Prefer setbacks over good news; failure creates suspense, success does not.
 
 ### Coverage Requirements
 
-The 9 beats must span:
+The 9 beats must follow the structural anchors:
 
-- **Beginning** (Beats 1-3): Setup, character introduction, inciting incident
-- **Middle** (Beats 4-6): Rising action, obstacles, complications
-- **End** (Beats 7-9): Climax, resolution, denouement
+- **Act One** (Beats 1-3): Hook / Characteristic Moment (0-10%), Inciting Event (~12%), First Plot Point (20-25%)
+- **Act Two** (Beats 4-7): First Attempt (25-37%), First Pinch Point (~37%), Midpoint (50%), Third Plot Point (~75%, the Act II/III turn)
+- **Act Three** (Beats 8-9): Climax (~90%), Resolution (98-100%)
 
 ### Distribution Strategy
 
-**Even Distribution** (preferred for episodic content):
+Beats are placed by anchor, not by equal page gaps.
 
-- Beats roughly evenly spaced across the script timeline
-- Example for 30-page script: Beats at pages 3, 7, 11, 15, 19, 23, 26, 28, 30
-
-**Weighted Distribution** (for dramatic arcs):
-
-- More beats in high-intensity sections
-- Example: Beats 1-2 (setup), 3-4 (conflict), 5-7 (climax), 8-9 (resolution)
+- Example for a 30-page script: Beats at pages 2, 4, 7, 10, 11, 15, 22, 27, 30
+- The gap between the Midpoint and the Third Plot Point is the longest; the gaps around the climax are the shortest
+- **Promise and payoff**: a hazard, clue, or object planted in an early beat should return in a later one. The nine beats together must keep every promise they make
 
 ### Beat Description Format
 
@@ -781,8 +780,8 @@ Before submitting work, verify:
 
 - [ ] Exactly 9 beats selected
 - [ ] All beats have number, timestamp, description, purpose
-- [ ] Beats span beginning, middle, end
-- [ ] Each beat is a turning point or crucial moment
+- [ ] One beat per structural anchor (Hook through Resolution)
+- [ ] Each beat turns (emotional state changes)
 - [ ] Descriptions are specific, not vague
 
 ### Beat Board (9-panel):

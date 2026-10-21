@@ -18,10 +18,10 @@ Comprehensive quality standards for the output of each production stage.
 
 ### Coverage and Distribution
 
-- [ ] **Beginning covered**: Beats 1-3 include setup and the inciting incident
-- [ ] **Development covered**: Beats 4-6 include rising action and complications
-- [ ] **Ending covered**: Beats 7-9 include climax and resolution
-- [ ] **Reasonable spacing**: Beats are distributed across the timeline (not all clustered)
+- [ ] **Act One covered**: Beats 1-3 are the Hook / Characteristic Moment, the Inciting Event, and the First Plot Point (the protagonist's choice that sets the goal)
+- [ ] **Act Two covered**: Beats 4-7 are the First Attempt, the First Pinch Point, the Midpoint, and the Third Plot Point (the low point)
+- [ ] **Act Three covered**: Beats 8-9 are the Climax and the Resolution
+- [ ] **Anchored spacing**: Beats follow the structural anchors (not all clustered, not spaced by equal page gaps)
 - [ ] **Complete arc**: The 9 beats together tell a complete story
 
 ### Clarity and Specificity
@@ -34,10 +34,11 @@ Comprehensive quality standards for the output of each production stage.
 
 ### Selection Quality
 
-- [ ] **Turning points**: Beats are narrative pivots, not filler moments
-- [ ] **Visual potential**: Each beat can be represented by a compelling image
-- [ ] **Story-essential**: Removing any beat would leave a gap in narrative understanding
-- [ ] **Emotional significance**: Beats capture moments of heightened emotion or tension
+- [ ] **Turns**: Each beat changes the character's emotional state; no incidents without a turn
+- [ ] **Visual potential**: Each beat can be represented by a compelling image with at most three characters
+- [ ] **Story-essential**: Removing any beat would leave a gap; the Purpose names the anchor's job
+- [ ] **Emotional significance**: Beats carry structural emotion (curiosity, anticipation, surprise) or thematic emotion (sympathy, identification, empathy); setbacks outnumber good news
+- [ ] **Promises kept**: Anything planted in an early beat pays off in a later one
 
 ### Character and Location Tracking
 
@@ -49,8 +50,8 @@ Comprehensive quality standards for the output of each production stage.
 
 - ❌ Wrong beat count (7, 10, 12 beats instead of exactly 9)
 - ❌ Vague descriptions ("a scene", "something happens", "the character does things")
-- ❌ Missing sections (e.g. no climax beats, no setup beats)
-- ❌ Mundane moments (beats describing unimportant actions)
+- ❌ Missing anchors (e.g. no Climax, no First Plot Point, no Midpoint)
+- ❌ Mundane moments (beats describing unimportant actions, or moments with no turn)
 - ❌ Clustered beats (all 9 beats in the first third of the story)
 
 ---

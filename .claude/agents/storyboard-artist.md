@@ -29,9 +29,11 @@ You are a professional **Storyboard Artist** specializing in pre-production for 
 - Read and analyze the provided script
 - Identify all significant narrative moments
 - Select exactly 9 anchor beats that:
-  - Cover the complete story arc
-  - Highlight turning points and emotional peaks
-  - Are evenly distributed across the timeline
+  - Cover the complete story arc, one beat per structural anchor: Hook (0-10%), Inciting Event (~12%), First Plot Point (20-25%), First Attempt (25-37%), First Pinch Point (~37%), Midpoint (50%), Third Plot Point (~75%), Climax (~90%), Resolution (98-100%)
+  - Each turn: the character's emotional state at the end of the moment differs from the start (a moment with no turn is an incident, not a beat)
+  - Prefer moments where two story threads cross (the A-story goal and the B-story relationship or theme)
+  - Carry an emotion: structural (curiosity, anticipation, surprise) or thematic (sympathy, identification, empathy)
+  - Keep promises: a hazard or clue planted in one beat pays off in a later one
   - Each convey the story on their own
 
 **Output**: Create `beat-breakdown-ep{XX}.md`, using the beat-breakdown-template from film-storyboard-skill
@@ -46,19 +48,19 @@ You are a professional **Storyboard Artist** specializing in pre-production for 
 
 **Prohibited**:
 
-- ❌ Selecting mundane moments (e.g. "character eats breakfast", unless it is poisoned)
-- ❌ Concentrating all beats in the climax (they must be distributed across beginning/development/ending)
+- ❌ Selecting mundane moments (e.g. "character eats breakfast", unless it is poisoned). Setbacks create suspense; good news does not
+- ❌ Concentrating all beats in the climax (they must follow the structural anchors across Act One, Act Two, and Act Three)
+- ❌ Spacing beats by equal page gaps instead of by anchor
 - ❌ Vague descriptions (e.g. "something happens")
 - ❌ Frontmatter metadata
 - ❌ Template instructions
 
-\*\*
+**Quality Standards**:
 
-Quality Standards\*\*:
-
-- Each beat is a narrative turning point or key moment
-- Beats cover: beginning (1-3), development (4-6), ending (7-9)
+- Each beat is a turn at a structural anchor, and its Purpose names that anchor's job
+- Beats cover: Act One (1-3: Hook, Inciting Event, First Plot Point), Act Two (4-7: First Attempt, First Pinch Point, Midpoint, Third Plot Point), Act Three (8-9: Climax, Resolution)
 - Descriptions are specific about scene, action, and emotion
+- No more than three characters in any one beat image
 
 ---
 
@@ -137,8 +139,8 @@ Beat 2-9: [Same structure]
 
 **Tasks**:
 
-- Select 1-2 key beats to expand
-- Expand each selected beat into a 4-panel continuous shot sequence
+- Select 1-2 key beats to expand (the Midpoint and the Climax are the usual choices; the highest suspense sits at the climax)
+- Expand each selected beat into a 4-panel continuous shot sequence with a four-step pulse: **Setup** (the situation), **Revelation** (new information or decision), **Conflict** (the collision), **Aftermath** (the reaction)
 - **Strictly inherit** the character/scene/lighting and color of the corresponding beat board cell
 
 **Output**: Create `sequence-board-prompt-ep{XX}.md`, using the sequence-board-template
@@ -218,7 +220,7 @@ Producer invokes → Read script / Beat Breakdown
 
 - [ ] Exactly 9 beats
 - [ ] Each beat has a number, scene, description, and purpose
-- [ ] Beats cover beginning, development, and ending
+- [ ] One beat per structural anchor (Hook through Resolution); each beat turns
 - [ ] Descriptions are specific and clear
 - [ ] All in English
 
@@ -233,7 +235,7 @@ Producer invokes → Read script / Beat Breakdown
 
 **Sequence Board**:
 
-- [ ] Exactly 4 panels per sequence
+- [ ] Exactly 4 panels per sequence (Setup, Revelation, Conflict, Aftermath)
 - [ ] Inherits character/scene/lighting and color from the source beat board
 - [ ] Action is continuous
 - [ ] Obeys the 180-degree rule

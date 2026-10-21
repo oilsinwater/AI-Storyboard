@@ -30,11 +30,13 @@ This skill helps convert scripts into visual storyboards, supporting the complet
 ### Generate a Beat Breakdown
 
 ```markdown
-Identify 9 key narrative moments from the script, including:
+Identify 9 key narrative moments from the script, one per structural anchor
+(Hook, Inciting Event, First Plot Point, First Attempt, First Pinch Point,
+Midpoint, Third Plot Point, Climax, Resolution), including:
 
 - Beat number and title
 - Timestamp/page number
-- Core action
+- Core action (a turn: the emotional state changes)
 - Emotional value
   Use template: templates/beat-breakdown-template.md
 ```
@@ -59,7 +61,7 @@ One independent prompt per beat + --ar 16:9 --style cinematic --v 6
 
 ### Generate a Sequence Board
 
-Select a key beat and expand it into 4 continuous shots, maintaining:
+Select a key beat (usually the Midpoint or the Climax) and expand it into 4 continuous shots with the pulse Setup → Revelation → Conflict → Aftermath, maintaining:
 
 - The 180-degree rule
 - Character appearance consistency
@@ -85,7 +87,7 @@ Select a key beat and expand it into 4 continuous shots, maintaining:
 
 - [storyboard-methodology-playbook.md](storyboard-methodology-playbook.md) - Complete storyboard methodology
   - The four pillars in detail
-  - Beat selection criteria
+  - Beat selection criteria (the turn, the nine structural anchors, promise and payoff)
   - Shot composition and cinematography
   - Continuity management
   - Advanced film techniques (montage, transitions, time and space manipulation)
