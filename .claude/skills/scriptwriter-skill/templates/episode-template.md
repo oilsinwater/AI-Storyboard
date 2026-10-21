@@ -101,15 +101,15 @@ Emma's expression shifts from fear to focus.
 
 ## Key Beat Candidates
 
-1. **Beat 1** (Scene 1, Hook) - The diary activates on its own, objects in the room float
-2. **Beat 2** (Scene 2, Inciting Event) - Emma travels through the void passage
-3. **Beat 3** (Scene 3, First Plot Point) - Arrives at the otherworldly library
-4. **Beat 4** (Scene 5, First Attempt) - First encounter with the Library Guardian
-5. **Beat 5** (Scene 7, First Pinch Point) - Discovers her own family's secret
-6. **Beat 6** (Scene 9, Midpoint) - The Guardian tests Emma's will
-7. **Beat 7** (Scene 11, Third Plot Point) - Emma passes the test
-8. **Beat 8** (Scene 13, Climax) - Gains her first magical ability
-9. **Beat 9** (Scene 15, Resolution) - Decides to accept her destiny and returns to the real world to prepare for the next step
+1. **Beat 1** (Scene 1, Hook) - Sleepless, Emma hides the diary under her mattress; it falls open on its own and every object in the room floats
+2. **Beat 2** (Scene 2, Inciting Event) - Emma is pulled through the void passage
+3. **Beat 3** (Scene 3, First Plot Point) - At the library gate, Emma chooses to enter rather than flee back through the rift
+4. **Beat 4** (Scene 5, First Attempt) - First encounter with the Library Guardian; Emma demands answers
+5. **Beat 5** (Scene 7, First Pinch Point) - The Guardian reveals her family sealed this place; the shelves turn against her
+6. **Beat 6** (Scene 9, Midpoint) - The Guardian tests Emma's will; she stops running and faces it
+7. **Beat 7** (Scene 11, Third Plot Point) - Emma fails the test; the diary burns out and the way home closes
+8. **Beat 8** (Scene 13, Climax) - Emma relights the diary with her own will and gains her first magical ability
+9. **Beat 9** (Scene 15, Resolution) - Accepts her destiny and returns to the real world; the Guardian's last words plant the next question
 ```
 
 ## Key Points:

@@ -1,6 +1,6 @@
 # AI Storyboard Production System
 
-An AI-driven storyboard artist system built on the Claude Agent + Skill architecture, that automates the film storyboarding workflow.
+An AI-driven storyboard artist system built on the Claude Agent + Skill architecture that automates the film storyboarding workflow.
 
 ## System Overview
 
