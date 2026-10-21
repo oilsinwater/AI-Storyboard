@@ -69,6 +69,7 @@ Comprehensive quality standards for the output of each production stage.
 - [ ] **Appropriate length**: 110-170 words per prompt in total (Visual Description 80-120 + Lighting & Mood 30-50)
   - Too short (<110 words) → missing detail
   - Too long (>170 words) → bloated, unfocused
+  - Gemini/Midjourney single-block format (only if the Producer chose it): 80-150 words per prompt
 - [ ] **Shot specification**: Each prompt includes shot type and camera angle
   - Required: "Medium shot, eye-level" or similar wording
 
